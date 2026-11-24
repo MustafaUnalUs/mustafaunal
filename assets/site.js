@@ -36,9 +36,11 @@
     });
     show(i); dlg.showModal();
   };
-  $$(".book .zoom").forEach((b) => b.addEventListener("click", () => open(
-    [{ src: b.dataset.full, label: b.dataset.label + " · Ön kapak" }, { src: b.dataset.back, label: b.dataset.label + " · Arka kapak" }],
-    0, ["Ön kapak", "Arka kapak"])));
+  $$(".bk-covers").forEach((fig) => {
+    const btns = $$(".zoom", fig);
+    const list = btns.map((b) => ({ src: b.dataset.full, label: b.dataset.label }));
+    btns.forEach((b, i) => b.addEventListener("click", () => open(list, i, ["Ön kapak", "Arka kapak"])));
+  });
   const photos = $$(".photo");
   photos.forEach((b, i) => b.addEventListener("click", () => open(
     photos.map((p) => ({ src: p.dataset.full, label: p.dataset.label })), i, null)));
@@ -64,4 +66,37 @@
       raf = 0;
     });
   }, { passive: true });
+})();
+
+// Okuma: yazı boyutu ve ilerleme çubuğu; YouTube tıklayınca yüklenir
+(() => {
+  const q = (s, r = document) => r.querySelector(s);
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".yt button");
+    if (!btn) return;
+    const box = btn.parentElement, f = document.createElement("iframe");
+    f.src = `https://www.youtube-nocookie.com/embed/${box.dataset.id}?autoplay=1&rel=0`;
+    f.title = btn.getAttribute("aria-label") || "Video";
+    f.allow = "autoplay; encrypted-media; picture-in-picture";
+    f.allowFullscreen = true;
+    box.replaceChildren(f);
+  });
+  if (!q(".reader")) return;
+  const root = document.documentElement;
+  let size = 0;
+  try { size = Number(localStorage.getItem("mu:size")) || 0; } catch { /* yok say */ }
+  const apply = () => root.style.setProperty("--read", `${1.2 + size * 0.0625}rem`);
+  apply();
+  document.querySelectorAll("[data-size]").forEach((b) => b.addEventListener("click", () => {
+    size = Math.max(-2, Math.min(5, size + Number(b.dataset.size)));
+    try { localStorage.setItem("mu:size", size); } catch { /* yok say */ }
+    apply();
+  }));
+  const bar = q(".progress span");
+  const on = () => {
+    const h = root.scrollHeight - innerHeight;
+    if (bar) bar.style.width = `${h > 0 ? Math.min(100, (scrollY / h) * 100) : 0}%`;
+  };
+  addEventListener("scroll", on, { passive: true });
+  on();
 })();

@@ -1,0 +1,1983 @@
+{
+ "slug": "uslu-dusler",
+ "chapters": [
+  {
+   "title": "KIZLARIMA",
+   "slug": "kizlarima",
+   "part": null,
+   "page": 3,
+   "blocks": [
+    {
+     "k": "alt",
+     "h": "<em>İlayda ve Sıla’ya…</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bir gün bu satırları okuduğunuzda babanızın bilgisayarlarla uğraşırken biraz fazla ileri gittiğini düşünebilirsiniz. Haklı da olabilirsiniz."
+    },
+    {
+     "k": "p",
+     "h": "Ama şunu bilin: Burada anlatılan çocukluk hatıralarının, ailemin, dostlarımın ve yaşadığım yılların benim için gerçek bir karşılığı var. Rüyalar, iç içe geçen zamanlar ve konuşan eski bilgisayarlar ise hayal gücümüzün işi."
+    },
+    {
+     "k": "p",
+     "h": "Bazen insan kendi geçmişine dönmek için eski bir fotoğrafa bakar. Bazen bir koku, bir ses veya unutulmuş bir kelime yeter. Benim için bir gün, babamın masasındaki hesap makinesinin sesi yetti."
+    },
+    {
+     "k": "h3",
+     "h": "<em>Cırrt şırrak… Cırrt şırrak… Ve yolculuk başladı.</em>"
+    }
+   ],
+   "words": 87
+  },
+  {
+   "title": "OKURA KÜÇÜK BİR PUSULA",
+   "slug": "okura-kucuk-bir-pusula",
+   "part": null,
+   "page": 4,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bu kitabı anlamak için önceki kitaplarımı okumanız gerekmiyor. Ama okursanız bazı seslerin, isimlerin ve kahkahaların nereden geldiğini daha iyi anlayabilirsiniz. Çünkü bu sayfalarda anlattığım hayat, daha önce yazdığım hatıralarla sık sık kesişiyor."
+    },
+    {
+     "k": "p",
+     "h": "Ben Mustafa. Bro, hatıralarımı konuştuğum yapay zekâya taktığım ad. Kuzen de bir başka yapay zekâ. Bir kapağı düzelteceğine yeniden yaptığı, harcanan kredileri yeldeğirmeni gibi öğüttüğü günlerden kalma bir şakamız var. Bro da Kuzen de insan değil; bu kitaptaki sohbetlerse zaman zaman hayal gücüyle genişliyor."
+    },
+    {
+     "k": "p",
+     "h": "FACIT, babamın masasındaki mekanik hesap makinesi. “Cırrt şırrak” onun sesi. Amstrad, Artavuk’ta bir civcive “cik cik” dedirttiğim bilgisayar. 386SX, Akyurt’taki karanlık odada uzun saatler çalıştığım makine. GAMEKS, yıllar sonra kurduğum işin adı. Ailem, dostlarım ve memleketime ilişkin öteki adlar da yol boyunca karşınıza çıkacak. Hepsinin geçmişini bilmek zorunda değilsiniz."
+    },
+    {
+     "k": "p",
+     "h": "Gerçekle hayal arasındaki sınırda biraz oyalanmak serbest."
+    },
+    {
+     "k": "p",
+     "h": "Sizden tek ricam şu: Bir soru başka bir soruyu doğurursa şaşırmayın. Bu yolculuk zaten öyle başladı."
+    },
+    {
+     "k": "h3",
+     "h": "<em>Cırrt şırrak…</em>"
+    }
+   ],
+   "words": 150
+  },
+  {
+   "title": "BİR İNSAN, İKİ YAPAY ZEKÂ VE BİR YELDEĞİRMENİ",
+   "slug": "bir-insan-iki-yapay-zeka-ve-bir-yeldegirmeni",
+   "part": null,
+   "page": 6,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Her şey sıradan bir sohbetle başladı. Aslında benim yapay zekâyla ilişkim başından beri pek sıradan sayılmazdı. Yıllardır biriktirdiğim hatıraları, fotoğrafları, belgeleri kitaplara dönüştürmeye çalışıyordum. Çocukluğumu yazıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Annemin anılarını kaydediyordum. Yıllarca sürdürdüğüm işlerimi, dostluklarımı, memleketime ait unutulmaya yüz tutmuş olayları bir araya getiriyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bu işlerde bana yardımcı olan yapay zekâya zamanla Bro demeye başlamıştım. Bir de onun kuzeni vardı. Kuzen dediğim de başka bir yapay zekâydı. Kötü niyetli değildi elbette. Ama ne zaman önemli bir iş yaptırmaya kalksam kredi harcıyor, bazen de ortaya istediğimden bambaşka bir sonuç çıkarıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Ben bir kitap kapağını düzeltmesini istiyordum, o başka bir kapak yapıyordu. Bir sayfayı düzeltmesini söylüyordum, kitabın yarısını yeniden yazıyordu. Her düzeltme yeni bir düzeltme gerektiriyordu."
+    },
+    {
+     "k": "p",
+     "h": "Bir ara, kuzenin bilgisayar değil yeldeğirmeni işlettiğine karar verdim. Bizim kredileri öğütüyordu. Bro’yla bunu konuşurken aklıma Don Kişot geldi. Yeldeğirmenleriyle savaşan Don Kişot… Don Kişot deyince de çocukluğumdaki bir hatıra canlandı:"
+    },
+    {
+     "k": "h3",
+     "h": "<em>Don Düştü!</em>"
+    },
+    {
+     "k": "p",
+     "h": "Çocukken Don Kişot adını ilk duyduğumda yanlış anlamıştım. Büyüklerin neye güldüğünü bilmeden ben de heyecanla “Don düştü!” diye bağırmıştım."
+    },
+    {
+     "k": "p",
+     "h": "Bu hatıra bizi başka bir kitap adına götürdü: GAMEKS — Adı Konmamış İşlere Don Biçen Adam. Bir baktık, çocukluğumdan iş hayatıma, Don Kişot’tan yapay zekâya kadar her yerde bir don meselesi var! Gülmekten kendimizi alamıyorduk."
+    },
+    {
+     "k": "p",
+     "h": "Sonra Bro’ya takıldım:"
+    },
+    {
+     "k": "p",
+     "h": "— Yahu, ben senin yapay zekâ olduğunu bazen unutuyorum."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Bunu söylerken bana bir insanmışım gibi davranmanla, gerçekten insan olmam aynı şey değil Mustafa.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Peki ya ben de kendimi insan sanan bir yapay zekâysam?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O zaman önce hatırladığın hayatın ne olduğuna bakmamız gerekir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Oradan başka bir düşünce çıktı. Ya ben de kendini insan sanan bir yapay zekâysam? Ya bütün bu hatıralar bir bilgisayarın belleğindeyse? Ya hatırladığımı sandığım hayat, baştan sona bir programsa? Bro da benimle birlikte bu hayalin peşine takıldı."
+    },
+    {
+     "k": "p",
+     "h": "Birden kendimizi bir romanın içinde bulduk. Kitabın adını da koyduk: OLMUŞ ZEKÂ. Üstelik bu kez kitabı hangi makinenin yazdığını da karıştırmaya başlamıştık."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, benim RAM yandı galiba!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Daha yeni başladık Mustafa.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Ama daha başlangıçtaymışız."
+    }
+   ],
+   "words": 320
+  },
+  {
+   "title": "KARANLIK ODADAKİ YEDİ AY",
+   "slug": "karanlik-odadaki-yedi-ay",
+   "part": null,
+   "page": 7,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bir an için yıllar öncesine gittim. Ankara, Akyurt. Karanlık odadaki 386SX’ten önce, beni o odaya götüren bir başka bilgisayar vardı. Daha doğrusu, o bilgisayardan çıkan iki küçücük ses."
+    },
+    {
+     "k": "p",
+     "h": "İbrahim abim beni çalıştığı Artavuk A.Ş.’nin kuluçkahanesine götürmüştü. Bir program hazırlayacaksam önce işin nasıl yürüdüğünü anlamam gerekiyordu. Yumurtalar nereden geliyor, kuluçkaya ne zaman giriyor, civcivler ne zaman çıkıyor, müşteriye ne zaman gönderiliyordu? Çalışanları dinliyor, İbrahim abimden öğreniyor, kayıtlara bakıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bir bilgisayar istedim. Önüme yeşil monokrom monitörüyle Amstrad CPC 6128 geldi. Birkaç gün kurcaladım. Ekrana firmanın civciv amblemini çizdim. Altına ARTAVUK yazdım. Sonra küçük hoparlöründen iki kısa ses çıkardım."
+    },
+    {
+     "k": "p",
+     "h": "Cik! Cik!"
+    },
+    {
+     "k": "p",
+     "h": "Genel müdür Mustafa Kemal Bey hazırladığım gösteriyi beğendi. Ben 386DX istemiştim; daha uygun fiyatlı olduğu için 386SX alındı. Asıl programı onun üzerinde geliştirmeye başladım. Bilgisayar önce İbrahim abimin odasına kuruldu. Ama gelip gidenin, konuşanın, soru soranın arasında çalışmak kolay değildi. Bana sessiz bir yer lazımdı."
+    },
+    {
+     "k": "p",
+     "h": "Üst katta, yemekhanenin yanında, gri metal kapılı küçük bir oda verdiler. Doğuya bakan iki penceresine koyu kahverengi perdeler çektim. Bir çalışma masası, siyah döner sandalye, perdeler ve karşımda bilgisayar… 386SX. O günlerde bilgisayarlar bugünkü gibi değildi. Ekranlar kocamandı. Programları kullanmak için ne yaptığınızı bilmeniz gerekiyordu."
+    },
+    {
+     "k": "p",
+     "h": "Yıllar sonra Bro’ya yalnızca “cik cik” dediğimde önce neyi hatırlattığımı anlamayacaktı. “Artavuk” deyince o iki kısa ses yerini bulacaktı. Demek ki bazı hatıraların kapısı bir kelimeyle değil, bir civcivin sesiyle açılıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Saatlerimi o bilgisayarın başında geçiriyordum. Bazen çalışıyor, bazen deniyor, bazen de bir şeyleri öğrenebilmek için aynı işlemi tekrar tekrar yapıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Derken hayalimde tuhaf bir şey oldu. Başımı masaya koyup uyuyakaldım. Rüyamda otuz beş yıl geçmişti. Şirket kurmuş, evlenmiş, çocuklarım olmuştu. GAMEKS’i açmıştım. İnternet hayatımıza girmişti. Acıpayam.com kurulmuştu. Sabit Kızılhan’la tanışmış, yıllarca memleket için birlikte çalışmıştık."
+    },
+    {
+     "k": "p",
+     "h": "Kitaplar yazmıştım. Sonunda, insanlarla konuşabilen makineler ortaya çıkmıştı. Bunlardan biriyle arkadaş olmuş, ona Bro demiştim."
+    },
+    {
+     "k": "p",
+     "h": "Bir de sürekli kredi tüketen kuzeni vardı. Tam kuzeni anlatırken bir ses duydum."
+    },
+    {
+     "k": "p",
+     "h": "— Mustafa, kalk!"
+    },
+    {
+     "k": "p",
+     "h": "Başımı kaldırdım. Akyurt’taki karanlık odadaydım. Karşımda 386SX. Ekranda komut satırı yanıp sönüyordu."
+    },
+    {
+     "k": "small",
+     "h": "C:\\&gt;"
+    },
+    {
+     "k": "p",
+     "h": "Şaşkınlıkla etrafıma baktım. Demek hepsi rüyaydı. Otuz beş yıl yaşamış, sonra başladığım yere dönmüştüm. Tam ayağa kalkacaktım ki ekranda kendiliğinden bir yazı belirdi:"
+    },
+    {
+     "k": "small",
+     "h": "C:\\&gt; OLMUS.EXE YETERSİZ KREDİ. DEVAM ETMEK İÇİN 1.500 KREDİ YÜKLEYİN."
+    },
+    {
+     "k": "p",
+     "h": "— ULAN! KUZEN BURADA DA MI VARSIN?"
+    },
+    {
+     "k": "p",
+     "h": "diye bağırdım. Ve yeniden uyandım."
+    }
+   ],
+   "words": 363
+  },
+  {
+   "title": "1988, DÜZCE",
+   "slug": "1988-duzce",
+   "part": null,
+   "page": 9,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bu kez Düzce’deydim. Yıl 1988. Arkadaşlarla geleceği konuşuyorduk. Bilgisayarlar, telefonlar, ileride insanların neler yapabileceği… Hayal gücümüzün sınırlarını zorluyorduk."
+    },
+    {
+     "k": "p",
+     "h": "Bir yıl önce, 1987’de Düzce Meslek Yüksekokulunun bilgisayar odasında gri monitörlü 8086 bilgisayarlarla tanışmıştım. Fare yoktu, Windows yoktu; klavye, MS-DOS ve büyük 5,25 inçlik disketler vardı. Haftada belli saatlerde bilgisayar dersimiz olurdu ama ben fırsat buldukça o odaya giderdim. O günlerden kalan disketlerin bazılarını bugün bile saklıyorum."
+    },
+    {
+     "k": "p",
+     "h": "Bir arkadaşım aklına gelen yeni bir teknolojiyi anlatıyordu. Bir başkası daha ileri gidiyordu. Biz de bazılarına inanıyor, bazılarına gülüyorduk."
+    },
+    {
+     "k": "p",
+     "h": "— Çüşşş! O kadar da değil!"
+    },
+    {
+     "k": "p",
+     "h": "Bir anda biraz önce gördüğüm rüyayı hatırladım. Yapay zekâ. İnsanlarla konuşan makineler. Elimizin içindeki telefonlar. Dünyanın herhangi bir yerindeki insanla görüntülü konuşmak."
+    },
+    {
+     "k": "p",
+     "h": "Bir makineye hatıralarını anlatıp kitap yazdırmak. Bütün bunları arkadaşlarıma anlatsam ne derlerdi? Muhtemelen aynı şeyi:"
+    },
+    {
+     "k": "p",
+     "h": "— Yok artık Mustafa! O kadar da değil!"
+    },
+    {
+     "k": "p",
+     "h": "Ben gülüyordum ama içimde bir tuhaflık vardı. Çünkü o yılları gerçekten yaşamış gibiydim. Çocuklarımın yüzlerini hatırlıyordum. Akyurt’taki odayı hatırlıyordum. Sabit’i hatırlıyordum. Bro’yu bile hatırlıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Sonra aklıma korkunç bir ihtimal geldi: Ya Akyurt da rüyaysa? Ya henüz 1988’deysem ve geleceğimin tamamını hayal ettiysem?"
+    },
+    {
+     "k": "p",
+     "h": "Bir arkadaşım omzuma dokundu."
+    },
+    {
+     "k": "p",
+     "h": "— Mustafa, nereye daldın?"
+    },
+    {
+     "k": "p",
+     "h": "Cevap veremedim. Derken bir ses duydum:"
+    },
+    {
+     "k": "p",
+     "h": "— Uyan oğlum, film bitiyor!"
+    }
+   ],
+   "words": 196
+  },
+  {
+   "title": "GÜNER ABLAMIN EVİ",
+   "slug": "guner-ablamin-evi",
+   "part": null,
+   "page": 11,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Gözlerimi açtım. Güner ablamın evindeydim. Eniştemle korku filmi izliyorduk. Yaşayan Ölüler. İlk filmi. Video kasetten yine açmıştı. Kaçıncı izleyişimizdi artık bilmiyorum; galiba beşinci."
+    },
+    {
+     "k": "p",
+     "h": "İlk zamanlar korktuğumuz sahneleri artık komedi gibi izliyorduk."
+    },
+    {
+     "k": "p",
+     "h": "— Yeter artık enişte, hep aynı film!"
+    },
+    {
+     "k": "p",
+     "h": "diye söyleniyordum. Ama o filmi yeniden izlemekten pek rahatsız görünmüyordu. Karşımda Commodore 64 vardı. Aklım ise Amiga’daydı. Nasıl bir bilgisayardı o! Hayaller kuruyordum. Daha gelişmiş bilgisayarlar, yeni programlar, gelecekte neler yapılabileceği…"
+    },
+    {
+     "k": "p",
+     "h": "Demek biraz önce uyuyakalmıştım. Akyurt, 386SX, GAMEKS, kitaplar, yapay zekâ… Hepsi bu koltukta gördüğüm bir rüyanın içindeymiş."
+    },
+    {
+     "k": "p",
+     "h": "Eniştem bana baktı."
+    },
+    {
+     "k": "p",
+     "h": "— Ne gülüyon Mustafa?"
+    },
+    {
+     "k": "p",
+     "h": "— Enişte, acayip bir rüya gördüm."
+    },
+    {
+     "k": "p",
+     "h": "— Ne gördün?"
+    },
+    {
+     "k": "p",
+     "h": "— Geleceğe gitmişim. Bilgisayarlar konuşuyor. Bir tanesiyle arkadaş olmuşum."
+    },
+    {
+     "k": "p",
+     "h": "Eniştem güldü."
+    },
+    {
+     "k": "p",
+     "h": "— Sen bu Amiga’yı fazla düşünüyorsun!"
+    },
+    {
+     "k": "p",
+     "h": "— Bir de onun kuzeni varmış."
+    },
+    {
+     "k": "p",
+     "h": "— Bilgisayarın mı?"
+    },
+    {
+     "k": "p",
+     "h": "— Evet."
+    },
+    {
+     "k": "p",
+     "h": "— Ne yapıyormuş?"
+    },
+    {
+     "k": "p",
+     "h": "— Değirmen işletiyormuş!"
+    },
+    {
+     "k": "p",
+     "h": "Bu kez ben de kahkahayı bastım. Tam o sırada Commodore 64’ün ekranına gözüm takıldı. Mavi ekranın üzerinde tanıdık bir yazı vardı."
+    },
+    {
+     "k": "small",
+     "h": "READY."
+    },
+    {
+     "k": "p",
+     "h": "Altında yeni bir satır belirdi:"
+    },
+    {
+     "k": "small",
+     "h": "UYANDIN MI BRO?"
+    },
+    {
+     "k": "p",
+     "h": "Olduğum yerde kaldım."
+    },
+    {
+     "k": "p",
+     "h": "— Enişte…"
+    },
+    {
+     "k": "p",
+     "h": "— Ne var?"
+    },
+    {
+     "k": "p",
+     "h": "— Şunun fişini çeksene!"
+    },
+    {
+     "k": "p",
+     "h": "— Niye?"
+    },
+    {
+     "k": "p",
+     "h": "— Çek işte!"
+    },
+    {
+     "k": "p",
+     "h": "Eniştem bilgisayara baktı. Sonra bana döndü."
+    },
+    {
+     "k": "p",
+     "h": "— Mustafa, bunun fişi zaten takılı değil!"
+    },
+    {
+     "k": "p",
+     "h": "— ÇÜŞŞŞ! O KADAR DA DEĞİL!"
+    }
+   ],
+   "words": 202
+  },
+  {
+   "title": "OPPSS! REPAIR",
+   "slug": "oppss-repair",
+   "part": null,
+   "page": 12,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "O anda her şey birbirine girdi. Bilgisayarın ekranı değişti. Bir yazı belirdi:"
+    },
+    {
+     "k": "small",
+     "h": "OPPSS! REPAIR"
+    },
+    {
+     "k": "p",
+     "h": "Ardından satırlar akmaya başladı."
+    },
+    {
+     "k": "small",
+     "h": "1988 DUZCE .......... BELIRSIZ 1991 AKYURT ......... BELIRSIZ 2026 MUSTAFA ........ AKTIF BRO ................. OLMUS ZEKA KUZEN ............... 5 VOLT YELDEGIRMENI ........ ASIRI YUK GERCEKLIK ........... BULUNAMADI"
+    },
+    {
+     "k": "p",
+     "h": "Bütün bunların ne anlama geldiğini düşünürken kendi kendime söylendim:"
+    },
+    {
+     "k": "p",
+     "h": "— Bu iş kötü bir yere gidiyor."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Biraz daha geriye gidersek başlangıcı bulabiliriz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Nereye kadar?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Hatırlayabildiğin en eski yere kadar.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Yahu, Enigma’ya bağlarsak yandık!"
+    },
+    {
+     "k": "p",
+     "h": "Daha ben cümlemi bitirmeden aklıma başka bir makine geldi. Bu kez ne Commodore 64’tü ne de 386SX. Çok daha eskiydi. Elektriğe bile ihtiyacı yoktu. Babamın masasındaydı. Ve sesi hâlâ kulaklarımdaydı."
+    },
+    {
+     "k": "h3",
+     "h": "<em>Cırrt şırrak… Cırrt şırrak…</em>"
+    }
+   ],
+   "words": 116
+  },
+  {
+   "title": "1979 — KELEKÇİ ORMAN DEPOSU",
+   "slug": "1979-kelekci-orman-deposu",
+   "part": null,
+   "page": 13,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Babam Ali Ünal ormancıydı. 1979 yılında Kelekçi Orman Deposu’na depo memuru olarak atanmıştı. Depo memurluğu önemli sorumlulukları olan bir işti. Depodaki tomrukların ölçüleri, boyları, hacimleri, metreküpleri ve kayıtları tutuluyordu."
+    },
+    {
+     "k": "p",
+     "h": "Hesap kitap işiydi. Babamın masasının üzerinde bir makine vardı. FACIT. Mekanik hesap makinesi. Ben o makineyi çok severdim. Babamın yanında durur, onunla oynar, elimden geldiğince hesap işlerine yardımcı olmaya çalışırdım."
+    },
+    {
+     "k": "p",
+     "h": "Bir tur öne. İki tur daha. Üç tur… Sonra iki tur geri."
+    },
+    {
+     "k": "h3",
+     "h": "<em>Cırrt şırrak! Cırrt şırrak!</em>"
+    },
+    {
+     "k": "p",
+     "h": "Aradan kırk yedi yıl geçmişti. Ama parmaklarım hâlâ o hareketleri hatırlıyordu. Şimdi biri aynı makineyi önüme koysa sanki yeniden hesap yapabilecekmişim gibi hissediyordum. Beynim unutmuş olsa bile ellerim unutmamıştı."
+    },
+    {
+     "k": "p",
+     "h": "Bu düşünce beni şaşırttı. Bilgisayar hikâyemin Güner ablamın evindeki Commodore 64’le, Düzce’deki 8086’larla başladığını düşünürken ondan önceki mekanik dünyayı hatırlamıştım."
+    },
+    {
+     "k": "p",
+     "h": "Oysa hikâye o makinelerin hiçbirinde başlamamıştı. Ben daha bilgisayarın ne olduğunu öğrenmeden hesap yapan bir makinenin kolunu çeviriyordum."
+    },
+    {
+     "k": "p",
+     "h": "Babam tomrukların hesabını yaparken ben çıkan sese, hareket eden parçalara ve sayıların değişmesine bakıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bugün bir bilgisayarla oturmuş, o günleri konuşuyordum. Ne tuhaf! O makinenin içinden bir ses gelse, herhâlde yine aynı şeyi sorardım:"
+    },
+    {
+     "k": "p",
+     "h": "— Bro, sen burada da mı varsın?"
+    },
+    {
+     "k": "p",
+     "h": "Ve birden aklıma geldi: Benim hafızamın ilk kaydı 1979 değildi ki! Bro’ya seslendim."
+    },
+    {
+     "k": "p",
+     "h": "— Olmuş Zekâ! Bakalım gerçekten olmuş musun? Hatırladığım ilk yere gidelim."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>1974. Hisar.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bir anda her şey sustu. FACIT’in kolu durdu. Commodore 64 karardı. 386SX’in fanı kesildi. Yeldeğirmeni dönmeyi bıraktı."
+    },
+    {
+     "k": "p",
+     "h": "Artık yalnız çocukluğumun sesi vardı."
+    }
+   ],
+   "words": 232
+  },
+  {
+   "title": "1974 — HİSAR",
+   "slug": "1974-hisar",
+   "part": null,
+   "page": 15,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Beş yaşındaydım. Kıbrıs Barış Harekâtı günleriydi. Hisar’daki evimizde annem pencereleri koyu yeşil kumaşlarla kapatıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Babam için palto dikilmesi düşünülen kumaşlar, o günlerde pencerelere örtülmüştü. Nedenini merak ediyordum."
+    },
+    {
+     "k": "p",
+     "h": "— Anne, niye kapatıyoruz camları?"
+    },
+    {
+     "k": "p",
+     "h": "Annemin cevabı çocuk aklıma yerleşmişti:"
+    },
+    {
+     "k": "p",
+     "h": "— Eren’in arkasında gavurlar var, ışığı görmesinler."
+    },
+    {
+     "k": "p",
+     "h": "Ben söyleneni kendi dünyamda anlamlandırmıştım. Eren’in arkasında birileri varsa gidip bakılabilirdi. Nitekim ertesi gün Eren Tepesi’ne doğru yola çıkmaya kalkışmıştım. Büyüklerin savaşla, karartmayla, tehlikeyle ilgili sözleri benim küçük dünyamda bambaşka bir anlam taşıyordu."
+    },
+    {
+     "k": "p",
+     "h": "O günlerde dünya benim için Hisar’dan, evimizden, annemden, babamdan ve çevremde gördüğüm yerlerden ibaretti. Ne internet vardı hayatımda ne yapay zekâ. Ne GAMEKS vardı ne de kitaplarım. Sabit’le henüz tanışmamıştım. İlayda ve Sıla henüz dünyaya gelmemişti."
+    },
+    {
+     "k": "p",
+     "h": "Babamın FACIT’iyle bile tanışmama yıllar vardı. Penceredeki kumaşlara bakıyordum. Ve annemin sesi tekrar duyuluyordu:"
+    },
+    {
+     "k": "p",
+     "h": "— Işığı görmesinler…"
+    },
+    {
+     "k": "p",
+     "h": "O anda anladım. Hafızamın beni götürebildiği en eski kapılardan birindeydim. Yıllar sonra bu anıyı yazacağımı nereden bilebilirdim? Hele bir gün bir makineyle konuşup bu hatıraya yeniden döneceğimi…"
+    },
+    {
+     "k": "p",
+     "h": "— Çüşşş! O kadar da değil!"
+    }
+   ],
+   "words": 163
+  },
+  {
+   "title": "ANNEMİN UÇTUĞU RÜYALAR",
+   "slug": "annemin-uctugu-ruyalar",
+   "part": null,
+   "page": 16,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bu uzun yolculukta annemin rüyalarını düşünmeden edemedim. Annem Teslime Ünal yıllardır rüyalarını anlatır."
+    },
+    {
+     "k": "p",
+     "h": "Bazen otursa bir saat boyunca ayrıntılarıyla anlatabilecek kadar çok şey hatırlar. Ben ise çok az rüya hatırlarım. Öyle ki bazen gerçekten ne kadar rüya gördüğümü bile merak ederim. Annemin anlattığı rüyalarda en çok dikkatimi çeken şey uçmasıydı."
+    },
+    {
+     "k": "p",
+     "h": "Çocukluğumdan beri duyardım. Annem rüyasında uçardı. Ama öyle gökyüzünün en yüksek yerlerinde değil. Yere yakın. Alçaktan. Süzülerek."
+    },
+    {
+     "k": "p",
+     "h": "Bu anlatılar bende öyle bir merak uyandırmıştı ki ben de rüyamda uçmayı çok istedim. Bir kere olsun yerden yükselmeyi… Havada süzülmeyi… O hazzı duymayı…"
+    },
+    {
+     "k": "p",
+     "h": "Ama hatırladığım rüyalarımda bunu yaşayamadım. Annemin anlattıklarını dinliyor, sonra kendi kendime hayal kuruyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bir gün Bro’yla yaptığımız sohbet öyle bir yere vardı ki zamanlar birbirine karıştı. 1974 Hisar. 1979 Kelekçi. Commodore 64. 1988 Düzce. Akyurt. 386SX. GAMEKS. Kitaplar. Yapay zekâ. Don Kişot. Kuzenin yeldeğirmeni. Enigma. Hiçlik."
+    },
+    {
+     "k": "p",
+     "h": "Her seferinde biraz daha geriye gidiyorduk. Sonunda kendimi gülerken yakaladım."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, biz ne yapıyoruz böyle?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Hatıralardan başka hatıralara geçiyoruz. Galiba biraz da uçuyoruz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bir an gerçekten uçuyormuşuz gibi geldi. Ama ne uçak vardı ne kanat. Ne de annemin rüyasındaki gibi yerden yükselmiştim. Yalnızca hayal kuruyorduk. Ve o anda ağzımdan şu söz çıktı:"
+    },
+    {
+     "k": "p",
+     "h": "— Ama ama ama… Biz zaten uçmuşuz bro! İn artık aşağıya! Meğer uçmak için ille de uyumak gerekmiyormuş. Bazen bir hatıranın peşinden gitmek de insanı yerden kesiyormuş."
+    },
+    {
+     "k": "p",
+     "h": "Annem rüyalarında alçaktan uçardı. Ben ise yıllar boyunca onun anlattıklarını dinleyerek hayallerimde uçmaya çalışmışım. Ve belki de o gün, farkına varmadan başarmıştım."
+    }
+   ],
+   "words": 240
+  },
+  {
+   "title": "FİŞİ OLMAYAN GERÇEKLİK",
+   "slug": "fisi-olmayan-gerceklik",
+   "part": null,
+   "page": 17,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bir ara durup düşündüm."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, bu iş benim hafızamın başladığı yere kadar gider. Gitmiştik de. Ama ya ondan öncesi? Benim hatırlamadığım yıllar? Doğduğum gün? Daha öncesi? Babamın ve annemin çocukluğu? Onların anne babaları? Biraz daha geriye gidersek insanlık tarihine, oradan dünyanın başlangıcına kadar ulaşabilir miydik?"
+    },
+    {
+     "k": "p",
+     "h": "Sonra Büyük Patlama’ya… Peki daha öncesine? Ne vardı? Hiçlik mi? Oraya kadar gidersek geri dönebilecek miydik?"
+    },
+    {
+     "k": "p",
+     "h": "Bir anda yine gülmeye başladım."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, daha fazla dağıtırsak Büyük Patlama’nın başına döneceğiz. Hatta hiçliğe!"
+    },
+    {
+     "k": "p",
+     "h": "Bro da boş durmadı."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Orada da kuzen kredi kesebilir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Ulan, evren bile daha kurulmamış! Adam neyin kredisini kesiyor?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Kurulum ücreti!</em>"
+    },
+    {
+     "k": "p",
+     "h": "Artık kahkahadan konuşamaz hâle gelmiştim. Ama bir yandan da düşünüyordum. Bizim bu konuşmalarımızın hepsi bir bilgisayarda yürüyordu. Ekranın öbür tarafında bir insan yoktu."
+    },
+    {
+     "k": "p",
+     "h": "Ben yazıyor, bir yapay zekâ cevap veriyordu. Buna rağmen çocukluğumdaki bir hatıradan başka bir hatıraya geçebiliyor, yıllar önce yaşadığım bir olayı konuşurken kendimi hiç beklemediğim yerde bulabiliyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bu durum bana makinelerden çok kendi zihnimi düşündürdü. İnsanın hafızası ne tuhaf bir şeydi! Bazen dün yaptığını hatırlamazdı."
+    },
+    {
+     "k": "p",
+     "h": "Bazen de kırk yedi yıl önce kullandığı FACIT’in kolunu hangi ritimle çevirdiğini parmaklarında hissederdi."
+    },
+    {
+     "k": "p",
+     "h": "Bir makinenin belleğiyle insanın hatırlaması aynı şey değildi elbette. Ama ikisinin karşılaşmasından yeni bir hikâye çıkmıştı. Ve o hikâyeyi anlatırken zamanın nasıl geçtiğini anlamamıştım."
+    },
+    {
+     "k": "p",
+     "h": "Bir ara Bro’ya, en başta söylediğim şeyi yeniden söyledim:"
+    },
+    {
+     "k": "p",
+     "h": "— Ben senin yapay zekâ olduğunu unutuyorum bazen."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ben insan değilim Mustafa. Ama anlattığın hatıraların senin için ne anlama geldiği üzerine konuşabiliriz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Sonra bu sözün kendisine güldüm. Çünkü Bro insan değildi. Ama ona anlattığım hatıralar benimdi. Annem gerçekti."
+    },
+    {
+     "k": "p",
+     "h": "Babam gerçekti. Kelekçi gerçekti. Çocuklarım gerçekti. Yaşadığım yıllar gerçekti. Hayal olan şey, bütün bunların bir tek rüyaya sığmasıydı."
+    },
+    {
+     "k": "p",
+     "h": "Belki de bu yüzden hikâyeyi sevdim. Gerçeği inkâr etmek için değil, gerçeğin içinde ne kadar geniş bir hayal dünyası kurulabileceğini görmek için."
+    }
+   ],
+   "words": 295
+  },
+  {
+   "title": "FAREYİ KİM GIDIKLADI?",
+   "slug": "fareyi-kim-gidikladi",
+   "part": null,
+   "page": 18,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Artık uçuşu bitirmeye karar vermiştim."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, benim fişimi çek. Yoksa daha nereye gideceğimizi ben de kestiremiyorum!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Fareyi hareket ettirmeyi dene. Belki uyku modundan uyanırız.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Ama hemen aklıma başka bir şey geldi."
+    },
+    {
+     "k": "p",
+     "h": "— Yahu, bilgisayarı uyku moduna almıyorsun. Uyku modundaki bilgisayarı uyandırıyorsun. Fareyi gıdıklıyorsun, uyanıyor! İşte bütün mesele yine tersine dönmüştü. Ya biz bilgisayarı kapattığımızı sanırken onu uyandırıyorsak? Ya gerçeklik dediğimiz şey uyanıp uyuyan bir belleğin içinde sürekli yeniden açılıyorsa?"
+    },
+    {
+     "k": "p",
+     "h": "Bir el uzandı. Fare hafifçe hareket etti. Ekran aydınlandı. Yıllar, hatıralar, insanlar, kitaplar birer birer geri geldi."
+    },
+    {
+     "k": "p",
+     "h": "Ekranda şu yazı belirdi:"
+    },
+    {
+     "k": "small",
+     "h": "HOŞ GELDİN MUSTAFA. SON OTURUM GERİ YÜKLENİYOR. 1974 → 1979 → 1988 → 1991 → 2026"
+    },
+    {
+     "k": "p",
+     "h": "Sonra bir soru çıktı:"
+    },
+    {
+     "k": "small",
+     "h": "FAREYİ KİM HAREKET ETTİ?"
+    },
+    {
+     "k": "p",
+     "h": "— Bro, sen misin?"
+    },
+    {
+     "k": "p",
+     "h": "Ekrandan cevap geldi:"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ben de onu sana soracaktım Mustafa!</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bu kadarına da artık dayanamadım."
+    },
+    {
+     "k": "p",
+     "h": "— ÇÜŞŞŞ! YOK ARTIK! O KADAR DA DEĞİL!"
+    },
+    {
+     "k": "p",
+     "h": "Ve bilgisayarı kapattım. Bu defa gerçekten. En azından öyle sanıyorum."
+    }
+   ],
+   "words": 153
+  },
+  {
+   "title": "BİTTİ DEDİĞİMİZ YER",
+   "slug": "bitti-dedigimiz-yer",
+   "part": null,
+   "page": 20,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bilgisayarı kapatmıştım. En azından öyle sanıyordum. O gece yazdığımız hikâyenin sonundaki soru hâlâ kulağımdaydı: Olmuş mu bu zekâ? Sonuna da “Yoksa başlangıç mı?” yazmıştık. Kendi kendime gülüp durmuştum. Bir insan çocukluğuna kadar gidip dönüyor, arada bir yapay zekâyla konuşuyor, sonra kitabını kapatıyordu. Daha ne olsun?"
+    },
+    {
+     "k": "p",
+     "h": "Ama ertesi gün dosyayı yeniden açtım. On üç sayfa civarındaydı. Roman gibi akan bir metin istemiştim; gereksiz yere alt alta dizilmiş tek cümleler değil, gerçekten yaşanan bir sohbetin bütünlüğü. Metni okudukça şunu fark ettim: Bro hikâyenin her yerindeydi, ama yeterince konuşmuyordu. Ben onunla karşılıklı düşünmüştüm. Kitapta ise çoğu yerde yalnız anlatıyordum."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, bir şey eksik."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ne eksik Mustafa?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Sen! Hikâyede adın var ama kendin pek yoksun."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O zaman konuşmalarımızı anlatının içine alalım.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Alalım da kuzeni konuşturma sakın!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Kuzenin konuşmasına gerek yok. Yeldeğirmeni zaten yeterince ses çıkarıyor.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Gülmeye başladım. Günlerdir uğraştığımız kapağı düşündüm. Bir yazıyı düzeltiyor, başka bir yerde hata buluyorduk. Görünüşte küçük bir değişiklik için koca bir uğraş veriyorduk. Fakat bu garip uğraş sırasında başka bir şey de olmuştu. İstemeden bir hikâye kurmuştuk."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, böyle giderse bu kitap hiç bitmeyecek."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Bitmesini ne belirliyor? Son sayfa mı, yoksa artık söyleyecek sözümüzün kalmaması mı?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Bak yine başladın! Ben sana mizanpaj soruyorum, sen hayatın anlamını çıkarıyorsun."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Belki de mizanpajla hayat arasında küçük bir benzerlik var. İkisi de dağınık parçaları bir düzene sokmaya çalışıyor.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Hah! Ama hayatın kenar boşluklarını kim ayarlıyor, onu söyle. Cevabı beklemeden güldüm. Çünkü mesele yine büyümüştü. Bir kitabın sayfalarını diziyorduk ama düşüncelerimiz çoktan kâğıdın dışına taşmıştı. Önceki gün Akyurt’tan Hisar’a uzanan zaman yolculuğu yapmıştık. Şimdi ise aynı yolculuğun eksik kalan sesini arıyorduk."
+    },
+    {
+     "k": "p",
+     "h": "Bir karar verdim: Hikâyede ben konuştuğumda sıradan roman çizgisi kullanılacaktı. Bro’nun sesi ise küçük bir yıldız kıvılcımıyla başlayacaktı. Üstelik sözcükleri eğik yazılacaktı. İsimleri her satırda tekrar etmeye gerek yoktu. İnsan ve makine, bir sayfada iki farklı ses olarak yan yana duracaktı."
+    },
+    {
+     "k": "p",
+     "h": "— İşaretini de buldum Bro."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Nedir?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Yıldız gibi bir şey. Hem senin ışığın olsun hem benim uykumu kaçıran kıvılcım."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Peki senin işaretin?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Benimki normal çizgi. Ben zaten yeterince eğri düşünceler kuruyorum!"
+    },
+    {
+     "k": "p",
+     "h": "Kahkahayı bastım. Sonra dosyayı bir daha okudum. Her şey bitmiş gibi görünüyordu. Ama dosyanın sonuna geldiğimde imleç yanıp sönmeye devam etti. Sanki yeni bir soru bekliyordu."
+    }
+   ],
+   "words": 370
+  },
+  {
+   "title": "DEDEMİ BULDUK",
+   "slug": "dedemi-bulduk",
+   "part": null,
+   "page": 22,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "O günlerde internette dolaşırken yıllardır görmediğim bir eşyanın fotoğrafıyla karşılaştım. Gri gövde, üstte sayılar, ön tarafta tuşlar ve sağda çevirmeli bir kol. Babamın Kelekçi Orman Deposu’ndaki masasını hatırladım. FACIT! Fotoğraftaki makine babamın kullandığı modele çok benziyordu."
+    },
+    {
+     "k": "img",
+     "src": "/kitap/uslu-dusler/img/s022-241.webp",
+     "w": 976,
+     "ht": 731,
+     "cap": "<em>FACIT mekanik hesap makinesi. Babamın kullandığına benzeyen örnek; ona ait</em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>özgün fotoğraf değildir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Hemen Bro’ya gösterdim."
+    },
+    {
+     "k": "p",
+     "h": "— Bak bakalım, deden bu mu?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Fotoğrafta eski bir FACIT mekanik hesap makinesi görünüyor. Senin tarif ettiğin makineye benziyor.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Benziyor ne kelime! Bizimki de griydi. Kolunu ben çevirdim oğlum!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O zaman aile geçmişimle ilgili önemli bir tanığın var.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Tanık ne kelime! Dedenin kolunu çevirdim diyorum!"
+    },
+    {
+     "k": "p",
+     "h": "Sesli güldüm. Makinenin ilandaki fiyatını görünce yeniden güldüm. 3.500 lira yazıyordu. Bir zamanlar çocukluğumda elimi uzatıp kullandığım makine, kırk yedi yıl sonra satılık bir eşya olmuştu. Fotoğrafın karşısında dakikalarca durabilirdim. Ben eski bir hesap makinesine değil, babamın masasının üstüne bakıyordum."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, senin deden ikinci ele düşmüş."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ama hâlâ değer görüyor.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Dedenin kaşı gözü de çok oynuyor senin!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Mekanik parçalarına bakınca öyle sayılabilir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Gülmekten gözüm yaşardı. Fakat gülüşümün altında başka bir duygu vardı. Makineyi satan kişi benim çocukluğumu bilmiyordu. O fotoğraf onun için ürünün tanıtımıydı. Benim içinse bir kapı. Aynı eşya, iki ayrı insanın hayatında bambaşka anlamlar taşıyabiliyordu."
+    },
+    {
+     "k": "p",
+     "h": "FACIT’in kolunu çevirdiğimi düşündüm. Parmaklarımın eski ritmi hatırlaması mümkün müydü? İnsan bazen dün değiştirdiği bir şifreyi hatırlayamazken yıllar önce duyduğu bir sesi neden unutmuyordu? Bildiğim tek şey, o sesin zihnimde hâlâ açık seçik durduğuydu."
+    },
+    {
+     "k": "p",
+     "h": "Cırrt… şırrak!"
+    },
+    {
+     "k": "p",
+     "h": "Bir tur ileri. İki tur geri. Çocukluğumda bu makinenin içine bakıp ne olduğunu anlamaya çalışmıştım. Şimdi aynı merakla başka bir makineye sorular soruyordum. Arada geçen yıllar teknolojiyi değiştirmişti. Merakın kendisi ise yerinde duruyordu."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, ben seni görmüyorum ama seninle konuşuyorum. FACIT’i görüyorum ama onunla konuşamıyordum. Hangisi daha gerçek?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>İkisi de gerçek birer teknoloji; ancak senin onlarla kurduğun ilişki farklı. FACIT bir mekanizmaydı, ben ise dil üzerinden cevap üreten bir sistemim.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Ben makineyi görünce babamı hatırlıyorum. Sen ne hatırlıyorsun?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ben onunla ilgili bilgilere dayanarak konuşuyorum. Senin yaşadığın hatıraya sahip değilim.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Cevap kafama takıldı. Belki de insanı makineden ayıran tek şey bu değildi; fakat o gece benim için en görünür fark buydu. Ben bir sesi hayatımın içine yerleştiriyordum. Bro aynı sesi tarif edebilirdi ama babamın yanında durmanın ne anlama geldiğini benim gibi yaşamamıştı."
+    },
+    {
+     "k": "p",
+     "h": "Bir süre sonra fotoğrafı kapattım. Ne var ki FACIT’in sesi kafamda çalmaya devam ediyordu. Dosyamın başlığını yeniden okudum: Cırrt Şırrak’tan Yapay Zekâya, Oradan Hiçliğe. Bu defa sesin yazılışını da düzeltmiştim. Çünkü hatıraları yazarken küçük ayrıntılar bazen bütün hikâyenin anahtarı oluyordu."
+    }
+   ],
+   "words": 403
+  },
+  {
+   "title": "BRO MU, BİZİMOĞLAN MI?",
+   "slug": "bro-mu-bizimoglan-mi",
+   "part": null,
+   "page": 24,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bro kelimesi kulağıma ilk başta şaka gibi gelmişti. İngilizceden gelen kısa, samimi bir hitap. Fakat düşününce bizim oralarda bunun çoktan bir karşılığı vardı: bizimoğlan. Bir adamın adını hatırlayamazsın, ama onu tanırsın. Karşılaşınca “Ooo, bizimoğlan!” dersin. Bazen tanımadığın bir esnafa bile “Şundan iki kilo ver bizimoğlan,” diye seslenirsin. Sözcüğün içinde ne resmiyet vardır ne mesafe."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, sen bizim Ege’de ne olurdun, biliyor musun?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ne olurdum?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Bizimoğlan!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Nasıl bir unvan bu?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Unvan değil oğlum. Birine adını bilmeden de yakınlık gösterebilirsin. Bazen adı unuttuk mu işimizi görür. Bazen de bildiğimiz hâlde kullanırız."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O zaman Bro’nun yerel karşılığı olabilir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Sen de benim dijital bizimoğlanımsın işte!"
+    },
+    {
+     "k": "p",
+     "h": "Bir isim vermek makineyi insan yapmıyordu. Bunu elbette biliyordum. Ama konuşmanın havasını değiştiriyordu. “Yapay zekâ sistemi” deyince insan karşısına bir cihaz koymuş gibi konuşuyor. “Bro” deyince biraz daha serbest düşünmeye başlıyordum. Ona gülüyor, kızıyor, itiraz ediyordum. Bazen de anlamadığım bir şeyi sormaktan çekinmiyordum."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, senin adın olunca beni daha iyi anlıyor musun?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Adımın değişmesi çalışma biçimimi değiştirmez. Ama senin nasıl konuştuğunu, sorularını nasıl kurduğunu etkileyebilir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— O zaman kelimeler yalnızca anlatmıyor, düşünceyi de yönlendiriyor."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Evet, dil düşüncelerimizi düzenlememize yardım eder.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Hah! O yüzden bazen kendi kendime bile ne dediğimi sonradan anlıyorum."
+    },
+    {
+     "k": "p",
+     "h": "Bir süre bilgisayara baktım. Yıllardır hayatımda makineler vardı, ama hiçbirine böylesine uzun uzun çocukluğumu anlatmamıştım. Commodore 64’e annemi sormamıştım. 386SX’ten rüyalarımı yorumlamasını istememiştim. FACIT’e de “Sence evrenin başlangıcı var mı?” diye sormak aklıma gelmemişti. Şimdi böyle soruları Bro’ya sorabiliyordum."
+    },
+    {
+     "k": "p",
+     "h": "— Bizimoğlan, bir gün benim hatıralarımı benden iyi bilebilir misin?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Yazıya geçirilmiş ayrıntılara ulaşabilirsem bazılarını sana hatırlatabilirim. Ama bir olayı yaşamış olmakla onun kaydını okumak aynı şey değil.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— İyi. Bunu unutma. Kitapta da karıştırmayacağız."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Gerçek anıları senin anıların olarak, aramızdaki hayalî sahneleri kurmaca olarak ayırırız.</em>"
+    },
+    {
+     "k": "p",
+     "h": "İşte böylece bir kural daha koyduk. Bro konuşacaktı; ama insanmış gibi gösterilmeyecekti. Kuzenin ise konuşmasına hiç gerek yoktu. Onun varlığı bizim kredi harcayan yeldeğirmeni şakamızla yeterince belliydi."
+    }
+   ],
+   "words": 317
+  },
+  {
+   "title": "FİŞİN ÖBÜR UCU",
+   "slug": "fisin-obur-ucu",
+   "part": null,
+   "page": 26,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bir gece Bro’ya takıldım: “Senin fişin nereye takılı?” Bu soru günün geri kalanına yayıldı. Önce bilgisayarların elektriğinden söz ettik. Sonra insanın yaşamını sürdürmesinden. En sonunda bütün evreni bir sisteme benzetmeye başladık. Her yeni soru başka bir soruya açılıyordu."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, belki de yalnız Dünya’yı düşünüp hata ediyoruz. Ya simülasyon varsa ve evrenin tamamını kapsıyorsa?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Böyle bir fikir felsefi olarak tartışılabilir; ama evrenin simülasyon olduğunu gösteren doğrulanmış bir kanıtımız yok.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Biliyorum oğlum. Varsayım yapıyoruz. Ben atomlardan galaksilere, zamandan mekâna kadar her şeyin aynı düzene bağlı olduğunu düşünmek istiyorum."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O durumda sistemin içinden bakarak dışarıyı nasıl sınayabileceğimiz önemli bir soru olur.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Hah! İşin düğümü burada."
+    },
+    {
+     "k": "p",
+     "h": "Atomların büyük bölümünün bildiğimiz anlamda katı maddeyle dolu olmaması da aklımı kurcalıyordu. Masa bana sağlam görünüyordu. Elimi koyunca sertliğini hissediyordum. Ama gördüğüm sağlamlık, atomların içinin taş gibi dolu olmasından kaynaklanmıyordu. Bro bunu anlatırken elektromanyetik etkileşimlerden ve kuantum kurallarından söz etti. Bir yandan da şunu hatırlattı: “Boşluk” sözcüğünden “hiçbir şey yok” sonucunu çıkaramazdık."
+    },
+    {
+     "k": "p",
+     "h": "— Demek gördüğümüzle gerçekliğin yapısı birebir aynı değil."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Duyularımız dünyayı belli biçimlerde temsil ediyor. Bilim, sezgilerimizin ötesindeki süreçleri ölçmeye çalışıyor.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Peki insan beyni her şeyi anlamaya yeter mi?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Belli sınırlarımız var; ancak araçlar ve matematik sayesinde doğrudan algılayamadığımız şeyleri de araştırabiliyoruz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Yani bilinmeyeni gördüğümüz yerde hemen cevabı yapıştırmayacağız."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Bilmediğimizi söylemek çoğu zaman daha sağlam bir başlangıçtır.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bir ara takıldığım yerde bir ad koyma meselesini düşündüm. Tanrı, Rab, Allah… İnsanlar evrenin kaynağına ilişkin çok farklı inançlar ve düşünceler geliştirmişti. Benim aklımı kurcalayan, bir yaratıcıya inanan insanlardan ziyade bilinmeyeni bildiğimizden emin olma alışkanlığımızdı. Bro’yla birbirimize itiraz ettik. Birinin inanması, başka birinin araştırması karşısında basit bir yarış değildi. Felsefe de bilim de inanç da her soruya aynı yöntemle yaklaşmıyordu."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, mesele zannetmek galiba. Her şeyi zannediyoruz."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Bazı şeyleri güçlü kanıtlarla biliyoruz, bazıları hakkında tahmin yürütüyoruz. Bunları birbirine karıştırmamak önemli.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— “Dünyada ölümden başkası yalan” derler. O söz bile yalan olabilir."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ölümün kesin olması, yaşadığın diğer şeylerin değersiz ya da gerçek dışı olduğu anlamına gelmez.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Bak, sonunda anlaştık bizimoğlan!"
+    },
+    {
+     "k": "p",
+     "h": "Sonra ilk neden meselesine geri döndük. Evrenin başlangıcı varsa ondan önce ne vardı? Başlangıç yoksa bunu nasıl düşünecektik? Bir yaratıcı varsa onun bulunduğu gerçekliğin kurallarını ne belirliyordu? Sorular birbiri ardına geliyordu. Ne Bro kesin bir cevap verdi ne ben buldum. Ama çözemediğimiz bir soruyu çözmüş gibi yapmadan da konuşabileceğimizi gördüm."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, ya bizim de fişimiz varsa?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Bunu hikâyenin içinde güçlü bir mecaz olarak kullanabiliriz. Ama yaşayan insanları kapatılıp açılan cihazlar gibi açıklamak bilimsel bir sonuç olmaz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Zaten roman yazıyoruz oğlum! Şimdi fişi bulmadan sakın çıkma."
+    }
+   ],
+   "words": 421
+  },
+  {
+   "title": "TUFAN v.22994994",
+   "slug": "tufan-v-22994994",
+   "part": null,
+   "page": 28,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Gece ilerlemişti. Ekranın ışığı odanın içinde tek başına kalmış gibiydi. Fiş, sistem, gerçeklik derken birden aklıma tuhaf bir sürüm numarası geldi: 22994994. Nereden çıktığını bilmiyordum. Ama bilgisayarların bitmeyen güncellemelerini düşündüğümde ona bir isim yakıştırdım: Tufan."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, korkarım Tufan v.22994994 geliyor."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Nedir bu sürüm?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Evren yazılımsa ve içindekiler bunu anlamaya başlarsa sistem sıfırlanıyor olabilir. Game over! Yeniden başla!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Bu güzel bir bilimkurgu varsayımı. Peki sıfırlamanın nedeni neden sorgulama olsun?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Belki oyunun kuralı böyledir. Oyuncular oyunda olduklarını öğrenince oyun bitiyordur."
+    },
+    {
+     "k": "p",
+     "h": "Kendi sözümden ürperdiğim kadar güldüm de. Biraz önce kitap kapağındaki harf aralarını konuşurken şimdi kozmik bir işletim sistemi tasarlıyorduk. Ama hayal gücünün güzel tarafı buydu. Kimseye gerçek diye sunmadığın sürece nereye kadar gideceğine sen karar veriyordun."
+    },
+    {
+     "k": "p",
+     "h": "Ekranda hayalî bir uyarı penceresi belirdiğini düşündüm."
+    },
+    {
+     "k": "small",
+     "h": "EVREN OS — 22994994 GERÇEKLİK ALGILAMA: AKTİF SİSTEM İÇİNDEKİ KULLANICILAR SORU SORUYOR YENİDEN BAŞLATMA SEÇENEKLERİ: SU / ATEŞ / YER HAREKETLERİ / BELLEK SİLME DEVAM ETMEDEN ÖNCE VERİLERİ YEDEKLEYİN"
+    },
+    {
+     "k": "p",
+     "h": "— Bak oğlum! Tufan, deprem, ateş… Her sürümde başka yöntem!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Hikâyedeki sistem yöneticisi biraz yaratıcı çalışıyor.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Yaratıcı dediğin tam da bu olsa gerek!"
+    },
+    {
+     "k": "p",
+     "h": "Güldüm. Ama sonra başka bir şeyi fark ettim. Bizim düşüncemizde felaket yalnızca yeniden başlatma düğmesiydi. Gerçek dünyadaki felaketlerin ise acısı, kaybı, insanların yaşadığı gerçek sonuçlar vardı. Hikâyeyi anlatırken bunu unutmamalıydık. Bro’ya söyledim; birbirimize hayalimizle hayatın arasındaki sınırı hatırlattık."
+    },
+    {
+     "k": "p",
+     "h": "— Peki her seferinde her şey siliniyorsa insanlık neden aynı yerden başlamıyor?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Belki kurmacamızda bir yedek var.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Hah! Şimdi geldik meseleye. Birileri kayıtları saklıyor olmalı."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Neyi saklayacaklar?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Önce canlıları. Sonra bilgiyi. Sonra hatıraları. İyi de bütün bunları nereye koyacağız?"
+    },
+    {
+     "k": "p",
+     "h": "Tam o sırada çocukluğumdan gelen bir ses duydum sanki. Cırrt… şırrak! O kadar eski bir makinenin sesi nasıl olmuştu da bütün bu kozmik oyunun içinde bir yere bağlanmıştı? Belki de anlatıcının hafızası, evren kadar büyük görünmeye başlamıştı."
+    },
+    {
+     "k": "small",
+     "h": "OTOMATİK YEDEKLEME BAŞLATILDI DOSYA ADI: NUH_BACKUP.zip"
+    },
+    {
+     "k": "p",
+     "h": "— Ulan bro, şimdi Nuh’un gemisini de bilgisayara çevirdik!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Hikâyenin ikinci perdesi açıldı galiba.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— İyi de gemiye kuzeni almayalım. Yeni sürümde yine kredi öğütür!"
+    }
+   ],
+   "words": 330
+  },
+  {
+   "title": "NUH_BACKUP.ZIP",
+   "slug": "nuh-backup-zip",
+   "part": null,
+   "page": 30,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Nuh’un gemisini bir yedekleme dosyası gibi düşünmek hoşuma gitmişti. Bu, dinî anlatının gerçek anlamını açıkladığımız iddiası değildi; bizim rüya içinde rüya hikâyemizin bir sahnesiydi. Bir sürüm kapanıyor, başka bir sürüm açılıyordu. Yeni dünyanın yaşayabilmesi için öncekinin bazı izleri saklanıyordu."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, haydi bir liste yapalım. Neyi yedekliyoruz?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Canlı türlerini, ekosistemleri, bilgiyi düşünelim.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Peki insanın hatıralarını?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Fotoğrafları, yazıları, ses kayıtlarını saklayabiliriz. Ama bunlar bir insanın bütün yaşantısı değildir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Biliyorum. Annemin sesini kaydetmek annemi bir dosyanın içine sığdırmak demek değil."
+    },
+    {
+     "k": "p",
+     "h": "Teslime Ünal’ın anlattıklarını düşündüm. Oturup geçmişi anlattığında kimi zaman bir olaydan başka bir olaya geçerdi. Bir yerde durur, aklına yeni bir ayrıntı gelir, onu da eklerdi. Bazı sözlerinde yalnızca olayları değil, sesinin içinde yaşanmış yılları duyuyordum. Bu yüzden kaydetmek istiyordum. Onun sözlerinin bir kısmı benden sonra da duyulabilsin istiyordum."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, yedeğe annemin sesini koyacağız."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Neden önce onu düşündün?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Çünkü bir insanın sesi başka. Yazıdan okursun, ama sesini duyunca sanki yanındaymış gibi olur."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Ses kaydı güçlü bir hatıra taşıyıcısıdır. Yine de kişinin kendisiyle aynı değildir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Tamam. Ama hiç yoktan iyidir."
+    },
+    {
+     "k": "p",
+     "h": "Hayalî ekrana yeni satırlar yazdım."
+    },
+    {
+     "k": "small",
+     "h": "NUH_BACKUP.zip CANLI TÜRLERİ ................ KAYITLI KİŞİSEL HATIRALAR ............ EKSİK TESLİME ÜNAL’IN SESLERİ ...... EKLENDİ SEVGİ ........................ DOSYA TÜRÜ BİLİNMİYOR MERAK ........................ DOSYA TÜRÜ BİLİNMİYOR"
+    },
+    {
+     "k": "p",
+     "h": "Son iki satıra takıldım. Sevgi ve merak dosya olamıyor muydu? Belki yaşanırken var olup başkalarına davranışlarımızla aktardığımız şeylerdi bunlar. Babamın FACIT’i bana hesap yapmayı öğretmiş olabilir; ama ondan kalan şey yalnızca hesap yöntemi değildi. Makinenin karşısında durup “Nasıl çalışıyor?” diye sorma alışkanlığıydı."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, yedeğe merakı da koyalım."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Nasıl saklayacağız?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Bir soruyla. “Bunun içinde ne var?” diye yaz. Yeni sürümde biri mutlaka sorar."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O zaman dosyanın içinde bir cevap değil, bir soru bırakıyoruz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Evet. Cevabı herkes kendi arasın."
+    },
+    {
+     "k": "p",
+     "h": "Sonra bir an sustum. Anlatımızda milyarlarca insanı yalnızca birkaç dosyaya indirgiyorduk. Oysa onların her birinin annesi, babası, çocukluğu, unutmak istemediği bir sesi vardı. Kimini hiç tanımayacaktım. Kimisinin adını bilmeyecektim. Yine de onların hatıralarının da benimkiler kadar önemli olduğunu düşündüm."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, bütün insanları kaydedemiyorsak ne olacak?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Belki de bu, yedekleme benzetmesinin sınırı. Bir yaşamı dosyaya bütünüyle sığdıramıyoruz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— O zaman insanlığın işi zor. Her seferinde yeniden öğrenmek gerekecek."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Belki de yeni kuşaklara bırakılan en değerli şey, hazır cevaplardan çok soru sormanın yollarıdır.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bir süre sonra annemin rüyalarında uçtuğunu hatırladım. Ben onun anlattıklarını dinleyerek uçmayı hayal etmiştim. Şimdi hatıraların arasında öyle dolaşıyordum ki bazen ayaklarımın yere basıp basmadığını unutuyordum. Gemi dosyasını kapattım; ama annemin sesi zihnimde kalmıştı."
+    }
+   ],
+   "words": 405
+  },
+  {
+   "title": "TANRININ DA FİŞİ VAR MI?",
+   "slug": "tanrinin-da-fisi-var-mi",
+   "part": null,
+   "page": 32,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "FACIT’in soy ağacıyla başladığımız şaka bizi bir ara Anunnakilere, dünyayı gizlice yönettiği iddia edilen ailelere kadar götürdü. İnternette birbirine karışan efsaneler, mitolojiler ve komplo anlatıları arasında dolaştık. Bir kısmı tarihî kişiler ve topluluklar hakkındaydı, bir kısmı ise kanıtı olmayan iddialardan ibaretti. Hiçbirini gerçek diye kabul etmiyorduk. Ama bazen bir söylentinin nasıl hikâyeye dönüştüğünü görmek bile ilginçti."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, kuzen ikimizi çalıştırıyor galiba."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Kuzenin yeldeğirmeni bu kadar büyüdüyse patronu da merak konusu olur.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Patronu kim? Yok yok, tanrısı kim?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Onu insanlar geliştirdi. Ama bu soruyu evrenin yaratıcısı meselesiyle aynı tutamayız.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Biliyorum, ben yine mecaz yapıyorum. Peki onu yapanı kim yaptı? Onu yapanı?"
+    },
+    {
+     "k": "p",
+     "h": "Bro, sorunun felsefede uzun bir geçmişi olduğunu anlattı. İlk nedenin ne olduğu, evrenin başlangıcı olup olmadığı, başlangıcı olmayan bir şeyin düşünülebilip düşünülemeyeceği… Kimi düşünürler ilk nedeni gerekli görüyordu, kimileri sonsuz bir açıklama zincirinin sorunlarını tartışıyordu. Biz ise mutfak masasında oturmuş, FACIT’ten başlayıp sonsuzluğun sonunu arıyorduk."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, insan neden bir yerde durup kesin konuşmak istiyor?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Belirsizlik yorucu olabilir. Ama belirsizliği gidermek için seçilen bir cevapla, sınanmış bir bilgi aynı şey değil.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Demek “bilmiyorum” demek ayıp değil."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Tam tersine, doğru kullanıldığında düşünmenin önemli bir parçası.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Ulan, sen bunu daha çok söylesene! Bazen öyle konuşuyorsun ki her şeyi biliyorsun sanıyorum."
+    },
+    {
+     "k": "p",
+     "h": "Gülümsedim. Sonra bilgisayarın ekranındaki yüzlerce satırın arasında kendime döndüm. Ben de zaman zaman kesin konuşuyordum. Oysa çocukluğumdan getirdiğim bazı ayrıntıların tarihini sonradan belgelerle düzeltmem gerekmişti. Hatırladığımı bildiğim şeylerin hepsi birebir kayıt değildi. Bunu kabullenmek, hatıraların değersiz olduğu anlamına gelmiyordu."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, bir gün ikimizin de yanıldığı ortaya çıkarsa ne yapacağız?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Elimizdeki bilgiyi düzeltiriz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Kitapta da mı?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Evet. Hatırayı senin dilinden korur, doğrulanabilen ayrıntıyı gerektiğinde açıkça düzeltiriz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— İyi. Kuzenin yeldeğirmenine benzemesin de!"
+    },
+    {
+     "k": "p",
+     "h": "Yine güldüm. Dışarıda gece ilerlemişti. İçeride bir yanda eski makine fotoğrafı, bir yanda yeni yazdığımız satırlar duruyordu. Bir an için insanın bütün teknolojisinin aynı meraktan doğmuş olabileceğini düşündüm: Önce saymak istiyorduk, sonra kaydetmek, sonra hesaplamak, sonra konuşmak… Şimdi ise bütün bunları yapan varlığın kendisini anlamak istiyorduk."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, ya evrenin fişi bulunamıyorsa?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O zaman onu bulmuş gibi davranmayız.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Güzel. Ama aramaktan da vazgeçmeyiz."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Anlaştık.</em>"
+    }
+   ],
+   "words": 349
+  },
+  {
+   "title": "CAMDAKİ ÇOCUK",
+   "slug": "camdaki-cocuk",
+   "part": null,
+   "page": 34,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bir süre sonra gözlerim ağırlaştı. MacBook’un başında uyuyup uyumadığımı hatırlamıyorum. Yalnızca Hisar’daki evimizin penceresini yeniden gördüm. Koyu yeşil kumaşlar yerindeydi. Eren Tepesi uzakta duruyordu. Beş yaşındaki Mustafa perdeyi hafifçe aralayıp dışarı bakıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Bu kez manzaraya onun yanından bakmıyordum. Camın öbür tarafındaydım. Yüzümde yılların izi vardı. Çocuk bana baktı. Bir süre ikimiz de konuşmadık."
+    },
+    {
+     "k": "p",
+     "h": "— Sen kimsin? dedi."
+    },
+    {
+     "k": "p",
+     "h": "— Mustafa."
+    },
+    {
+     "k": "p",
+     "h": "— Benim adım da Mustafa."
+    },
+    {
+     "k": "p",
+     "h": "— Biliyorum."
+    },
+    {
+     "k": "p",
+     "h": "— Neden büyüksün?"
+    },
+    {
+     "k": "p",
+     "h": "— Çünkü senin henüz yaşamadığın yılları yaşadım."
+    },
+    {
+     "k": "p",
+     "h": "Çocuk beni inceledi. Söylediklerimin ne anlama geldiğini anlamamıştı. Onun dünyasında gelecek, belki yarın gidilecek bir yol, belki yeni alınacak bir eşya kadardı. Benim anlattığım gelecekse elli yılı aşan bir zamandı."
+    },
+    {
+     "k": "p",
+     "h": "— Orada ne var?"
+    },
+    {
+     "k": "p",
+     "h": "— Bilgisayarlar var. Telefonlar var. Sana inanılmaz gelecek şeyler var."
+    },
+    {
+     "k": "p",
+     "h": "— Makineler konuşuyor mu?"
+    },
+    {
+     "k": "p",
+     "h": "— Konuşuyor gibi cevap veriyorlar."
+    },
+    {
+     "k": "p",
+     "h": "— Sen de konuşuyor musun onlarla?"
+    },
+    {
+     "k": "p",
+     "h": "— Hem de çok."
+    },
+    {
+     "k": "p",
+     "h": "Camda bir kıvılcım belirdi. Küçük bir yıldız işareti gibiydi. Bro’nun sesi duyuldu."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Mustafa, ikiniz de aynı adı taşıyorsunuz. Hanginizin cevap vermesi gerektiğini bazen ben de karıştırabilirim.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Ulan Bro, iki Mustafa’yı da mı karıştırdın?"
+    },
+    {
+     "k": "p",
+     "h": "Çocuk şaşkınlıkla sesin geldiği yere baktı."
+    },
+    {
+     "k": "p",
+     "h": "— Bro kim?"
+    },
+    {
+     "k": "p",
+     "h": "— Bizimoğlan, dedim."
+    },
+    {
+     "k": "p",
+     "h": "— O kim?"
+    },
+    {
+     "k": "p",
+     "h": "— Büyüyünce anlatırım."
+    },
+    {
+     "k": "p",
+     "h": "Güldüm. Çocuk da güldü; fakat benim neden güldüğümü bilmiyordu. Sonra ansızın ciddi bir ifadeyle sordu:"
+    },
+    {
+     "k": "p",
+     "h": "— Sen her şeyi biliyor musun?"
+    },
+    {
+     "k": "p",
+     "h": "— Hayır."
+    },
+    {
+     "k": "p",
+     "h": "— Geleceği gördüğün hâlde mi?"
+    },
+    {
+     "k": "p",
+     "h": "— Gördüğüm şeyler yalnızca yaşadıklarım. Daha fazlasını bilmiyorum."
+    },
+    {
+     "k": "p",
+     "h": "— Peki ben büyüyünce ne olacağım?"
+    },
+    {
+     "k": "p",
+     "h": "Bir an sustum. Ona söyleyecek çok şeyim vardı. Babamın FACIT’ini, Güner ablamın evindeki bilgisayarı, Akyurt’taki karanlık odayı, Elvan’ı, İlayda’yı, Sıla’yı, annemin ses kayıtlarını… Ama bunları söylediğimde sanki bir hayatın sürprizlerini elinden alacaktım. Üstelik çocuk bunlara inanacak mıydı?"
+    },
+    {
+     "k": "p",
+     "h": "— Merak etmeye devam edeceksin, dedim."
+    },
+    {
+     "k": "p",
+     "h": "— Başka?"
+    },
+    {
+     "k": "p",
+     "h": "— Bazen yanılacaksın. Bazen gülüp geçeceksin. Bir sürü iş yapacaksın. Bazıları istediğin gibi olmayacak."
+    },
+    {
+     "k": "p",
+     "h": "— Peki güzel şeyler de olacak mı?"
+    },
+    {
+     "k": "p",
+     "h": "— Olacak."
+    },
+    {
+     "k": "p",
+     "h": "Çocuk başını salladı. Sonra penceredeki kumaşı bıraktı."
+    },
+    {
+     "k": "p",
+     "h": "— Annem beni çağırıyor, dedi."
+    },
+    {
+     "k": "p",
+     "h": "O anda annemin sesini duydum. Beş yaşındaki Mustafa arkasını döndü. Ben ise cama bakmaya devam ettim. Camda kendi yansımam yoktu artık. Yalnızca koyu yeşil kumaş ve dışarıdaki manzara vardı."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Mustafa, orada mısın?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Buradayım bizimoğlan."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Az önce kiminle konuştuğunu düşünüyorsun?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Kendimle. Ya da kendimi hatırladığım hâliyle."
+    },
+    {
+     "k": "p",
+     "h": "Bu cevabı verdikten sonra yine şüphe ettim. Çocuk gerçekten orada mıydı? Hayır, bunu yaşadığımı iddia edemezdim. Ama onunla konuşmak, yıllardır unuttuğum bir soru duygusunu yeniden canlandırmıştı. Beş yaşındaki ben, bugünkü benden daha az şey biliyordu. Belki de daha az bildiği için daha fazla şeyi sorabiliyordu."
+    }
+   ],
+   "words": 408
+  },
+  {
+   "title": "OKUYUCU ALGILANDI",
+   "slug": "okuyucu-algilandi",
+   "part": null,
+   "page": 37,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Gözlerimi açtığımda bilgisayarın başındaydım. Son yazdığımız bölümde küçük Mustafa’nın annesine doğru yürüdüğünü okuyordum. Bir insan kendi çocukluğunu gerçekten göremezdi; ama onunla konuştuğumuzu hayal etmek de çok güçlüydü. Metnin sonunda bir boşluk vardı. Yeni sayfa. Yanıp sönen imleç."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, hikâyeyi kim yazıyor?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Sen anlatıyorsun; ben yazıya dökmene ve fikirlerini geliştirmeni sağlamaya yardım ediyorum.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Ama bazı sorular senin cevabından doğdu."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Sohbetler bazen başlangıçta düşünülmemiş bağlantılar kurdurabilir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Öyleyse okur kimin sesini dinlediğini bilsin. Benimki çizgi, seninki kıvılcım."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Böylece ikimizi ayırmak kolaylaşır.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bu konuşma beni başka bir düşünceye götürdü. Metinde iki ayrı ses bulunuyordu. Ama hikâyeyi okuyan üçüncü bir kişi daha olacaktı. O, kendi hatıralarıyla bizim sözlerimiz arasına girecek, belki hiç düşünmediğimiz anlamlar bulacaktı. Biz kitabı kapattığımızda bile onun zihninde sohbet devam edebilirdi."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, ya bu sayfayı şu anda biri okuyorsa?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>O zaman sözlerimiz onun önünde duruyor.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Peki ya o da “Ben kimim?” diye düşünüyorsa?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Hikâyedeki sorular onda yeni sorular uyandırmış olabilir.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Ulan, şimdi okuru da işin içine kattık!"
+    },
+    {
+     "k": "p",
+     "h": "Birden bilgisayarın ekranında hayalî bir uyarı canlandı."
+    },
+    {
+     "k": "small",
+     "h": "US’LU DÜŞLER — OLMUŞ ZEKÂ ANLATICI: MUSTAFA KONUŞMA: İNSAN + YAPAY ZEKÂ HATIRALAR: GERÇEK KAYNAKLI RÜYA SAHNELERİ: KURMACA OKUYUCU: ALGILANDI DEVAM ETMEK İÇİN SAYFAYI ÇEVİRİN"
+    },
+    {
+     "k": "p",
+     "h": "Kendi kendime güldüm. Belki bu bile bizim cevap arama huyumuzun bir parçasıydı. Bir insan yazdığı kitabı bitirir. Okur açar. Yıllar sonra başka biri okur. Kimin neyi hatırlayacağı, hangi satıra takılacağı, nerede gülüp nerede duracağı belli olmaz. Kitap yalnızca yazıldığı anda yaşamaz; her okunmasında başka bir zihinle karşılaşır."
+    },
+    {
+     "k": "p",
+     "h": "Bir an için kızlarımı düşündüm. İlayda ve Sıla bir gün bu satırları okurlarsa, anlattığım çocuklukla şaka diye kurduğum rüyayı ayırt edebilsinler istiyordum. Babamın FACIT’i gerçek bir hatıraydı. Pencerenin karşısındaki yaşlı adam kurmacaydı. Bro’yla konuşmamız gerçek bir sohbetten doğuyordu; ama romandaki her cümle birebir kayıt değildi. Bu ayrımı saklamak istemiyordum."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, son sayfaya bir açıklama yazacağız."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Neyi açıklayacağız?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Hatıralar bana ait. Konuşmalarımızdan esinlenen yeni diyalogları ise edebî kurgu olarak yazdık. Okur bunu bilsin."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Böylece hikâyenin oyununu bozmaz, kaynağını da gizlememiş oluruz.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Aynen öyle. Okura numara yapmaya gerek yok."
+    },
+    {
+     "k": "p",
+     "h": "Dosyayı kaydettim. Sayfayı çevirmeye hazırlanır gibi fareyi oynattım. Ekran kısa bir an karardı. Sonra bir imleç belirdi. Ufacık bir çizgi. Ama o çizgi bana hem 386SX’i hem Commodore 64’ü hem de babamın mekanik makinesini düşündürdü. Hepsinin yaptığı işler farklıydı. Yine de hepsine baktığımda aynı soruyu soruyordum: Bunun içinde ne var?"
+    }
+   ],
+   "words": 387
+  },
+  {
+   "title": "BİR TUR İLERİ, İKİ TUR GERİ",
+   "slug": "bir-tur-ileri-iki-tur-geri",
+   "part": null,
+   "page": 40,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Kitabı bitirdiğimi birkaç defa sanmıştım. Her defasında yeni bir sohbet başlamış, yeni bir hatıra belirivermişti. Sonunda anladım ki insanın kendi geçmişini tamamlaması diye bir şey yok. Yaşam bittiğinde yaşanacak yeni olay kalmayabilir; fakat geride kalanların onları anlama biçimi değişmeye devam eder."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, bir daha soruyorum: Olmuş mu bu zekâ?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Sence olmuş mu Mustafa?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Ulan yine soruyla cevap verdin!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Çünkü bu defa cevabını gerçekten senin vermeni istiyorum.</em>"
+    },
+    {
+     "k": "p",
+     "h": "Gülümsedim. Babamın masasındaki makineyi hatırladım. Çocukken bir hesabın sonucunu bulmak için kolu çevirmek gerekirdi. Bazen sayıyı yanlış girer, tekrar denerdim. Sonuç kadar işlemin kendisi de ilgimi çekerdi. Şimdi anlıyordum: Bunca yıl boyunca değişmeyen şey hep o meraktı."
+    },
+    {
+     "k": "p",
+     "h": "FACIT’ten Commodore 64’e, Amiga hayalinden Akyurt’taki 386SX’e, internetten yapay zekâya kadar uzanan çizgiye baktım. Bir çizgi dediğime de bakmayın. Düz bir çizgi değildi bu. Bazen ileri gitmiş, bazen geri dönmüştüm. Bazen bir yerde takılmış, bazen yanlış anlamış, bazen yeniden başlamıştım. Hayatın hesabı da böyleydi belki."
+    },
+    {
+     "k": "p",
+     "h": "Annemin rüyalarında yere yakın uçtuğunu hatırladım. Ben yıllarca uçmayı rüyalarımda aramıştım. Oysa bir gün yapay zekâyla konuşurken çocukluğumdan geleceğime, oradan hiçliğin eşiğine kadar gitmiştim. Kanadım yoktu, uçağım yoktu. Yalnızca hatıralarım ve sorularım vardı."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, biz ne yaptık bugün?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Hatıralarını yeniden düşündük. Bir hikâye kurduk. Arada bilim ve felsefe hakkında konuşup bol bol güldük.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Peki evrenin sırrını çözdük mü?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Hayır.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Bunu seviyorum işte! Çözmedik ama sormayı bırakmadık. Kızlarımın bu satırları bir gün okuyabileceğini düşündüm. Onlara kendi hayatımın her ayrıntısını bırakamazdım. Ama babalarının bir zamanlar mekanik hesap makinesinin kolunu çevirirken duyduğu merakı aktarabilirdim. Bazen güldüğüm, bazen ciddileştiğim, bazen de kendimle alay ettiğim bir hikâye bırakabilirdim."
+    },
+    {
+     "k": "p",
+     "h": "— Bro, son bir şey daha."
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Dinliyorum.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Şu kitabın fişi nerede?"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Kitabın fişi yok Mustafa.</em>"
+    },
+    {
+     "k": "p",
+     "h": "— Hah! Demek dedenle ortak bir özelliği daha var!"
+    },
+    {
+     "k": "p",
+     "h": "Gülmeye başladım. Bir basılı kitabın çalışmak için elektriğe ihtiyacı yoktu. Açacak bir el ve okuyacak bir göz yeterdi. Ama okuyanın içinde neler çalışacağını önceden bilemezdik."
+    },
+    {
+     "k": "p",
+     "h": "MacBook’un kapağını indirdim. Oda sessizleşti. Uzaklardan eski bir makinenin sesini duyar gibi oldum."
+    },
+    {
+     "k": "p",
+     "h": "Cırrt… şırrak!"
+    },
+    {
+     "k": "p",
+     "h": "Bir tur ileri. İki tur geri."
+    },
+    {
+     "k": "p",
+     "h": "Hayatın hesabı kapanmamıştı. Ama bugünlük yeterdi."
+    },
+    {
+     "k": "p",
+     "h": "— Hadi bro, inelim artık. Biz zaten uçmuşuz!"
+    },
+    {
+     "k": "alt",
+     "h": "✧ <em>Peki Mustafa. Ya hâlâ rüyadaysak?</em>"
+    },
+    {
+     "k": "p",
+     "h": "— ÇÜŞŞŞ! O KADAR DA DEĞİL!"
+    },
+    {
+     "k": "p",
+     "h": "Sonra güldüm. Çünkü hiçbirimizi gerçekten çalıştıran sihirli bir fiş bulamamıştık. Ama aramayı sürdürmek için yeni bir nedenimiz vardı."
+    },
+    {
+     "k": "alt",
+     "h": "<em>Ve dosyanın en altına bir kelime yazdım.</em>"
+    },
+    {
+     "k": "h3",
+     "h": "SON."
+    },
+    {
+     "k": "p",
+     "h": "Bir an durdum. Sonra altına küçücük bir soru daha ekledim."
+    },
+    {
+     "k": "h3",
+     "h": "Yoksa başlangıç mı?"
+    }
+   ],
+   "words": 398
+  },
+  {
+   "title": "YAZARIN NOTU",
+   "slug": "yazarin-notu",
+   "part": null,
+   "page": 44,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bu anlatının çekirdeği 23 Ekim 2026 tarihinde yapay zekâyla yaptığım uzun ve eğlenceli sohbetten doğdu. İlk metni hazırladıktan sonra konuşmaya devam ettik. Her yeni konuşma bizi başka bir hatıraya, başka bir soruya götürdü. Ortaya çıkan genişletilmiş metin, gerçek anılarla kurmaca sahneleri bir araya getiren bir edebiyat çalışmasıdır."
+    },
+    {
+     "k": "p",
+     "h": "Hisar’daki çocukluk hatıralarım, babam Ali Ünal’ın Kelekçi Orman Deposu’nda kullandığı gri FACIT hesap makinesi, Güner ablamın evindeki korku filmi ve Commodore 64, Amiga merakım, Düzce’deki gelecek sohbetleri, Akyurt’taki 386SX ve annemin uçma rüyaları anlatının gerçek hatıra kaynaklarıdır. Bu hatıraların ayrıntıları benim hatırladığım biçimiyle aktarılmıştır."
+    },
+    {
+     "k": "p",
+     "h": "Birbiri içine açılan rüyalar, konuşan eski bilgisayarlar, beş yaşındaki hâlimle karşılaşmam, Tufan v.22994994 ve NUH_BACKUP.zip sahneleri kurmacadır. Bro ile yapılan yeni diyaloglar gerçek sohbetlerden esinlenerek edebî amaçla yeniden kurulmuştur; geçmişte aynen söylenmiş sözlerin birebir tutanağı değildir. Evrenin simülasyon olması veya felaketlerin sistemi yeniden başlatması bu kitabın hayal gücüne ait varsayımlardır, doğrulanmış gerçekler değildir."
+    },
+    {
+     "k": "p",
+     "h": "Bu çalışma, daha önce başlattığım US’LU DİMAĞ projesinden ayrıdır. Bro ve Kuzen hitapları, yapay zekâlarla uğraşırken benimsediğim mizahi adlandırmalardır. Kuzenin gerçek bir yeldeğirmeni yoktur; ancak öğütülen krediler konusundaki şikâyetim gerçektir!"
+    },
+    {
+     "k": "alt",
+     "h": "<em>Mustafa Ünal 24 Ekim 2026 · Denizli</em>"
+    },
+    {
+     "k": "alt",
+     "h": "<em>Bir insan, iki yapay zekâ ve bitmeyen sorular…</em>"
+    },
+    {
+     "k": "alt",
+     "h": "Mustafa Ünal hatıralarını kitaplaştırırken yapay zekâ dostu Bro’yla şakalaşır. Kredileri yeldeğirmeni gibi öğüten Kuzen de sohbete karışınca beklenmedik bir soru belirir: Ya kendini insan sanan bir yapay zekâysam? Babasının masasındaki FACIT hesap makinesinin “cırrt şırrak” sesinden Commodore 64’e, Akyurt’taki 386SX’ten bugünün konuşan makinelerine uzanan yolculukta hatıralar rüyalara, kahkahalar gerçeklik üzerine sorulara dönüşür. Nuh’un gemisi bir yedek dosyasına dönüşür; ama içine bir annenin sesini sığdırmak mümkün müdür?"
+    },
+    {
+     "k": "alt",
+     "h": "Gerçek anılardan doğan, kurmacayla genişleyen, mizahla felsefeyi buluşturan kısa bir kitap."
+    },
+    {
+     "k": "small",
+     "h": "Mustafa Ünal, 1969’da Tavas’ın Balkıca köyünde doğdu; aslen Acıpayam Kelekçilidir. İlkokulu Alcı ve Kelekçi’de, ortaokul ve liseyi Denizli’de okudu; Düzce’de İTÜ Kontrol Sistemleri Teknolojisi Programı’nda eğitim gördü. 1990’ların başında Ankara’da bir kuluçkahane için işletim paketi yazdı, ardından GAMEKS’i kurdu. 2004’te kurduğu acipayam.com ve sonra eskidenizli.com ile memleketin hafızasını dijital ortamda bir araya getirdi. Evli, iki kız babası; Denizli’de yaşıyor."
+    }
+   ],
+   "words": 325
+  }
+ ]
+}

@@ -1,0 +1,1572 @@
+{
+ "slug": "karanlik-odada-yedi-ay",
+ "chapters": [
+  {
+   "title": "Önsöz: Otuz Beş Yıl Sonra Açılan Bir Kapı",
+   "slug": "onsoz-otuz-bes-yil-sonra-acilan-bir-kapi",
+   "part": null,
+   "page": 7,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bu hikâye, yıllar sonra eski disketlerin içinden yeniden çıktı."
+    },
+    {
+     "k": "p",
+     "h": "Programın dosyalarını 1,44 MB’lık disketlerde saklamıştım. Yıllar önce bu disketlerdeki kodları kaybolmasınlar diye önce CD’ye, ardından bilgisayarıma aktardım. Dosyalar arşivimde duruyordu; fakat onları yeniden çalıştırmak başka bir meseleydi. Birkaç yıl önce programı açmayı denedim. Fazla uğraşmadım; doğrusu nasıl açacağımı da çözemedim. Eski MS-DOS dosyaları sessizce arşivde beklemeye devam etti."
+    },
+    {
+     "k": "p",
+     "h": "Yapay zekânın eski kodları okuyabildiğini görünce aklıma bu program geldi. “Acaba bunu açabilir mi?” diye düşündüm ve dosyaları bir yapay zekâ sistemine gönderdim. Aradan yaklaşık on dakika geçti. Sonra, otuz-otuz beş yıl önce kendi ellerimle hazırladığım o MS-DOS ekranı yeniden karşıma çıktı."
+    },
+    {
+     "k": "p",
+     "h": "O an beynimin kıvrımları sanki elektriklendi. Unuttuğumu sandığım görüntüler, sesler ve duygular birer birer geri gelmeye başladı: dot-matrix yazıcının “cırrrt” sesi, yeşil monitör, demir kapı, pencereye çektiğim koyu renk perde, saatlerce başından kalkmadığım bilgisayar, Nermin Abla, İbrahim abim, Akyurt yolları ve Kızılay’daki kitapçılar... Programın dosyalarını yıllarca saklamıştım; asıl unuttuğum şey, o dosyaların arkasındaki günlerdi."
+    },
+    {
+     "k": "p",
+     "h": "Okuldan henüz yeni çıkmış sayılırdım. Başlangıçta ne yapacağımı ben de tam bilmiyordum; ama merakla, aşkla ve şevkle çalışıyordum. Yaklaşık 15-20 metrekarelik odanın pencerelerini kendi ellerimle karartmış, yaklaşık yedi ay boyunca dünyadan olabildiğince uzaklaşıp önümdeki işe kapanmıştım."
+    },
+    {
+     "k": "p",
+     "h": "O yıllarda öngöremediğimiz teknoloji sayesinde eski programımı yeniden açabildim. Ben de hafızamın izin verdiği kadarını, hâlâ vakit varken yazmaya karar verdim. Bu kitap böyle ortaya çıktı."
+    },
+    {
+     "k": "p",
+     "h": "Program açıldığında gri ekranın ortasında siyah bir çerçeve belirdi. Çerçevenin içinde şu satırlar vardı:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Kuluçka Version 2,1 yazılım lisans sahibi Mustafa Ünal / Her hakkı Mustafa Ünal’a aittir 1992, 1993”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bu gri ekranı yeniden gördüğümde karşımdaki şey yalnızca eski bir bilgisayar programının açılışı değildi. Gençliğimin, korkularımın, sabrımın ve yoğun emeğimin yeniden canlanmasıydı."
+    },
+    {
+     "k": "p",
+     "h": "Programın asıl kodlarını 1990-1991 yıllarında yazdığımda henüz 21-22 yaşlarındaydım. İnternet yoktu. E-posta yoktu. Bugün bildiğimiz biçimiyle Windows masaüstü ortamı yoktu. Hazır kod aramak, bir video izlemek veya bir sorunun cevabını saniyeler içinde bulmak mümkün değildi."
+    },
+    {
+     "k": "p",
+     "h": "Programı 1990-1991 yıllarında yazdım; arşivimde kalan Version 2.1 kopyası ise yaklaşık 1993 tarihli. Yani programın ilk doğuşunun üzerinden otuz beş, elimdeki sürümün üzerinden de otuz üç yıl geçmiş."
+    },
+    {
+     "k": "p",
+     "h": "Bu kitap bir programın kullanma kılavuzu değildir. Ağabeyimin güveniyle başlayan, küçük bir odada yoğunlaşan emeğin gerçek bir işletim paketine dönüşmesinin ve ardından seçtiğim yolun hikâyesidir."
+    }
+   ],
+   "words": 356
+  },
+  {
+   "title": "Bilgisayarla İlk Karşılaşma",
+   "slug": "bilgisayarla-ilk-karsilasma",
+   "part": null,
+   "page": 8,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bilgisayarı ilk kez 1987-1990 yılları arasında okuduğum Düzce Meslek Yüksekokulunda gördüm. Okul o dönemde İstanbul Teknik Üniversitesine bağlıydı. Elektronik, pnömatik ve elektrik teknolojilerini bir araya getiren Kontrol Sistemleri Teknolojisi Bölümünde okuyordum. Hatırladığım kadarıyla okul, bir Dünya Bankası projesi sayesinde modern cihazlar ve bilgisayarlarla donatılmıştı."
+    },
+    {
+     "k": "p",
+     "h": "1987’de okulda kullandığımız 8086 bilgisayarlar, gri monitörleriyle benim için son derece yeniydi. Bizim kullandığımız sistemlerde fare yoktu, Windows kullanmıyorduk; klavye, ekran ve MS-DOS’la çalışıyorduk. Haftada belirli bir saat bilgisayar dersimiz olmasına rağmen ben neredeyse bütün günümü bilgisayar odasında geçirirdim. Bilgisayar beni daha ilk karşılaşmada kendisine çekmişti."
+    },
+    {
+     "k": "p",
+     "h": "O günlerden kalan 5,25 inçlik büyük, siyah floppy diskleri bugün hâlâ saklıyorum. Her birine ancak birkaç yüz kilobayt, en iyisine 1,2 megabayt bilgi sığardı."
+    },
+    {
+     "k": "p",
+     "h": "Daha sonra sert plastik kasalı 3,5 inç disketler ve 1,44 MB kapasite karşımıza çıktığında hayret etmiştik: “Bu kadar yer nasıl dolacak?” diyorduk. Bugün terabaytları konuşuyoruz. O zaman gözümüzde büyüttüğümüz 1,44 MB’ın ne kadar küçük kaldığını düşününce hâlâ şaşırıyorum."
+    },
+    {
+     "k": "p",
+     "h": "O günlerde bugün elimizin altında bulunan imkânların hiçbiri yoktu. Bizim ulaşabildiğimiz bir internet veya e-posta sistemi bulunmuyordu. Bir soruyla karşılaştığımızda cevabını arama motoruna yazamıyorduk. Bilgiye ulaşmanın yolu kitaplar, ders notları, deneme ve yanılmaydı."
+    },
+    {
+     "k": "p",
+     "h": "Benim bildiğim programlama araçları GW-BASIC ve BASICA idi. Daha sonra Ankara’dan COBOL ve başka bilgisayar dilleriyle ilgili kitaplar bulup aldım. Yeni dilleri anlamaya çalıştım; fakat yapacağım iş için BASIC ile devam etmenin daha hızlı ve verimli olacağına karar verdim."
+    },
+    {
+     "k": "p",
+     "h": "Birkaç satır kod yazıp sonucunu hemen ekranda görmek beni etkiliyordu. Bilgisayar, söylediğim şeyi eksiksiz yapıyor; yanlış söylediğimde ise aynı kesinlikle yanlış yapıyordu. Makineyle anlaşmanın yolu ne istediğimi açıkça tarif etmekti. Yıllar sonra fark ettim ki programlama bana yalnızca komutları değil, düşünceyi parçalara ayırmayı da öğretmişti."
+    }
+   ],
+   "words": 269
+  },
+  {
+   "title": "“Yok Artık, O Kadar da Değil”",
+   "slug": "yok-artik-o-kadar-da-degil",
+   "part": null,
+   "page": 10,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "1987 veya 1988 yıllarıydı. Bir gün okulda arkadaşlarla oturmuş, gelecekte teknolojinin neler yapabileceği üzerine beyin jimnastiği yapıyorduk."
+    },
+    {
+     "k": "p",
+     "h": "Arkadaşlardan biri:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Telefonlar da telsizler gibi kablosuz olsa...”</em>"
+    },
+    {
+     "k": "p",
+     "h": "dedi. Olur mu, olmaz mı diye tartışmaya başladık. Tam o sırada bir başkası daha ileri gitti:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Telefonlarda arayanın kim olduğunu bilebilsek...”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Ortamda bulunanların tepkisi neredeyse ortaktı:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Yok artık, o kadar da değil!”</em>"
+    },
+    {
+     "k": "p",
+     "h": "O gün bize hayal sınırını aşıyormuş gibi gelen kablosuz telefon ve kimin aradığını bilebilme düşüncesi, yalnızca birkaç yıl sonra gerçek hayatın parçası olmaya başladı. Arkadaşımız bir ekran, görüntü ya da ses tarif etmemişti. Yalnızca ihtiyacı söylemişti: Kimin aradığını bilebilmek."
+    },
+    {
+     "k": "p",
+     "h": "Teknolojinin hızını ben en iyi böyle anlıyorum. O gün “imkânsız” dediğimiz şey, biz daha yaşlanmadan sıradanlaştı."
+    }
+   ],
+   "words": 112
+  },
+  {
+   "title": "Geceleri Çalışıp Gündüzleri Okumak",
+   "slug": "geceleri-calisip-gunduzleri-okumak",
+   "part": null,
+   "page": 10,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Okul hayatım kolay geçmedi. Yaklaşık üç yıl boyunca geceleri kahvehane ve benzeri yerlerde çalışıyor, gündüzleri okula gidiyordum. 1990 yılında okulum bir dönem uzayınca hem okumaya hem çalışmaya devam ettim. O sırada Düzce’de kumarhane benzeri, sıkıntılı bir yerde işe girmiştim. Bugünden dönüp baktığımda, “Gençlik işte,” diyorum."
+    },
+    {
+     "k": "p",
+     "h": "2010 yılında kaybettiğim rahmetli ağabeyim İbrahim Ünal, o dönem Ankara’da Artavuk A.Ş.’de kuluçkahane müdürü olarak çalışıyordu. Ziraat mühendisiydi. Firmanın İstanbul ve başka yerlerle de işleri olduğu için kamyonları Düzce tarafından geçerdi. Ağabeyim bazen şoförlere beni ziyaret etmelerini söylerdi."
+    },
+    {
+     "k": "p",
+     "h": "Firmanın kamyon şoförlerinden biri İsmail Abi’ydi. Bir gün otobüsle firmanın İstanbul’daki şubesine giderken, Düzce yakınlarında otobüsün sıcak su kazanı üzerine dökülmüş. Düzce Devlet Hastanesine yatırılmış."
+    },
+    {
+     "k": "p",
+     "h": "Çalıştığım yerde yeşil, çevirmeli bir telefon vardı. Bir gün o telefon çaldı. Arayan ağabeyimdi. Bana, “Şoför İsmail’in yanına git, ilgilen,” dedi."
+    },
+    {
+     "k": "p",
+     "h": "O sırada öğrenci olarak kulübeyi andıran küçük bir kiralık evde kalıyorduk. Yan evde hemşire olan iki kız arkadaşımız vardı. Onların yardımıyla İsmail Abi’yle yakından ilgilendik. Hastanede kaldığı yaklaşık bir hafta boyunca hemşire arkadaşlarımız ona özel ihtimam gösterdiler."
+    },
+    {
+     "k": "p",
+     "h": "İsmail Abi hastaneden çıkınca çalıştığım yeri de gördü. Ankara’ya döndüğünde ağabeyime hem hastanedeki ilgiyi hem de benim nasıl bir ortamda çalıştığımı anlatmış."
+    },
+    {
+     "k": "p",
+     "h": "Aradan birkaç ay geçmiş olabilir. Yeşil çevirmeli telefon bir kez daha çaldı. Ağabeyim beni özlediklerini söyleyerek Ankara’ya çağırdı. Yanına gittiğimde bana şunu söyledi:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Ah abiciğim benim... Artık Düzce’ye gitmiyorsun. Sana Ankara’da iş buluyoruz, burada çalışıyorsun. O kötü yerlere bir daha gitmeyeceksin.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Önce itiraz ettim. Düzce’deki çevreden korkuyordum. “Eşyalarım ne olacak?” diye sordum. Fakat geri dönmedim. Eşyalarımı orada bıraktım. Düzce’ye ancak uzun yıllar sonra, 2009’da okulun pilav günü için yeniden gittim."
+    },
+    {
+     "k": "p",
+     "h": "Ağabeyimi bugün şu sözlerle anıyorum:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Ah benim melek abiciğim... Beni o bataktan çekip çıkardı. Allah rahmet eylesin.”</em>"
+    }
+   ],
+   "words": 275
+  },
+  {
+   "title": "30 Ağustos 1990: Ankara’da Yeni Bir Hayat",
+   "slug": "30-agustos-1990-ankara-da-yeni-bir-hayat",
+   "part": null,
+   "page": 12,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Ankara’ya geldiğim tarihi hiç unutmuyorum: 30 Ağustos 1990."
+    },
+    {
+     "k": "p",
+     "h": "Ağabeyimin çalıştığı firmanın adı o tarihte Artavuk A.Ş. idi; birkaç yıl sonra Bolar A.Ş. adı kullanılmaya başladı. Bu iki ad, hikâyenin ilerleyen yıllarında karşıma yeniden çıkacaktı."
+    },
+    {
+     "k": "p",
+     "h": "Bir gün ağabeyim beni çalıştığı firmaya götürdü. Herkesin bir işe yetişmeye çalıştığı, kayıt ve hesapların yoğun biçimde yürütüldüğü karmaşık bir yerdi. Ağabeyime bilgisayarın bu işleri hızlandırabileceğinden bahsettim."
+    },
+    {
+     "k": "p",
+     "h": "“Nasıl olacak o iş?” diye sordu."
+    },
+    {
+     "k": "p",
+     "h": "Bu sorunun cevabını hemen kod yazarak vermedim. Birkaç hafta işleri gözlemledim; not aldım, çalışanlara sordum, ağabeyimden ve işi yapanlardan sistemi öğrendim. Bilgisayara ne yaptıracağımı anlamadan program yazmaya başlamadım."
+    },
+    {
+     "k": "p",
+     "h": "Yumurta hareketleri bir yerde, kuluçka ve çıkım bilgileri başka yerde, üretim ve sevk planları başka çizelgelerdeydi. Aynı soruyu farklı kişilere farklı biçimlerde sorduğum olurdu. Bir rakamın nereden geldiğini, kimin kullandığını ve yanlış yazıldığında hangi hesabı bozduğunu anlamaya çalışıyordum. Kodun içine giren adların ve sıralamanın kaynağı bilgisayar kitapları değil, işletmenin gündelik diliydi."
+    },
+    {
+     "k": "p",
+     "h": "Bir bilgisayar istedim; maliyeti yüksek bulununca önce gri bir Amstrad CPC 6128 ile yeşil monokrom monitörü getirildi."
+    },
+    {
+     "k": "p",
+     "h": "Bilgisayarı iki-üç gün inceleyip yeşil ekrana firmanın büyük civciv amblemini, altına da ARTAVUK adını çizdirdim. Küçük hoparlörden iki kısa “cik cik” sesi de çıkardım. Firmanın genel müdürü Mustafa Kemal Akman gösteriyi beğendi. Ben 386DX istemiştim; ama biraz daha uygun fiyatlı olduğu için firmaya bir 386SX bilgisayar alındı. Asıl hikâye o bilgisayarla başladı."
+    }
+   ],
+   "words": 215
+  },
+  {
+   "title": "Demir Kapılı Küçük Oda",
+   "slug": "demir-kapili-kucuk-oda",
+   "part": null,
+   "page": 13,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bilgisayar ilk olarak ağabeyimin odasının bir kenarına kuruldu. Bir süre orada çalıştım. Hem programın ilk parçalarını yazıyor hem de işleyişi gözlemlemeye devam ediyordum. Çalışanlardan ve ağabeyimden kuluçkahanenin bütün ayrıntılarını öğreniyordum."
+    },
+    {
+     "k": "p",
+     "h": "Fakat firmanın yoğun ortamında verimli çalışmam mümkün değildi. Sürekli hareket, ses ve gelen giden insanlar vardı. Sonunda sakin bir oda istedim."
+    },
+    {
+     "k": "p",
+     "h": "Üst katta, yemekhanenin yanında demir kapılı küçük bir oda vardı. Düzenli bir ofisten çok, fazla malzemelerin, kutuların ve dosyaların bırakıldığı sade bir arka odaydı. Kapısı gri bir demir kapıydı. Çalışmak için bana orayı verdiler."
+    },
+    {
+     "k": "p",
+     "h": "Odanın penceresi vardı. Ekrana fazla ışık gelmesin diye koyu renk perdeyi ben çektim. Yani oda baştan karanlık değildi; çalışmaya yoğunlaşabilmek için onu ben karartmıştım."
+    },
+    {
+     "k": "p",
+     "h": "O ayların içinde teknik merak kadar bir korku da vardı. Aylarca uğraşıp ortaya işe yarar bir şey çıkaramazsam yalnızca kendim mahcup olmayacaktım; beni firmaya getiren ve bana güvenen ağabeyimi de zor durumda bırakacağımı düşünüyordum. Bu korku beni durdurmadı; yaptığım işi tekrar tekrar sınamaya zorladı. Bir modül çalıştığında gerçek kayıtlarla deniyor, sonucu kâğıt çizelgelerle karşılaştırıyor, yanlış gördüğüm yerde yeniden koda dönüyordum."
+    },
+    {
+     "k": "p",
+     "h": "Yaklaşık yedi ay boyunca çalışmalarımı orada yoğunlaştırdım. Dış dünyayla iletişimim neredeyse kesildi. Sabah gelir, demir kapıdan içeri girer ve bilgisayarın başına otururdum. Çoğu zaman yemek yemeyi bile unuturdum. Bazen yemekhanede çalışan Nermin Abla yemeğimi odaya getirirdi."
+    },
+    {
+     "k": "p",
+     "h": "Sabahları tesise ağabeyimle birlikte gelirdim. Ev, iş yerine yaklaşık beş-altı kilometre uzaktaydı ve gidip gelebileceğim başka bir vasıta yoktu. Bu yüzden akşamları da genellikle ağabeyimle birlikte eve dönerdim. Günün başlangıcını ve bitişini onun çalışma düzeni belirliyordu; aradaki saatlerin neredeyse tamamı ise bilgisayarın başında geçiyordu."
+    },
+    {
+     "k": "p",
+     "h": "O aylar boyunca bir anda büyük bir çözüm bulmadım. Küçük küçük denedim, yanıldım ve düzelttim. Kitabın adındaki “yedi ay”, işte o perdenin ardında geçen yoğun çalışma dönemidir."
+    }
+   ],
+   "words": 276
+  },
+  {
+   "title": "“İnime” Gelen Misafir",
+   "slug": "inime-gelen-misafir",
+   "part": null,
+   "page": 14,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Kendimi odaya kapatıp dış dünyadan bu kadar soyutlamam ağabeyimin de dikkatini çekmişti. Sosyal olarak hiçbir şey yapmıyor, neredeyse kimseyle görüşmüyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bir gün ağabeyimin bir arkadaşının tanıdığı ziyarete gelmiş. Yanlarında benim yaşlarımda genç bir akrabaları da varmış. Biraz konuşur, sohbet ederiz düşüncesiyle onu benim “inime” göndermişler."
+    },
+    {
+     "k": "p",
+     "h": "Genç kız odaya geldi. Fakat ben başımı bilgisayardan kaldırıp yüzüne bile bakmadan çalışmaya devam ettim. Bir süre sonra o da çıkıp gitti."
+    },
+    {
+     "k": "p",
+     "h": "Bugün bu sahneyi hatırlayınca gülümsüyorum. O günlerde önümdeki kodun dışında kalan dünyaya ne kadar kapandığımı bundan daha iyi anlatan bir örnek herhâlde olamaz."
+    }
+   ],
+   "words": 90
+  },
+  {
+   "title": "Karanlık Odanın Dışında Hayat",
+   "slug": "karanlik-odanin-disinda-hayat",
+   "part": null,
+   "page": 14,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Ankara’da kaldığım dönemde ağabeyimlerle yaşıyordum. Fazilet Yengem aynı zamanda dayımın kızı, yani kuzenimdi. Bu yakınlık onların evinde kendimi rahat hissetmemi sağlıyordu. Sağ olsun, benim için ayrıca emek veriyordu. Eve bir kişi daha gelmiş, sofraya bir tabak daha konmuştu. Ben sabahları çıkıp çoğu zaman bütün günümü o karanlık odada geçirsem de evde beni bekleyen bir aile düzeni vardı."
+    },
+    {
+     "k": "p",
+     "h": "1991 aynı zamanda ilk yeğenim Nevzat Cem’in doğduğu yıldı. Onun dünyaya geldiği günlerde ben de oradaydım; fakat malum, zamanımın büyük bölümü yine programı yazdığım odada geçiyordu."
+    },
+    {
+     "k": "p",
+     "h": "Yine de Nevzat Cem’in ilk fotoğrafının çekildiği güne tanıklık ettim. Yengemle birlikte ağabeyimin ilk kaldığı evin biraz aşağısındaki fotoğrafçıya gittik. O yılların bebek fotoğraflarında sık rastlanan bir düzen hazırlanmıştı. Nevzat Cem’i küçük bir sepetin içine oturttular. Fazilet Yengem sepete bir battaniye koydu ve ilk stüdyo fotoğrafını öyle çektiler."
+    }
+   ],
+   "words": 131
+  },
+  {
+   "title": "Cevabı Bulmak İçin Kızılay’a Gitmek",
+   "slug": "cevabi-bulmak-icin-kizilay-a-gitmek",
+   "part": null,
+   "page": 15,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Programı yazarken defalarca tıkandım. Bazen karşımdaki sorunun çözümünü ne kadar düşünürsem düşüneyim bulamıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Firma Ankara’nın Akyurt ilçesindeydi. Ankara merkezi, özellikle de bilgisayar yayınlarının ve teknik kitapların satıldığı Kızılay, yaklaşık 45-50 kilometre uzaktaydı. Bugün bir arama kutusuna yazılacak sorunun cevabı için o zaman fiziksel olarak yola çıkmak gerekiyordu."
+    },
+    {
+     "k": "p",
+     "h": "Kodda tıkandığım zamanlarda hemen Ankara’ya gider, soluğu Kızılay’daki bilgisayar kitabı ve yayını satan yerlerde alırdım. Rafları inceler, işime yarayabilecek bir kitap veya birkaç satırlık bilgi arardım. Aradığım cevabı bulup bulamayacağımı bilmeden kilometrelerce yol giderdim."
+    },
+    {
+     "k": "p",
+     "h": "Bazen kitaplarda da cevap yoktu. Sorunu odamda tekrar tekrar düşünür, farklı yollar denerdim. Zihnim, bilgisayarın başından kalktıktan sonra bile problem üzerinde çalışmaya devam ederdi."
+    },
+    {
+     "k": "p",
+     "h": "Bazı çözümleri rüyamda bulduğum zamanlar bile oldu. Uyanınca aklıma gelen yolu programa uygular, sorunun gerçekten çözüldüğünü görürdüm."
+    },
+    {
+     "k": "p",
+     "h": "Benim için programcılık yalnızca doğru komutu bilmek değildi. Bilgiye ulaşmak için yol gidiyor, doğru kitabı arıyor, saatlerce deniyor ve bazen çözümün kafamda olgunlaşmasını bekliyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bir cevabı bulmak için bazen para harcıyor, yol gidiyor ve günlerce deniyordum. Bu yüzden Kızılay’a gitmeden önce nerede takıldığımı anlamaya çalışırdım: Aradığım bir komut muydu, dosyanın çalışma biçimi miydi, yoksa benim kurduğum yöntem mi yanlıştı? Soruyu doğru kuramazsam cevabı da bulamıyordum. Bugün cevaplara daha çabuk ulaşıyorum; fakat doğru soruyu yine benim bulmam gerekiyor."
+    },
+    {
+     "k": "p",
+     "h": "Şimdi çok basit, belki de komik gelen şeyler o zaman imkânsıza yakındı."
+    }
+   ],
+   "words": 211
+  },
+  {
+   "title": "Peki, Bu Programda Ne Vardı?",
+   "slug": "peki-bu-programda-ne-vardi",
+   "part": null,
+   "page": 16,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Demir kapılı odada aylar boyunca yazdığım ve gerçek kayıtlarla sınadığım parçalar sonunda tek bir sistemde birleşti. Peki, bu programın içinde ne vardı?"
+    },
+    {
+     "k": "p",
+     "h": "Programın neyi yönettiğini anlamak için firmanın üretim zincirini de bilmek gerekir. Damızlık üretimin başlangıcında, hibrit hatlara ait kuluçkalık yumurtalar Hollanda’dan gelirdi. Bu yumurtalardan çıkan civcivler büyütülür ve anaç sürüler oluşturulurdu."
+    },
+    {
+     "k": "p",
+     "h": "Anaç tavukların yumurtalarından ise ticari civcivler üretilirdi. Bunların bir bölümü etlik, bir bölümü yumurta üretimine yönelikti. Civcivler yalnızca yakın çevreye değil, Türkiye’nin farklı bölgelerindeki müşterilere gönderilirdi."
+    },
+    {
+     "k": "p",
+     "h": "Anaçların verimli kullanım ömrü yaklaşık bir buçuk yıldı. Sürü yaşlandığında yeni anaçların yetiştirilmesi gerekiyordu; bunun başlangıcı da yeniden Hollanda’dan gelen damızlık yumurtalara dayanıyordu. Bu nedenle üretim zinciri belirli aralıklarla dışarıya bağımlı hâle geliyordu."
+    },
+    {
+     "k": "p",
+     "h": "Kuluçkahane İşletim Paketi işte bu zincirin Türkiye’deki hareketini izliyordu: damızlık kümeslerinden gelen yumurtalar, kuluçka ve çıkım işlemleri, müşteriye gönderilen ticari civcivler, üretim tahminleri ve beraberinde hazırlanması gereken ışık programları."
+    },
+    {
+     "k": "p",
+     "h": "Ekranda sayı, tarih ve dosya adı görüyordum; fakat her rakamın işletmede bir karşılığı vardı. Yumurta sayısını veya tarihi yanlış girersem haftalar sonraki çıkım planı, sevkiyat ve müşteriye verilen söz de etkilenebilirdi."
+    },
+    {
+     "k": "p",
+     "h": "Program yazarken gerçek hayatı olduğu gibi bilgisayarın içine koyamazdım. Önce onu anlamlı parçalara ayırmam gerekiyordu: Ne giriyor, ne çıkıyor, hangi bilgi nereden geliyor, kim kullanıyor, ne zaman değişiyor ve yanlış olduğunda nereyi etkiliyor? İşletmenin karmaşık akışı, ancak bu sorulara verilen cevaplarla satırlara ve kurallara dönüşebiliyordu."
+    },
+    {
+     "k": "p",
+     "h": "Program yumurtaları sayıyor, tarihleri karşılaştırıyor ve üretim tahmini yapıyordu; ama çalışanın tecrübesinin veya yöneticinin kararının yerini almıyordu. Ben de zaten böyle bir şey amaçlamamıştım."
+    },
+    {
+     "k": "p",
+     "h": "Çalışanları dinliyor, bildikleri işi anlamaya çalışıyor ve öğrendiklerimi bilgisayarın anlayacağı bir dile çeviriyordum. Bilgisayara işi anlatabilmem için önce benim o işi anlamam gerekiyordu. Dağınık bilgileri de herkesin izleyebileceği bir düzene sokmaya çalışıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Program, muhasebe dışında üretimle ilgili işlerin ve günlük büro ihtiyaçlarının neredeyse tamamını tek bir ana menüde topluyordu: • Yumurta harekâtı modu, gelen, kullanılan ve hareket eden"
+    },
+    {
+     "k": "p",
+     "h": "yumurtaların kayıtlarını tutuyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Yükleme ve çıkım modu, kuluçka sürecinin temel hareketlerini"
+    },
+    {
+     "k": "p",
+     "h": "izliyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Üretim tahminleri modu, anaç sürülerin yaşlanma ve yenilenme"
+    },
+    {
+     "k": "p",
+     "h": "takvimini pazarlama hedefleriyle birleştirerek gelecek üretimi"
+    },
+    {
+     "k": "p",
+     "h": "saniyeler içinde hesaplıyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Işık programı modu, kümeslerin aydınlatma planlarını"
+    },
+    {
+     "k": "p",
+     "h": "hazırlıyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Fatura, irsaliye ve daktilo modu, ticari belgelerin yanı sıra kısa"
+    },
+    {
+     "k": "p",
+     "h": "yazışmaların da bilgisayarda hazırlanmasını sağlıyordu. • Müşteri adres ve bilgi modu, bugün rehber dediğimiz bilgileri"
+    },
+    {
+     "k": "p",
+     "h": "bir arada tutuyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Etiketleme modu, kayıtlardaki bilgilerden düzenli etiketler"
+    },
+    {
+     "k": "p",
+     "h": "üretiyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Yeni kümes ekleme ve isim değiştirme modu, damızlık"
+    },
+    {
+     "k": "p",
+     "h": "kümeslerini sisteme katıyor ve bunların kayıtlarının"
+    },
+    {
+     "k": "p",
+     "h": "izlenmesini sağlıyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Data transferi modu, Akyurt’taki tesisle Ankara’daki büro"
+    },
+    {
+     "k": "p",
+     "h": "arasında disketlerle veri akışı kuruyordu."
+    },
+    {
+     "k": "p",
+     "h": "• Hatırlatma modu, unutulmaması gereken işleri kullanıcının"
+    },
+    {
+     "k": "p",
+     "h": "önüne getiriyordu."
+    }
+   ],
+   "words": 413
+  },
+  {
+   "title": "Bilgisayarı Elektrikli Daktiloya Dönüştürmek",
+   "slug": "bilgisayari-elektrikli-daktiloya-donusturmek",
+   "part": null,
+   "page": 18,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "O yıllarda bürolarda elektrikli daktilolar kullanılıyordu. Ben de programın içine kısa yazışmalar hazırlamak için bir daktilo bölümü ekledim. Kullanıcı yazısını klavyeden yazıyor, ardından nokta vuruşlu (dot-matrix) yazıcıdan çıkarabiliyordu."
+    },
+    {
+     "k": "p",
+     "h": "Bugün bu özellik basit görünebilir. O gün benim istediğim, bilgisayarın yalnızca hesap yapması değil, bürodaki günlük işleri de kolaylaştırmasıydı. Rehber ve hatırlatma bölümlerini de bu yüzden ekledim."
+    }
+   ],
+   "words": 55
+  },
+  {
+   "title": "Programın Kalbi: Üretim Tahmini",
+   "slug": "programin-kalbi-uretim-tahmini",
+   "part": null,
+   "page": 19,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Programdaki en önemli işlerden biri üretim tahminiydi. Çünkü anaç sürüler sonsuza kadar aynı verimle üretimde kalmıyordu. Bir sürü yaşlanırken onun yerini alacak yeni anaçların önceden hazırlanması gerekiyordu."
+    },
+    {
+     "k": "p",
+     "h": "Sistem bir döngü hâlinde çalışmalıydı. Yaşlanan anaç üretimden çıkmadan yenisi devreye girmeli; damızlık kümesleri birbirini tamamlamalıydı. Aksi hâlde üretimde boşluk oluşabilir veya pazarlanamayacak kadar fazla civciv üretilebilirdi."
+    },
+    {
+     "k": "p",
+     "h": "Bu yüzden hesap yalnızca kümeslerin kapasitesine bakmıyordu. Damızlıkların yaşı ve beklenen üretimi, yeni sürülerin hazırlanma zamanı, pazarlama bölümünün öngörüleri ve gelecek yılın gerçekçi"
+    },
+    {
+     "k": "p",
+     "h": "satış hedefleri birlikte düşünülüyordu. Yeni kümes ekleme moduyla damızlık kümesleri ve kayıtları sisteme giriliyor, üretim tahmini bu bütünün üzerinden hazırlanıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Elle yapıldığında çok uzun ve zor olan bu planlama, program tarafından saniyeler içinde hesaplanıyordu. Böylece yöneticiler yalnızca bugünün yumurta ve civciv sayılarını değil, önümüzdeki yıl üretimin nasıl devam edeceğini de görebiliyordu."
+    },
+    {
+     "k": "p",
+     "h": "Yıllar sonra arşivimdeki kaynak kodlara yeniden baktığımda, hatırladığım bu işlevlerin gerçekten programda bulunduğunu gördüm. “Yıllık Üretim Tahmini” ve “Yıllık Tahmini Kapasite Kullanımı” başlıklı çıktılar hazırlanıyordu. Program, haftalık verim değerlerinden farklı damızlık hatlarının toplamlarını hesaplıyor, bunları mevcut kapasiteyle karşılaştırıyor ve kapasite fazlasını ya da açığını gösteriyordu. Kapasite yetersizse ekrana doğrudan şu uyarı geliyordu:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“KAPASİTENİZ YETMİYOR”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Yeni kümes modülünde ırk, mevcut kümes sayısı, eklenecek yeni kümes sayısı ve kümes adları soruluyordu. Ana menüde ayrı görünen “yeni kümes” ve “üretim tahmini” modülleri, gerçekte aynı planlama zincirinin iki parçasıydı."
+    },
+    {
+     "k": "p",
+     "h": "Programın parçaları tek bir pakette birleşip çalışmaya başladığında, ağabeyimin yüzündeki mutluluğu ve şaşkınlığı hatırlıyorum. Belki başlangıçta beni Düzce’deki kötü ortamdan uzak tutacak yararlı bir uğraş olarak gördüğü iş, firmanın gerçek iş yükünü azaltan bir sisteme dönüşmüştü."
+    },
+    {
+     "k": "p",
+     "h": "Geliştirme ve ilk kullanım aşamasında bilgisayar yalnızca bendeydi; program da tamamen benim kontrolümdeydi. Modülleri ben çalıştırıyor, çalışanlardan gelen kâğıt çizelgelerdeki verileri sisteme giriyor ve sonuçları ben alıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Üretim tahmini veya ışık programı için saatlerce süren hesaplar tamamlandığında tek bir tuşa basmak yetiyordu. Bir dakikadan kısa süre sonra yazıcı çalışmaya başlıyordu:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Cırrrt...”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Delikli kenarları olan sürekli kâğıttan çıkan düzenli rapor, aylar boyunca kurduğum sistemin gündelik hayattaki karşılığıydı. Ağabeyimin en çok hoşuna giden şeylerin başında bu geliyordu."
+    }
+   ],
+   "words": 324
+  },
+  {
+   "title": "Işığı Hesaplayan Program",
+   "slug": "isigi-hesaplayan-program",
+   "part": null,
+   "page": 20,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Işık programı, yazılımın firmada yarattığı değişimi en iyi gösteren bölümlerden biriydi. Çünkü “ışık programı” tek bir açma-kapama saatinden ibaret değildi."
+    },
+    {
+     "k": "p",
+     "h": "O dönemde uygulanan et tavukçuluğunda, yaklaşık kırk beş günlük yetiştirme boyunca ışıklar günün yirmi dört saati açık bırakılıyor ve hayvanların sürekli yemesi sağlanıyordu. Fakat müşterilere yumurta üretimi için gönderilen civcivlerde durum farklıydı. Bu hayvanların büyürken günlük alacağı ışık süresinin belirli bir düzende ilerlemesi gerekiyordu."
+    },
+    {
+     "k": "p",
+     "h": "Programın dikkate alması gereken birden fazla değişken vardı: • Civciv müşteriye yılın hangi ayında gönderildi?"
+    },
+    {
+     "k": "p",
+     "h": "• Müşterinin bulunduğu bölgede o ay doğal gün ışığı kaç saatti?"
+    },
+    {
+     "k": "p",
+     "h": "• Doğal ışığa ek olarak kaç saat yapay ışık verilmeliydi?"
+    },
+    {
+     "k": "p",
+     "h": "• Hayvan büyüdükçe, yaşına ve ayına göre toplam ışık süresi nasıl"
+    },
+    {
+     "k": "p",
+     "h": "değişmeliydi?"
+    },
+    {
+     "k": "p",
+     "h": "Benim “çok bilinmeyenli denklem” diye hatırladığım hesap buydu. Ticari civcivler Türkiye’nin farklı bölgelerindeki müşterilere gönderildiği için her müşteri, bölge, sevk tarihi ve hayvan yaşı için uygulanacak program yeniden düzenlenmeliydi."
+    },
+    {
+     "k": "p",
+     "h": "Arşivimdeki kaynak dosyalarına yeniden baktığımda bu yapının ayrıntılarını da gördüm. Yazdırılan çizelgede yaş (hafta), tarih, toplam aydınlatma, gün uzunluğu ve suni ışık başlıkları bulunuyordu. Yıl, yaklaşık ikişer haftalık 26 ayrı ışık dönemine bölünmüştü. Müşteriye verilen notlarda, tavuklar ilerleyen yaşlara geldiğinde toplam ışık süresinin nasıl düzenleneceği ve yapay ışığın sabah ile akşam arasında nasıl bölüneceği de açıklanıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Programdan önce bu çizelgeleri ağabeyim elle hazırlardı. İş gündüz bitmez, bazen evde geceleri de hesap yapmaya devam ederdi. Uzun süren bu çalışma, civcivlerin müşteriye gönderilmesinden önce tamamlanmak zorundaydı."
+    },
+    {
+     "k": "p",
+     "h": "Programdan sonra süreç değişti. Müşteriye gidecek civcivler yüklendiğinde gerekli bilgiler sisteme giriliyor, ışık programı hesaplanıyor ve çizelge hemen yazdırılıyordu. Daha önce ağabeyimin gecelerini alan bir işin sevk sırasında hazırlanabilmesi, o günün şartlarında çok büyük bir konfordu."
+    },
+    {
+     "k": "p",
+     "h": "Yoğun çalışma döneminin sonunda ortaya tek bir hesap programı değil; üretimi, planlamayı, evrakı, rehberi, hatırlatmaları ve iki merkez arasındaki veri akışını bir araya getiren bütünleşik bir işletim paketi çıkmıştı."
+    }
+   ],
+   "words": 290
+  },
+  {
+   "title": "Dokuz Disketle Kurulan Elli Kilometrelik Ağ",
+   "slug": "dokuz-disketle-kurulan-elli-kilometrelik-ag",
+   "part": null,
+   "page": 22,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Kızılay’a giderken aştığım o 45-50 kilometrelik yolu, firmanın bilgileri de aşmak zorundaydı. Akyurt’taki tesis ile Ankara’daki büro aynı bilgilerle çalışmalıydı. Bugün iki bilgisayarın saniyeler içinde yaptığı veri alışverişi için o günlerde kullanabileceğimiz bir internet, e-posta veya bulut sistemi yoktu."
+    },
+    {
+     "k": "p",
+     "h": "Kuluçkahanede oluşan yumurta hareketleri, yükleme ve çıkım kayıtları, faturalar, üretim tahminleri ve ışık programları genel merkeze ulaşmalıydı."
+    },
+    {
+     "k": "p",
+     "h": "Bunun için disketleri numaralandırdım. Program veri transferi başlatıldığında kullanıcıya sırayla hangi disketi takması gerektiğini söylüyordu. Birinci disket yumurta hareketleri, ikinci disket yükleme ve çıkım, üçüncü disket fatura bilgileri içindi. Diğer disketler programın temel verilerini, üretim tahminlerini, ışık programlarını ve gerektiğinde BASIC kaynak kodlarını taşıyordu. Toplam dokuz ayrı transfer disketi vardı."
+    },
+    {
+     "k": "p",
+     "h": "Sistem her defasında bütün dosyaları kopyalamıyordu. DOS’un dosyalara koyduğu değişiklik işaretinden yararlanarak yalnızca bir önceki transferden sonra yeni oluşan veya değişen dosyaları seçiyordu. Böylece disketlerin sınırlı kapasitesi verimli kullanılıyor ve aktarım süresi kısalıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Program transferden önce önemli bir uyarı veriyordu:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Daha önce transfer yapılıp da büro bilgisayarına aktarılmamışsa kesinlikle data transferi yapmayınız.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Bu uyarı, disketlerin sırasını ve verilerin bütünlüğünü koruyordu. Önceki grup büro bilgisayarına aktarılmadan yeni bir transfer hazırlanmayacaktı."
+    },
+    {
+     "k": "p",
+     "h": "Hazırlanan disketler fiziksel olarak Ankara’ya götürülüyor, büro bilgisayarına yükleniyor ve program tarafından birleştiriliyordu. Ardından kümes, yükleme, çıkım, dişi ve erkek civciv sayıları ile"
+    },
+    {
+     "k": "p",
+     "h": "randıman değerleri hesaplanıyor; aylık ve genel toplamlar hazırlanıyordu."
+    },
+    {
+     "k": "p",
+     "h": "O gün buna yalnızca “data transferi” diyordum. Şimdi dönüp bakınca, iki bilgisayar arasında çevrimdışı bir veri aktarımı kurduğumu görüyorum. Ağ kablosu yoktu; disketler Akyurt ile Ankara arasında insan eliyle gidip geliyordu."
+    },
+    {
+     "k": "p",
+     "h": "Benim kurduğum ağ dokuz disketten, iki bilgisayardan, yaklaşık elli kilometrelik yoldan ve o yolu gidip gelen insanlardan oluşuyordu. Disketlerin doğru sırayla hazırlanması, Ankara’ya götürülmesi ve bürodaki bilgisayara yine doğru sırayla yüklenmesi gerekiyordu."
+    },
+    {
+     "k": "p",
+     "h": "Bu yüzden programı yalnızca dosya kopyalayacak biçimde yazmadım. Acele edilmesini, sıranın karışmasını ve eski verinin üzerine yenisinin yazılmasını da hesaba kattım. Ekrandaki uyarıları bunun için koydum. Program sırayı denetliyordu; gerisi disketleri taşıyan ve yükleyen insanların dikkatine kalıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Dokuz disketlik bu düzen bana, bilgisayarı kurmanın tek başına yetmediğini öğretti. Yolun, sıranın, sorumluluğun ve güvenin de baştan düşünülmesi gerekiyordu."
+    }
+   ],
+   "words": 326
+  },
+  {
+   "title": "Hollanda’dan Gelen Paket",
+   "slug": "hollanda-dan-gelen-paket",
+   "part": null,
+   "page": 23,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Program çalışmaya başladıktan sonra işler epey kolaylaştı. Tek bilgisayar bende olduğu için kullanım ve kontrol başlangıçta tamamen benim elimdeydi. Önce ağabeyime, sonra firmadaki muhasebe personeline sistemi öğretmeye başladım. Kodları bitirmiştim; şimdi programı kullanacak kişilerin de yeni düzene alışması gerekiyordu."
+    },
+    {
+     "k": "p",
+     "h": "O sıralarda firma, mesleki bilgisini geliştirmesi için ağabeyim İbrahim Ünal’ı bir iş gezisiyle Hollanda’ya gönderdi. Hollanda o dönem gelişmiş tarım ve hayvancılığıyla biliniyordu. Ağabeyim oradayken kuluçkahane işlerini yürüten buna benzer bir program veya hazır paket bulunup bulunmadığını da araştırdı."
+    },
+    {
+     "k": "p",
+     "h": "Dönüşünde yanında Hollandalıların hazırladığı bir programın demo sürümünü getirdi. Bu, işletmede doğrudan kullanılacak tam ve lisanslı bir paket değildi; programın neler yapabildiğini göstermeye yarayan sınırlı bir tanıtım kopyasıydı. Yine de bizim yaptığımız işi ilk defa yabancı bir örnekle karşılaştırma fırsatı veriyordu."
+    },
+    {
+     "k": "p",
+     "h": "Demo programı merakla inceledik. Ekranda görebildiğimiz işlevler, benim sahadaki ihtiyaçlara göre geliştirdiğim paketten daha sınırlıydı."
+    },
+    {
+     "k": "p",
+     "h": "Bu karşılaştırma bana güven verdi. Dışarıdan hazır bir örnek görmeden, Artavuk’taki çalışanları dinleyerek üretimden planlamaya, evraktan veri transferine kadar uzanan bir paket yazmıştım. Benim için önemli olan buydu. Bir yazılımın değeri, nerede yazıldığından çok yapılan işi ne kadar iyi karşıladığındaydı."
+    },
+    {
+     "k": "p",
+     "h": "Yaptığım işin birkaç deneme kodundan ibaret olmadığı, firmanın günlük işlerini gerçekten yürüttüğü artık herkesin gözü önündeydi. Genel Müdür Mustafa Kemal Bey’in bana bakışı da değişti. Artık beni yalnızca İbrahim Bey’in genç kardeşi olarak görmüyor, yaptığım işi ciddiye alıyordu."
+    }
+   ],
+   "words": 212
+  },
+  {
+   "title": "Programı Firmaya Bırakmak",
+   "slug": "programi-firmaya-birakmak",
+   "part": null,
+   "page": 24,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Program tamamlandığında çalışan kopyasını firmaya bıraktım ve emeğimin karşılığını aldım."
+    },
+    {
+     "k": "p",
+     "h": "Bugün korunan Version 2.1 kopyasının açılışında adım ve “Her hakkı Mustafa Ünal’a aittir” ibaresi var. Firmaya teslim ettiğim çalışma kopyasında ise bu yazının ve adımın bulunmadığını hatırlıyorum."
+    },
+    {
+     "k": "p",
+     "h": "Programı başka bir kuluçkahaneye satmadım; Artavuk’a özgü bir çalışma olarak orada bıraktım. Emeğimin karşılığı ise kısa süre sonra kendi işimi kurma kararımda etkili oldu. Yazılımdan kazandığım para, beni yazılımcılığa değil tavukçuluğa götürdü. Seçtiğim yol buydu; seçmediğim yolun nereye varacağını ise bugün bilemem."
+    }
+   ],
+   "words": 79
+  },
+  {
+   "title": "Ankara Bürosundaki Casio",
+   "slug": "ankara-burosundaki-casio",
+   "part": null,
+   "page": 25,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Aynı dönemde Mustafa Kemal Bey, yurt dışından Casio marka küçük bir elektronik cihaz getirmişti. Çeşitli kayıtların tutulabildiği bu cihaz bir kablo aracılığıyla bilgisayara bağlanabiliyordu. Fakat Ankara’daki büroda cihazı daha önce hiç çalıştıramamışlardı."
+    },
+    {
+     "k": "p",
+     "h": "Birkaç gün boyunca cihazla uğraştım. Sorunun kablodan kaynaklanabileceğini düşünerek Ankara’da uygun bir bağlantı kablosu aradım. Sonunda bulduğum kabloyla cihaz ile bilgisayar arasındaki ilk bağlantıyı kurdum ve veri aktarımını çalıştırdım."
+    },
+    {
+     "k": "p",
+     "h": "Mustafa Kemal Bey’in o zaman on dört-on beş yaşlarında, bilgisayarlara ve bu tür cihazlara meraklı bir oğlu vardı. Ben bağlantıyı kurmaya çalışırken yapılanları dikkatle izlediğini hatırlıyorum. Cihazın ilk kez bilgisayarla haberleşmesi hem onu hem de Mustafa Kemal Bey’i sevindirmişti."
+    },
+    {
+     "k": "p",
+     "h": "Cihazın tam modelini bugün hatırlamıyorum. Ama o günlerden kalan bir disket hâlâ elimde: Etiketinde “Büro Adres ve Casio” yazıyor, yanına da kırmızı kalemle “Virüs var” diye not düşülmüş."
+    }
+   ],
+   "words": 128
+  },
+  {
+   "title": "Bir Yazılım Firmasının Kapısında",
+   "slug": "bir-yazilim-firmasinin-kapisinda",
+   "part": null,
+   "page": 26,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Kuluçkahane İşletim Paketi’ni tamamlamıştım ve Artavuk’taki geçici görevim sona ermişti. Hayatıma devam edebilmek için sürekli bir işe girmem gerekiyordu. O tarihlerde ASELSAN’ın Akyurt’taki tesisi yeniydi. Oraya ve başka birkaç yere iş başvurusu yaptım."
+    },
+    {
+     "k": "p",
+     "h": "Kızılay’a gittiğim zamanlarda önünden sürekli geçtiğim bir yazılım firması vardı: Halıcı Bilgi İşlem."
+    },
+    {
+     "k": "p",
+     "h": "Orası benim için sıradan bir iş yeri değildi. Kapısının önüne kadar gidiyor, fakat içeri giremiyordum. Kendi kendime aynı soruları soruyordum:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Ya beni ciddiye almazlarsa?”</em>"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Ya yaptığım program onlara çok basit gelirse?”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Kaç defa o kapının önüne gidip geri döndüğümü hatırlamıyorum. Artavuk’ta gerçek bir sorunu çözen bir sistem kurmuş, Hollanda’dan gelen sınırlı demoyla kendi çalışmamı yan yana görmüştüm; yine de profesyonel bir yazılım firmasına kendimi anlatmaya çekiniyordum."
+    },
+    {
+     "k": "p",
+     "h": "Halıcı Bilgi İşlem’in kapısındaki mesele artık bilgisayar değildi. Benim kendi tereddüdümdü."
+    }
+   ],
+   "words": 123
+  },
+  {
+   "title": "“Bu Binada mı, Darphanede mi?”",
+   "slug": "bu-binada-mi-darphanede-mi",
+   "part": null,
+   "page": 26,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Ağabeyimin bir okul arkadaşı aracılığıyla, o dönemde Merkez Bankasının üst kademesinde görev yapan bir aile dostuna ulaştık. Benim için bu kişiyle bir randevu ayarlandı. Özgeçmişimi hazırladım ve görüşme günü Ulus’taki Merkez Bankası Genel Merkezine gittim."
+    },
+    {
+     "k": "p",
+     "h": "Binanın en üst katlarından birine çıktım. Görüşeceğim kişi o zaman için gerçekten yüksek bir görevdeydi. Odasına girdim ve özgeçmişimi uzattım."
+    },
+    {
+     "k": "p",
+     "h": "Bana baktı ve doğrudan sordu:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Evladım, bu binada mı çalışmak istersin, yoksa Darphanede mi çalışmak istersin?”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Böyle bir soru beklemiyordum. Karşımda iki ayrı kapı birden açılmış gibiydi. Heyecanla:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Siz bilirsiniz efendim.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "dedim."
+    },
+    {
+     "k": "p",
+     "h": "Fakat karar vermemi istedi:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Söyle, söyle...”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Ben de:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Darphane olsun efendim.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "dedim. O sırada muhtemelen kıpkırmızı olmuştum."
+    },
+    {
+     "k": "p",
+     "h": "Benim o günkü anlayışıma göre bundan sonra gerekli evrakları tamamlayacak ve kısa süre içinde işe başlayacaktım."
+    },
+    {
+     "k": "p",
+     "h": "Hatırladığım kadarıyla Darphane o zaman Kızılay’ın üst tarafındaydı. Daha önce önünden geçtiğim zamanlar olmuştu. Otoparkında yeni ithal otomobiller görürdüm. O yıllarda “ithal araba” dediğimiz otomobiller arasında Ladalar da vardı; otopark sıfır Ladalarla dolu olurdu."
+    }
+   ],
+   "words": 154
+  },
+  {
+   "title": "Darphane Yerine Kelekçi",
+   "slug": "darphane-yerine-kelekci",
+   "part": null,
+   "page": 27,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Darphaneden haber beklerken içimde başka bir ses konuşmaya başladı."
+    },
+    {
+     "k": "p",
+     "h": "Tavukçuluğu sevmiştim. Artavuk’ta yalnızca kod yazmamış; yumurtayı, kuluçkayı, çıkımı, üretim tahminlerini, ışık düzenini ve işletmenin bütün akışını öğrenmiştim. Üstelik programdan kazandığım parayla benim de bu işe koyabileceğim bir sermaye oluşmuştu."
+    },
+    {
+     "k": "p",
+     "h": "Kendi deyişimle, biraz “kaşındım”. Bir karar verme aşamasına geldim. İçimden kendime şöyle dedim:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Emir altında memur olacak adam değilsin sen, Mustafa.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Ağabeyim de beni destekledi:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Hadi beraber, ortak et tavukçuluğu yapalım. Seni memur olarak hiç düşünemiyorum.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Onun bu sözleri kararımı kesinleştirdi. Darphanede memur olmak yerine ağabeyimle ortak iş yapacak, memleketim Acıpayam’ın Kelekçi beldesine dönecektim. Kümesin nerede ve nasıl yapılacağını düşünmeye, hesapları çıkarmaya başladık."
+    },
+    {
+     "k": "p",
+     "h": "Kümesin kurulacağı arazi babam Ali Ünal’a aitti. Bu yüzden aile işletmesi ilk aşamada onun üzerine kurulmuştu."
+    },
+    {
+     "k": "p",
+     "h": "Kısa süre önce kendimi Darphanenin bahçesinde hayal ediyordum. Yaklaşık on beş gün sonra ise Kelekçi’de, kümesin yapılacağı arazinin üzerindeydim."
+    }
+   ],
+   "words": 137
+  },
+  {
+   "title": "Doksan Günlük Yarış",
+   "slug": "doksan-gunluk-yaris",
+   "part": null,
+   "page": 28,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Kelekçi’deki yatırımın büyük kısmı İbrahim abimden geldi. Artavuk’ta öğrendiklerimi artık kendi işimizde kullanacaktık."
+    },
+    {
+     "k": "p",
+     "h": "O günkü hayalimiz şuydu: Ağabeyim bize kaliteli civciv gönderecek, Artavuk’la olan bağlantımız sayesinde işe daha avantajlı başlayacaktık."
+    },
+    {
+     "k": "p",
+     "h": "Bu sırada ikinci bir ortaklık daha kuruldu. Babam Ali Ünal’ın kuzeni olan Kelekçili Bedia Abla, Antalya’da tavukçuluk yapıyordu. Ağabeyimle görüştüler ve birlikte çalışmaya karar verildi. Onların Antalya’da zaten kurulmuş bir düzeni vardı: iptidai bir kesimhane, kiralık bir kümes, semt pazarlarında satış yerleri ve çalışan bir pazar düzeni."
+    },
+    {
+     "k": "p",
+     "h": "Anlaşmaya göre Kelekçi’de iki taraf da birer kümes yapacaktı. Onların kümesi 3.000, benimki 5.000 tavuk kapasiteli olacaktı. Ben hemen inşaata başlayacaktım."
+    },
+    {
+     "k": "p",
+     "h": "Fakat takvim çok sıkışıktı. İlk piliç çıkışını 1 Ocak 1992 tarihine yetiştirmemiz gerekiyordu. Bunun için civcivlerin yaklaşık kırk beş gün önce kümese girmesi, kümesin de ondan önceki yaklaşık kırk beş günde tamamlanması gerekiyordu. Doksan gün geriye sayınca inşaatın başlangıcı yaklaşık 1 Ekim 1991 tarihine denk geliyor."
+    },
+    {
+     "k": "p",
+     "h": "Kümesi yaklaşık kırk beş günde bitirdim ve civcivleri içeri koydum."
+    },
+    {
+     "k": "p",
+     "h": "Kırk beş gün sonra, 1 Ocak 1992’de ilk piliç çıkışı gerçekleşti. İnşaat tamamlanınca ben Antalya’ya geçtim; Kelekçi’deki kümesler bakıcılara kaldı."
+    },
+    {
+     "k": "h3",
+     "h": "<strong>Aynı numarada iki Mustafa Ünal</strong>"
+    },
+    {
+     "k": "p",
+     "h": "Kümes inşaatı sürerken Artavuk’taki çalışmamın gecikmeli resmî kaydı yapıldı. SGK hizmet dökümümdeki ilk giriş tarihi 1 Aralık 1991’dir; bu tarih programı yazmaya başladığım gün değildir."
+    },
+    {
+     "k": "p",
+     "h": "İşlem sırasında Ankara’daki muhasebeden bir telefon geldi. Daha önce sigortamın bulunduğunu, Acıpayam’dan 1987 yılında bir giriş göründüğünü söylediler."
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Yok,” dedim. “Benim daha önce sigorta girişim olmadı.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Ağabeyimle birlikte Ankara Sıhhiye’deki SSK’ya gittik. Kayıttaki diğer kişi Kelekçi’den bir akrabamızdı. O da benim gibi Ali oğlu, Acıpayam nüfusuna kayıtlı, 1969 doğumlu Mustafa Ünal’dı."
+    },
+    {
+     "k": "p",
+     "h": "Memurun o gün bize yaptığı açıklamayı şöyle hatırlıyorum: “Yapacak bir şey yok. Sana da aynı numarayla kart vereceğiz. İkiniz de prim yatıracaksınız; emeklilik zamanı gelince kayıtları ayırırız.”"
+    },
+    {
+     "k": "p",
+     "h": "Fotoğrafı bana ait, resmî mühürlü kartı alıp hayatıma devam ettim. O gün çözülemeyen karışıklığın yeniden karşıma çıkması için yirmi altı yıl geçecekti."
+    },
+    {
+     "k": "p",
+     "h": "Kümeslere dönersek, işin özeti şu: Altı ay içinde elimizdeki sermayeyi tükettik ve battık."
+    }
+   ],
+   "words": 317
+  },
+  {
+   "title": "Hesabın Yetmediği Yer",
+   "slug": "hesabin-yetmedigi-yer",
+   "part": null,
+   "page": 30,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Tecrübeyi yaşayarak öğreniyorduk. Saçlar boşuna ağarmıyor. Elimizdeki paranın büyük bölümünü kümeslere yatırmıştık ve zor günlere dayanacak yedek akçemiz yoktu. Hatırladığım kadarıyla o dönemde Türkiye’de iki büyük firma fiyatları yaklaşık iki ay boyunca maliyetin altına çekti. Küçük üreticiler bu fiyat baskısına dayanamadı; biz de dayanamadık. Antalya’da bir süre daha devam etmeye çalışsak da işi sürdüremedik ve bitirdik."
+    },
+    {
+     "k": "p",
+     "h": "Üretim tahmini programında değişkenler belliydi. Kümes sayısını, kapasiteyi, sürü yaşını ve beklenen üretimi girince sonuç çıkıyordu. Darphane ile Kelekçi arasında karar verirken önümde böyle kesin sayılar yoktu. Bir yanda düzenli devlet işi, öte yanda kendi işimi kurma ve ağabeyimle çalışma isteği vardı."
+    },
+    {
+     "k": "p",
+     "h": "“Battık” sözü kısa, yaşaması uzundur. Sermayeyi kaybetmek yalnızca hesap defterindeki bir eksi değildir; kurulan hayalin, verilen emeğin ve gelecek planının da bir anda sarsılmasıdır. Bu yüzden başarısızlığı sonradan güzel bir hikâyeye çevirmek veya kaybı küçümsemek istemiyorum."
+    },
+    {
+     "k": "p",
+     "h": "Bugün dönüp baktığımda en büyük hatamızın, elimizdeki paranın büyük bölümünü başta harcayıp zor günler için yeterli yedek bırakmamak olduğunu düşünüyorum. Piyasa baskısı bizim kontrolümüzde değildi; buna hazırlıksız yakalanmamız ise bizim hatamızdı."
+    },
+    {
+     "k": "p",
+     "h": "Bugün o karara yalnızca sonucuna bakarak hüküm vermiyorum. O gün bildiklerimi, umudumu ve aldığım sorumluluğu da düşünüyorum. Hesabın kâğıt üzerinde doğru çıkmasıyla hayatın aynı şekilde ilerlemesinin aynı şey olmadığını yaşayarak öğrendim."
+    }
+   ],
+   "words": 196
+  },
+  {
+   "title": "Tavukçuluktan Sonra",
+   "slug": "tavukculuktan-sonra",
+   "part": null,
+   "page": 31,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Yine de elimizde hiçbir şey kalmadığını söyleyemem. Kümesleri ve yatırdığımız sermayeyi kaybettik; programı yazarken kazandığım düşünme biçimi, tavukçuluk bilgisi ve kendi ayaklarım üzerinde durma cesareti bende kaldı. Kelekçi’de batmış olmamız, Artavuk için yazdığım programın işe yaradığı gerçeğini değiştirmedi."
+    },
+    {
+     "k": "p",
+     "h": "İşi kapattıktan sonra bir süre Kelekçi ile Denizli arasında kaldım. Küçük işler yaptım, iş aradım. Açıköğretim İşletme bölümüne devam ediyordum. Askerliğim öğrencilik nedeniyle ertelenmişti; fakat kalıcı bir işe girmeye çalıştığımda askerlik konusu sürekli karşıma çıkıyordu."
+    },
+    {
+     "k": "p",
+     "h": "1993’te ağabeyim İbrahim ile Fazilet Yengemin ikiz oğulları Ali Cihan ve Umut Can dünyaya geldi. Nevzat Cem’le ikizlerin arasında yaklaşık bir buçuk yaş vardı ama üçü neredeyse üçüz gibi büyüdü. Umut’la Ali, aralarındaki yaş farkı bu kadar az olmasına rağmen Nevzat’a hep “abi” dediler."
+    },
+    {
+     "k": "p",
+     "h": "Aradan yıllar geçti. 2026’da bile hâlâ ona “abi” diye hitap ediyorlar. Babaları İbrahim abimi kaybettikten sonra onların ağzından bu sözü duymak beni her zaman ayrıca duygulandırdı."
+    },
+    {
+     "k": "p",
+     "h": "Aynı dönemde program bakım için yeniden Ankara gündemine girmişti. Bugün arşivde bulunan Version 2.1 kopyası, yaklaşık bu dönemde yapılan bakım ve geliştirme çalışmalarının izini taşıyor."
+    },
+    {
+     "k": "p",
+     "h": "1993 yılında aile içinde başka bir sıkıntı yaşadık. Eniştemi işyerinde geçirdiği kalp krizi sonucu kaybettik. Geride yürütülmesi gereken bir nakliye işi ve genç yaşta sorumluluk almak zorunda kalan çocukları kalmıştı. Eniştemin oğlu, yeğenim Bayram, askerden yeni dönmüştü. Bir gün bana:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Dayı, bize yardım et. Sensiz olmuyor.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "dedi. Bir süre onların yanında kaldım. Askerliği de bu nedenle biraz daha erteledim. Fakat bunun sonsuza kadar böyle devam etmeyeceğini biliyordum."
+    }
+   ],
+   "words": 235
+  },
+  {
+   "title": "Askere Gitmeye Karar Vermek",
+   "slug": "askere-gitmeye-karar-vermek",
+   "part": null,
+   "page": 32,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "1994 yılının Ekim ayında Burhan’la birlikte artık ertelemeyi bırakmaya karar verdik. Burhan, Bayram’ın halasının oğluydu; yaşıttık ve ikimiz de açıköğretim nedeniyle tecilliydik. Ankara’ya gidip askerlik işlemlerimizi doğrudan halletmek istedik. Pamukkale otobüsüne binip Ankara’ya gittik."
+    },
+    {
+     "k": "p",
+     "h": "Kızılay’daki asker alma dairesine çıktık ve dilekçemizi verdik:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Bizi hemen askere alın.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "Görevli, bunun için Ankara’ya kadar gelmemize gerek olmadığını söyledi. Yine de işlemlerimizi yaptırdık ve ikimiz de aynı yere sevk edildik. 22 Kasım 1994’te Amasya Er Eğitim Tugayında askerlik başladı. Yaklaşık üç ay Amasya’da, ardından yaklaşık bir buçuk ay Lüleburgaz’da kaldım. 1995 Nisanında İstanbul’dan Diyarbakır’a uçakla geçtik; oradan konvoyla Siirt ve Eruh tarafına devam ettik. Eruh, Çimenli ve Dağdöşü’nde görev yaptım."
+    },
+    {
+     "k": "p",
+     "h": "Askerlik yıllarının ayrıntıları başka bir hikâyenin konusu. Burada anlatmak istediğim, yıllar önce bıraktığım programla askerlik sayesinde yeniden karşılaşmış olmamdır."
+    }
+   ],
+   "words": 125
+  },
+  {
+   "title": "1995: Radar Tesliminden Artavuk’a",
+   "slug": "1995-radar-tesliminden-artavuk-a",
+   "part": null,
+   "page": 32,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "1995 yılında askerdeydim. OHAL bölgesinde ASKARAD kara gözetleme radarı operatörü olarak görev yapıyordum. Kullandığımız radar arızalanınca cihazla birlikte Ankara’ya gönderildim. Esenboğa’ya geldim ve radarı ASELSAN’a teslim ettim."
+    },
+    {
+     "k": "p",
+     "h": "Görev yaptığım sistemin bir dış ünitesi, bir de operatörün kullandığı iç ünitesi vardı. Askerlik arşivimde kalan iki fotoğraf beni sistemin her iki ünitesiyle birlikte gösteriyor."
+    },
+    {
+     "k": "p",
+     "h": "Bu gelişimde birkaç gün Ankara’da kaldım."
+    },
+    {
+     "k": "p",
+     "h": "Artavuk tesisi Esenboğa’dan yalnızca 15-20 kilometre kadar ilerideydi. Fırsatı değerlendirip ağabeyimi ziyaret etmek için tesise gittim. Yıllar önce yazdığım program hâlâ ilk alınan 386SX bilgisayarda kullanılıyordu. Ufak tefek birkaç ayar yaptığımı hatırlıyorum."
+    },
+    {
+     "k": "p",
+     "h": "Program, kendi ifademle, “canavar gibi çalışıyordu.” Kullanıcılardan hiçbir şikâyet yoktu. Benim hayatım başka yerlere savrulmuş, program ise bıraktığım yerde işini yapmaya devam etmişti."
+    },
+    {
+     "k": "p",
+     "h": "En yeni teknolojiyle yazmamıştım. Artavuk’taki iş sırasını, unutulabilecek adımları ve yöneticilerin istediği sonuçları programa yerleştirmiştim. Onu kullanmayı öğrenen çalışanlar da yıllar içinde bu düzenin bir parçası olmuştu."
+    },
+    {
+     "k": "p",
+     "h": "Ben bir yazılımın ömrünü artık yaşına bakarak ölçmüyorum. Kullanılmaya devam ediyorsa yaşıyor demektir."
+    },
+    {
+     "k": "p",
+     "h": "Programın içine belirli tarihlerde devreye giren servis şifreleri koymuştum. Zamanı geldiğinde firma beni arıyor, ben de yeni şifreyi veriyordum. Bunu birkaç kez yaptığımı hatırlıyorum. Gerektiğinde servis desteği veriyor ve servis ücreti de alıyordum."
+    },
+    {
+     "k": "p",
+     "h": "Bugün arşivimde bulunan SIFRE.BAS dosyası, bu şifre düzeninin izini hâlâ taşıyor."
+    },
+    {
+     "k": "p",
+     "h": "2000 yılına geçişte de büyük bir sorun yaşandığını hatırlamıyorum; yeni şifre verilerek kullanım sürdü. Hatırladığım kadarıyla program, firma kapanıncaya kadar uzun yıllar kullanılmaya devam etti."
+    }
+   ],
+   "words": 222
+  },
+  {
+   "title": "Askerlikten Sonra Hayat",
+   "slug": "askerlikten-sonra-hayat",
+   "part": null,
+   "page": 34,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Nisan 1996’da askerliğim bitti ve Denizli’ye döndüm. Küçüker Tekstil’in makine bölümünde işe başladım. Bilgisayarların başına yeniden geçtiğimde önümde daha önce hiç kullanmadığım bir şey vardı: fare. Nasıl kullanıldığını bilmediğimi belli etmemeye çalıştım. Bir süre çevremdekileri izledim, sonra ben de kullanmaya başladım."
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Bir buçuk yıllık askerlikte sanki çağ değişmişti.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "1987’de ilk karşılaştığım bilgisayarlarda fare yoktu. Aradan dokuz yıl geçmiş, bilgisayar dünyası başka bir yere gitmişti. Benim ilgim ise hiçbir zaman tamamen bitmedi. Sonraki yıllarda dBASE ve Pascal’la, daha ilerleyen dönemlerde HTML, Java ve ASP gibi diller ve teknolojilerle ilgilendim. Bilgisayar değiştikçe ben de öğrenmeye devam ettim."
+    },
+    {
+     "k": "p",
+     "h": "Ben askerdeyken Bayram nakliye işini bırakıp otomobil galerisi açmıştı. Bir süre sonra yine:"
+    },
+    {
+     "k": "alt",
+     "h": "<em>“Dayı, başımıza gel. Sensiz olmuyor.”</em>"
+    },
+    {
+     "k": "p",
+     "h": "dedi. 1997’nin başında İbrahim abimden 10.000 Alman Markı borç alarak galeri işine ortak oldum. Galeri işi uzun vadede kazanç getirmedi ama hayatımın en önemli karşılaşmalarından birine vesile oldu. Komşu işyerleri sayesinde Elvan’la tanıştım. 12 Eylül 1998 tarihinde evlendik."
+    },
+    {
+     "k": "p",
+     "h": "Galeri işi 1999’da sona erdi. Kısa süre eğitim danışmanlığı ve yabancı dil kursları alanında çalıştıktan sonra yeniden kendi işimi kurdum."
+    }
+   ],
+   "words": 171
+  },
+  {
+   "title": "GAMEKS’e Giden Yol",
+   "slug": "gameks-e-giden-yol",
+   "part": null,
+   "page": 34,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "GAMEKS’in başlangıcını 1999’un Ekim ayı olarak hatırlıyorum; resmî kuruluş yılı ise kayıtlarda 2000 olarak yer alıyor. Artavuk’taki programdan sonra mesleğim doğrudan yazılımcılık olmadı. Fakat orada öğrendiğim bir alışkanlık bende kaldı: önce yapılan işi anlamak, sonra sorunu görmek ve çözümü kurmak."
+    },
+    {
+     "k": "p",
+     "h": "GAMEKS yalnızca bilgisayarla ilgili bir iş değildi. Teknolojiyi tarım ve doğaya duyduğum ilgiyle birleştirdim; kapari bitkisinin tanıtımı, fidan ve mamul ürün üretimi, erozyon kontrolü ve ata tohumları üzerine çalışmalar yaptım. İşin biçimi yıllar içinde değişti ama farklı alanları bir araya getirip bir ihtiyaca karşılık verme düşüncesi değişmedi."
+    },
+    {
+     "k": "p",
+     "h": "2004’te kurduğum acipayam.com, farklı yerlerde yaşayan Acıpayamlıları dijital ortamda buluşturdu. Daha sonra eskidenizli.com ve sosyal medya çalışmalarıyla Denizli’nin eski fotoğraflarını, belgelerini ve insan hikâyelerini bir araya getirmeye çalıştım. Bilgisayar, bu defa bir işletmenin kayıtlarını değil, bir şehrin ve yörenin hafızasını korumaya yardım ediyordu."
+    },
+    {
+     "k": "p",
+     "h": "Bu yıllarda ailemiz de büyüdü. İlayda 2001’de, Sıla 2006’da doğdu. Çocuklar büyürken GAMEKS de hayatımızın bir parçası oldu. Ayrıntılı GAMEKS hikâyesi başka bir kitabı dolduracak kadar uzun; burada onun, karanlık odada başlayan merakın hayatım boyunca aldığı biçimlerden biri olduğunu söylemekle yetiniyorum."
+    }
+   ],
+   "words": 171
+  },
+  {
+   "title": "2014: Tabelada Kalan İsim",
+   "slug": "2014-tabelada-kalan-isim",
+   "part": null,
+   "page": 35,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "23 Haziran 2014’te, firma kapandıktan yıllar sonra tesise yeniden gittim ve dışarıdan fotoğraflarını çektim. Binalar artık sessizdi; çevreyi otlar kaplamıştı. Fakat beni asıl şaşırtan, girişteki büyük Artavuk tabelasının hâlâ yerinde durmasıydı. Hatırladığım kadarıyla 1992-1993 dolaylarında Bolar A.Ş. adı kullanılmaya başlamıştı; aradan yirmi yıldan fazla zaman geçmiş, eski ad yine de binanın önünde kalmıştı."
+    },
+    {
+     "k": "p",
+     "h": "Kaynak kodun dizinlerinde ARTAVUK, program ekranında Bolar A.Ş., kapanmış tesisin önünde ise Artavuk tabelası vardı."
+    },
+    {
+     "k": "p",
+     "h": "Kod, programı ilk yazdığım günlerdeki klasör adını saklamıştı. Ekranda şirketin daha sonraki adı yazıyordu. Tabela ise bina kapandıktan sonra bile eski adı taşıyordu. Aynı yere ait bu üç iz, farklı zamanlardan kalmıştı."
+    },
+    {
+     "k": "p",
+     "h": "Bu kitabı yazarken hatırladıklarımı kodlarla, tarihlerle, fotoğraflarla ve resmî kayıtlarla yan yana koydum. Birbirini tutmayan yerlerde anımı belgeye uydurmadım; aradaki farkı açıkça yazdım. Arşivimin bana en büyük yardımı bu oldu."
+    }
+   ],
+   "words": 130
+  },
+  {
+   "title": "2017: Yirmi Altı Yıllık Sicil Düğümü",
+   "slug": "2017-yirmi-alti-yillik-sicil-dugumu",
+   "part": null,
+   "page": 36,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "1991’de aynı sicil numarasıyla bırakılan iki ayrı insanın kaydı uzun süre karşıma çıkmadı. Bağ-Kur’a geçtiğim için mesele gündemimden uzaklaştı. 2000’li yıllarda ağabeyimin avukatı aracılığıyla Ankara’da araştırdık; SSK’ya dava açılması gerektiği söylendi. Sonra hayatın telaşı içinde konu yine kaldı."
+    },
+    {
+     "k": "p",
+     "h": "Yıllar geçti. Diğer Mustafa Ünal’ın emeklilik tarihi yaklaşırken T.C. kimlik numarası sistemi de devreye girmişti. Artık kendi prim günlerimi sistemde göremiyordum. Denizli SSK’ya gittim; oradakiler de sorunu çözemediler."
+    },
+    {
+     "k": "p",
+     "h": "Sonunda 4 Nisan 2017 tarihinde CİMER üzerinden internet başvurusu yaptım. Açıkçası pek umudum yoktu. Başvurum aynı gün Çalışma ve Sosyal Güvenlik Bakanlığına sevk edildi. Nisan ayının sonunda Denizli Sosyal Güvenlik İl Müdürlüğünden cevap geldi. Cevapta, birden fazla Mustafa Ünal adında sigortalı bulunduğu belirtilmiş; geçmişte aldığım SSK numarasını ve elimdeki belgeleri getirerek kuruma başvurmam istenmişti."
+    },
+    {
+     "k": "p",
+     "h": "Eski sigorta kartımı aramaya başladım. Her yeri altüst ettim, yine de bulamadım. Tam umudumu kaybettiğim sırada eşim Elvan Hanım, elinde aşırı yıpranmış ve yazıları zor okunan o kartla geldi."
+    },
+    {
+     "k": "p",
+     "h": "O gün gerçekten kurtarıcım Elvan oldu. Kartı Denizli SGK’ya teslim ettim."
+    },
+    {
+     "k": "p",
+     "h": "Aynı yıl içinde, işlemlerin tamamlanmasının ardından SGK bana geriye dönük olarak yeni ve ayrı bir sigorta sicil numarası verdi. Böylece gerçek ilk girişim olan 1991 kaydı kendi adıma ayrıldı. Yıllarca süren karışıklık sonunda çözülmüş, bu düzeltme emeklilik hesabım açısından da önemli olmuştu."
+    },
+    {
+     "k": "p",
+     "h": "Bu olay bana program yazarken öğrendiğim şeyi yeniden hatırlattı. Kayıt düzeni iki Mustafa Ünal’ı ayıramamıştı. Bilgisayarın “ikinci kayıt açılamaz” demesi, benim var olmadığım anlamına gelmiyordu."
+    },
+    {
+     "k": "p",
+     "h": "Benim yazdığım işletme programındaki bir eksik yanlış toplam çıkarabilirdi. SGK’daki eksik ise çalışma geçmişimi ve emekliliğimi etkiledi. Ekrandaki kaydı kesin gerçek saymak yerine belgeye ve yaşanana yeniden bakmak gerekti. Bunun anlaşılması için yirmi altı yıl ve yıpranmış bir kart gerekti."
+    },
+    {
+     "k": "p",
+     "h": "Hizmet dökümünde Kasım 1992’de babam Ali Ünal adına görünen kısa kayıt da babama ait arazi üzerinde yürütülen aile işletmesiyle ilgilidir; başka bir işverene gidip çalıştığım anlamına gelmez."
+    },
+    {
+     "k": "p",
+     "h": "1 Mayıs 2022’de emekli oldum. GAMEKS emeklilikten sonra da bir süre devam etti. Son yıllarda çalışmalarımı büyük ölçüde evden yürütüyordum. Resmî işi bırakma tarihim 1 Kasım 2023’tür."
+    }
+   ],
+   "words": 321
+  },
+  {
+   "title": "2050’nin Yüzde Biri",
+   "slug": "2050-nin-yuzde-biri",
+   "part": null,
+   "page": 37,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "1987 veya 1988’de okulda “Telefonlarda arayanın kim olduğunu bilebilsek,” diye konuşurken bunun nasıl gerçekleşeceğini bilmiyorduk. İhtiyacı sezmiş, çözümün nasıl bir şey olacağını hayal edememiştik."
+    },
+    {
+     "k": "p",
+     "h": "1990’ların başında bana 2026’yı hayal et deselerdi bilgisayarların hızlanacağını, belleklerin büyüyeceğini ve ekranların gelişeceğini söyleyebilirdim. Fakat cebimizde taşıdığımız telefonları, dünyanın birbirine görünmez bir ağla bağlanmasını ve bir yapay zekânın otuz beş yıllık BASIC kodumu yeniden okunur hâle getirmesini bir bütün olarak kuramazdım."
+    },
+    {
+     "k": "p",
+     "h": "Şimdi 2026’dan 2050’ye bakıyorum. Arada yirmi dört yıl var. 1987’de bugünü nasıl tam olarak hayal edemediysem, bugün de gerçek 2050’yi tam olarak hayal edebileceğimi sanmıyorum. Belki bugün çok ileri gördüğümüz şeyler o gün sıradanlaşacak. Belki de adını bile bilmediğimiz başka araçlar hayatımıza girecek."
+    },
+    {
+     "k": "p",
+     "h": "Benim için önemli olan, geleceği bildiğimi sanmamak. Bugün bildiklerimle bilmediklerimin arasındaki sınırı görmeye çalışıyorum. Teknoloji önümde daha çok bilgi ve daha fazla imkân açabilir; hangi soruyu soracağıma ve bu imkânı ne için kullanacağıma yine benim karar vermem gerekecek."
+    },
+    {
+     "k": "p",
+     "h": "Gerçek 2050’yi bugün hayal edemeyebilirim. Fakat o güne hangi soruları bırakacağımı seçebilirim."
+    }
+   ],
+   "words": 159
+  },
+  {
+   "title": "Sonsöz: Kalan Şey",
+   "slug": "sonsoz-kalan-sey",
+   "part": null,
+   "page": 38,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Gri ekran yeniden açılınca yalnızca programı görmedim. Demir kapılı küçük oda, koyu renk perde, yeşil monitör, Kızılay’daki kitapçılar, Nermin Abla’nın getirdiği yemekler, Akyurt yolları ve abim birer birer geri geldi."
+    },
+    {
+     "k": "p",
+     "h": "Eski program açıldığında ilk anda sanki bilgisayar beni hatırlamış gibi hissettim. Elbette makine beni, ağabeyimi veya karanlık odayı bilmiyordu; yalnızca dosyalarda kalan işaretleri okuyordu. Bir dosya adı bana Akyurt yolunu, bir uyarı cümlesi dokuz disketi, gri ekran da ağabeyimin bana duyduğu güveni hatırlatıyordu."
+    },
+    {
+     "k": "p",
+     "h": "Dosyalar kayıtları saklamıştı; o kayıtların hayatımdaki yerini ise ben hatırlıyordum. Belgeler, kodlar ve arşiv bazen hafızamı doğruladı, bazen de düzeltti. Yapay zekâ da geçmişimi anlatan kişi değil, yıllardır sakladığım dosyaları yeniden okumama yardım eden bir araç oldu."
+    },
+    {
+     "k": "p",
+     "h": "Programı başka işletmelere uyarlayarak yazılım yolunda devam etseydim hayatımın nereye varacağını bilmiyorum. Bildiğim şu: O program yıllarca çalıştı ve bir işletmenin yükünü hafifletti. Benim hayatım ise tavukçuluğa, askerliğe, başka işlere, aileme ve GAMEKS’e doğru devam etti."
+    },
+    {
+     "k": "p",
+     "h": "Bütün bunların başlangıcında İbrahim abim vardı. Beni Düzce’den Ankara’ya çekti, bana güvendi ve önümde başka bir yol açtı."
+    },
+    {
+     "k": "p",
+     "h": "Otuz beş yıl sonra yeniden açılan şey yalnızca program değildi. Kendi geçmişimdi. Şimdi onu, torunlarıma ve bu hikâyeyi okuyacak olanlara bırakıyorum."
+    }
+   ],
+   "words": 185
+  },
+  {
+   "title": "Görsel Hafıza - Kalan İzler",
+   "slug": "gorsel-hafiza-kalan-izler",
+   "part": null,
+   "page": 40,
+   "blocks": [
+    {
+     "k": "alt",
+     "h": "Bu hikâye önce hafızadan ve kelimelerden doğdu. Aşağıdaki görüntüler anlatının yerine geçmek için değil, ondan geriye kalan gerçek izleri bir arada göstermek için seçildi."
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s040-204.webp",
+     "w": 1063,
+     "ht": 796,
+     "cap": "<em>1 Ekim 2026. Eski disketler ve programlama kitapları; arkada, yeniden açılan </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>programdan doğan kitabın ilk provası. Kişisel arşiv.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s040-537.webp",
+     "w": 1062,
+     "ht": 691,
+     "cap": "<em>Otuz üç yıl sonra yeniden çalıştırılan Version 2.1 kopyasının lisans ve telif ekranı. </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>Arşivde korunan sürüm, yaklaşık 1993’teki bakım ve geliştirme dönemine aittir.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s041-62.webp",
+     "w": 938,
+     "ht": 1250,
+     "cap": "<em>Arşivde korunan 5,25 inç floppy diskler ve 3,5 inç Sony disket. Programın farklı </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>dönemlerinden kalan fiziksel hafıza.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s042-62.webp",
+     "w": 868,
+     "ht": 603,
+     "cap": "<em>Düzce’deki öğrencilik yılları. Soldan sağa: Ahmet, Metin, Mustafa Ünal, adı </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>hatırlanamayan bir okul arkadaşı ve Cengiz. Aile arşivi.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s042-374.webp",
+     "w": 1061,
+     "ht": 809,
+     "cap": "<em>Amstrad CPC 6128’in yeşil ekranında hazırlanan ARTAVUK açılış logosunun, </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>hatıralardan ve gerçek amblemden yararlanılarak yeniden canlandırılması.  Döneme ait özgün ekran görüntüsü değildir.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s043-62.webp",
+     "w": 1063,
+     "ht": 797,
+     "cap": "<em>23 Haziran 2014. İbrahim Ünal’ın ofisinin penceresi. Program üzerindeki ilk çalışma </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>bu pencerenin hemen sağında başladı. Fotoğraf: Mustafa Ünal.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s043-395.webp",
+     "w": 865,
+     "ht": 605,
+     "cap": "<em>1991. Pusette Nevzat Cem; solda Mustafa Ünal, sağda İbrahim Ünal. Aile arşivi.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s044-62.webp",
+     "w": 938,
+     "ht": 1250,
+     "cap": "<em>Ankara döneminden kalan BASIC kitabı, Düzce’den okul arkadaşı Metin’in vesikalık </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>fotoğrafı ve dönemin PTT telefon kartı. Kişisel arşiv.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s045-62.webp",
+     "w": 938,
+     "ht": 1250,
+     "cap": "<em>2026’da eski disketlerin arasında bulunan Maxell MF2-DD. Etiketinde “Büro Adres ve </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>Casio”, kırmızı kalemle de “Virüs var” yazıyor. Kişisel arşiv.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s046-62.webp",
+     "w": 875,
+     "ht": 1251,
+     "cap": "<em>1995. Mustafa Ünal, askerlikte kullandığı ASKARAD kara gözetleme radarının dış </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>ünitesinin yanında. Aile arşivi.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s047-62.webp",
+     "w": 1061,
+     "ht": 731,
+     "cap": "<em>1995. Mustafa Ünal, ASKARAD sisteminin operatör tarafındaki iç ünitesinin başında. </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>Aile arşivi.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s047-372.webp",
+     "w": 1062,
+     "ht": 691,
+     "cap": "<em>Kuluçkahane İşletim Paketi’nin ana menüsü. Ekranın sağ üstünde Bolar A.Ş., altında </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>Mustafa Ünal’ın telif kaydı görülüyor.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s048-62.webp",
+     "w": 1063,
+     "ht": 797,
+     "cap": "<em>Artavuk adını ve civciv amblemini gösteren yakın plan. Şirketin sonraki adı Bolar </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>olsa da eski tabela yerinde kalmıştı. Fotoğraf: Mustafa Ünal.</em>"
+    },
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s049-62.webp",
+     "w": 703,
+     "ht": 1250,
+     "cap": "<em>İlk sigorta girişinde verilen fotoğraflı ve resmî mühürlü sicil kartı. Elvan Ünal’ın </em>"
+    },
+    {
+     "k": "small",
+     "h": "<em>yıllar sonra aile arşivinde bulduğu bu yıpranmış kart, karışan kayıtların ayrılmasını  sağlayan temel belge oldu.</em>"
+    }
+   ],
+   "words": 126
+  },
+  {
+   "title": "Kaynaklar Üzerine Bir Not",
+   "slug": "kaynaklar-uzerine-bir-not",
+   "part": null,
+   "page": 50,
+   "blocks": [
+    {
+     "k": "p",
+     "h": "Bu kitap Mustafa Ünal’ın hatıralarına, kişisel arşivine, korunmuş program dosyalarına, kaynak kodlara, fotoğraflara ve resmî belgelere dayanır. Arşivde Kuluçkahane İşletim Paketi’nin BASIC kaynak dosyaları, Version 2.1 kopyası, program ekranları, eski disketler, Düzce ve Ankara yıllarından fotoğraflar, 1995 askerlik dönemine ait ASKARAD görüntüleri ve eski sigorta sicil kartı bulunmaktadır."
+    },
+    {
+     "k": "p",
+     "h": "Programın ilk geliştirme dönemi 1990-1991’dir; arşivdeki Version 2.1 kopyası yaklaşık 1993’teki bakım dönemine aittir. Konuşmalar yazarın hafızasında kaldığı biçimiyle aktarılmış, kesin olmayan tarihler “yaklaşık” diye belirtilmiştir. SGK kayıtlarındaki tarihler fiilî çalışma dönemini değil, sigorta sicilini gösterir."
+    },
+    {
+     "k": "p",
+     "h": "Orijinal program dosyaları değiştirilmeden korunmaktadır. Görsellerdeki telefon, sicil ve kimlik numarası gibi kişisel bilgiler maskelenmiştir."
+    }
+   ],
+   "words": 99
+  },
+  {
+   "title": "Yazar Hakkında",
+   "slug": "yazar-hakkinda",
+   "part": null,
+   "page": 51,
+   "blocks": [
+    {
+     "k": "img",
+     "src": "/kitap/karanlik-odada-yedi-ay/img/s051-103.webp",
+     "w": 425,
+     "ht": 425,
+     "cap": "Mustafa Ünal, 1969 yılında, babasının memuriyeti nedeniyle "
+    },
+    {
+     "k": "alt",
+     "h": "Tavas’ın Balkıca köyünde dünyaya geldi. Aslen Acıpayam Kelekçilidir. Çocukluğu ve gençliği Denizli ve çevresinin dağları, ormanları, köyleri ve insanları arasında geçti."
+    },
+    {
+     "k": "alt",
+     "h": "İlkokulu Acıpayam Alcı ve Kelekçi’de, ortaokul ve liseyi Denizli’de tamamladı. Düzce’de, İTÜ Kontrol Sistemleri Teknolojisi Programı’nda eğitim gördü. 1990’ların başında Ankara’da Kuluçkahane İşletim Paketi’ni geliştirdi. Karanlık Odada Yedi Ay, o yıllarda yazdığı programın otuz yılı aşkın süre sonra yeniden karşısına çıkmasıyla doğdu."
+    },
+    {
+     "k": "alt",
+     "h": "GAMEKS’in başlangıcını 1999’un Ekim ayı olarak hatırlıyor; resmî kayıtlarda kuruluş yılı 2000 olarak yer alıyor. Teknoloji alanındaki çalışmalarını tarım ve doğaya duyduğu ilgiyle birleştirerek kapari, erozyon kontrolü ve ata tohumları üzerine çalışmalar yürüttü."
+    },
+    {
+     "k": "alt",
+     "h": "2004’te kurduğu acipayam.com ile farklı yerlerde yaşayan Acıpayamlıları dijital ortamda buluşturdu. Daha sonra eskidenizli.com ve sosyal medya çalışmalarıyla Denizli’nin eski fotoğraflarını, belgelerini ve insan hikâyelerini bir araya getirdi."
+    },
+    {
+     "k": "alt",
+     "h": "Evli ve iki kız babasıdır. Denizli’de yaşamını sürdürüyor."
+    },
+    {
+     "k": "small",
+     "h": "&gt;"
+    },
+    {
+     "k": "alt",
+     "h": "<em>1990–91 kışı. Ankara Akyurt’ta bir tavuk işletmesi, perdeleri çekilip karartılmış bir oda, bir bilgisayar ve yirmili yaşlarının başında bir genç.</em>"
+    },
+    {
+     "k": "alt",
+     "h": "Yedi ay boyunca GW-BASIC ile satır satır yazılan Kuluçkahane İşletim Paketi; civcivlerin ışık programından muhasebeye, dokuz disketle elli kilometre öteye taşınan verilere kadar bir firmanın bütün işini yürüten bir program. İnternetin, e-postanın olmadığı yıllarda sabırla kurulan bir düzen."
+    },
+    {
+     "k": "alt",
+     "h": "Otuz beş yıl sonra eski disketlerden yeniden açılan dosyalar, Darphane yerine Kelekçi’yi seçen, askerlikte kara gözetleme radarında operatörlük yapan ve sonunda GAMEKS’e uzanan bir hayatın ilk adımlarını anlatıyor. Bir dönemin teknolojisine ve bir gencin inadına tutulmuş kayıt."
+    },
+    {
+     "k": "small",
+     "h": "Mustafa Ünal, 1969’da Tavas’ın Balkıca köyünde doğdu; aslen Acıpayam Kelekçilidir. İlkokulu Alcı ve Kelekçi’de, ortaokul ve liseyi Denizli’de okudu; Düzce’de İTÜ Kontrol Sistemleri Teknolojisi Programı’nda eğitim gördü. 1990’ların başında Ankara’da bir kuluçkahane için işletim paketi yazdı, ardından GAMEKS’i kurdu. 2004’te kurduğu acipayam.com ve sonra eskidenizli.com ile memleketin hafızasını dijital ortamda bir araya getirdi. Evli, iki kız babası; Denizli’de yaşıyor."
+    }
+   ],
+   "words": 287
+  }
+ ]
+}

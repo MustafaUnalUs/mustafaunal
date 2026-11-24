@@ -6,6 +6,8 @@ data/ ve static/ klasörlerinden docs/ altına statik site üretir:  python3 bui
 import html
 import json
 import shutil
+
+import books
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -13,29 +15,29 @@ OUT = ROOT / "docs"
 D = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
 ORIGIN = "https://mustafaunal.tr"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "4"
+ASSET_V = "5"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
-    {"slug": "icimde-kalan-cocuk", "no": "I", "title": "İçimde Kalan Çocuk", "path": "/icimde-kalan-cocuk/",
+    {"slug": "icimde-kalan-cocuk", "no": "I", "title": "İçimde Kalan Çocuk", "path": "/kitaplar/icimde-kalan-cocuk/",
      "line": "Çocukluğun saf pusulasından vicdana uzanan ilk on dört yıl."},
-    {"slug": "karanlik-odada-yedi-ay", "no": "II", "title": "Karanlık Odada Yedi Ay", "path": "/karanlik-odada-yedi-ay/",
+    {"slug": "karanlik-odada-yedi-ay", "no": "II", "title": "Karanlık Odada Yedi Ay", "path": "/kitaplar/karanlik-odada-yedi-ay/",
      "line": "1990’da Ankara-Akyurt’ta geçen yedi ay ve otuz beş yıl sonra yeniden açılan bir hayat."},
-    {"slug": "uslu-dusler", "no": "III", "tag": "Bonus", "title": "US’lu Düşler", "path": "/uslu-dusler/",
+    {"slug": "uslu-dusler", "no": "III", "tag": "Bonus", "title": "US’lu Düşler", "path": "/kitaplar/uslu-dusler/",
      "line": "Kırk sayfa civarında; aç, oku, bitir. Zihni dürtmeyi sürdüren küçük bir beyin jimnastiği."},
     {"slug": "adi-konmamis-islere-don-bicen-adam", "no": "IV", "tag": "Hazırlanıyor", "soon": True,
-     "title": "Adı Konmamış İşlere Don Biçen Adam", "path": "/adi-konmamis-islere-don-bicen-adam/",
+     "title": "Adı Konmamış İşlere Don Biçen Adam", "path": "/kitaplar/adi-konmamis-islere-don-bicen-adam/",
      "line": "GAMEKS, işler, fikirler ve internet. 2027’de yayımlanması planlanıyor."},
-    {"slug": "uslu-dimag", "no": "V", "tag": "Final", "title": "US’lu Dimağ", "path": "/uslu-dimag/",
+    {"slug": "uslu-dimag", "no": "V", "tag": "Final", "title": "US’lu Dimağ", "path": "/kitaplar/uslu-dimag/",
      "line": "Doksan öğretide ölçüsü oturmuş bir zihin."},
 ]
 OTHERS = [
-    {"slug": "gonul-dostu", "title": "Gönül Dostu", "role": "Yazar", "path": "/gonul-dostu/",
+    {"slug": "gonul-dostu", "title": "Gönül Dostu", "role": "Yazar", "path": "/kitaplar/gonul-dostu/",
      "line": "Sabit Kızılhan ile yol yürümek: 2005–2026 arasından dostluğun ve hak mücadelesinin tanıklığı."},
-    {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "role": "Editör · Sabit Kızılhan’ın derlemesi", "path": "/sabit/",
+    {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "role": "Editör · Sabit Kızılhan’ın derlemesi", "path": "/kitaplar/bana-koyunu-anlat/",
      "line": "Acıpayam köylerinin anlatıcılarıyla hazırlanan sözlü tarih çalışması."},
     {"slug": "kelekcide-yasamak", "title": "Kelekçi’de Yaşamak", "role": "Yayına hazırlayan · Dr. Oktar Öner’in kitabı",
-     "path": "/kelekcide-yasamak/", "line": "El yazmaları, mektuplar ve radyo kayıtlarıyla bir Kelekçi hafızası."},
+     "path": "/kitaplar/kelekcide-yasamak/", "line": "El yazmaları, mektuplar ve radyo kayıtlarıyla bir Kelekçi hafızası."},
 ]
 
 SALONS = [("kitaplar", "Kitaplar"), ("fotograflar", "Fotoğraflar"), ("mazi", "Mazi"), ("doga", "Doğa"),
@@ -106,7 +108,7 @@ def book(b, series=False):
     soon = b.get("soon")
     sub = (f"Kitap {b['no']}" + (f" · {b['tag']}" if b.get("tag") else "")) if series else b["role"]
     act = "Kitabın sayfası" if soon else "Kitabı aç"
-    return (f'<li class="book{" is-soon" if soon else ""}"><a class="book-link" href="{READER}{b["path"]}">'
+    return (f'<li class="book{" is-soon" if soon else ""}"><a class="book-link" href="{b["path"]}">'
             f'<span class="spot">{ph("/img/kapak/" + b["slug"] + ".webp", b["title"] + " kapağı", "cover", 400, 620)}</span>'
             f'<span class="book-meta">{E(sub)}</span><span class="book-title">{E(b["title"])}</span>'
             f'<span class="book-line">{E(b["line"])}</span><span class="book-act">{act}</span></a></li>')
@@ -237,7 +239,7 @@ def build_gameks():
     <p class="lobby-lead">{" ".join(E(p) for p in g['intro'])}</p></div>
 </section>
 <section class="salon"><ol class="years">{items}</ol>
-  <p class="more-link"><a href="/">Sergiye dön</a> · <a href="{READER}/adi-konmamis-islere-don-bicen-adam/">Kitap: Adı Konmamış İşlere Don Biçen Adam</a></p></section>"""
+  <p class="more-link"><a href="/">Sergiye dön</a> · <a href="/kitaplar/adi-konmamis-islere-don-bicen-adam/">Kitap: Adı Konmamış İşlere Don Biçen Adam</a></p></section>"""
     return layout("/gameks/", "GAMEKS: Bilişimden üretime · Mustafa Ünal", body, desc=g["lead"], cls="page-gameks")
 
 
@@ -250,6 +252,11 @@ def main():
     (OUT / ".nojekyll").write_text("")
     (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
     (OUT / "index.html").write_text(build_home(), encoding="utf-8")
+    def write(path, content):
+        f = OUT / path.lstrip("/") / "index.html"
+        f.parent.mkdir(parents=True, exist_ok=True)
+        f.write_text(content, encoding="utf-8")
+    print("kitap sayfası:", books.build_all(write, layout))
     (OUT / "gameks").mkdir()
     (OUT / "gameks" / "index.html").write_text(build_gameks(), encoding="utf-8")
     nf = layout("/404", "Sayfa bulunamadı · Mustafa Ünal",

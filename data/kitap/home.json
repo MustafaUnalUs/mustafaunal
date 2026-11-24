@@ -1,0 +1,354 @@
+{
+ "banner": "/img/acipayam-cicekli-hatirasi-opt.webp",
+ "books": [
+  {
+   "title": "US’lu Düşler — Olmuş Zekâ",
+   "author": "Mustafa Ünal",
+   "summary": "Kırk sayfalık, çerezlik görünen fakat zihni dürtmeyi sürdüren bir beyin jimnastiği.",
+   "cover": "/img/kapak-uslu-dusler.webp",
+   "href": "/uslu-dusler/",
+   "actions": {
+    "read": "/uslu-dusler/",
+    "pdf": "https://acipayam.com/uslu-dusler/assets/USLU_DUSLER_SON.pdf",
+    "audio": "/uslu-dusler/dinle/"
+   }
+  },
+  {
+   "title": "Bana Köyünü Anlat",
+   "author": "Sabit Kızılhan",
+   "summary": "Acıpayam köylerinin anlatıcılarıyla hazırlanan sözlü tarih çalışması.",
+   "cover": "/img/kapak-bana-koyunu-anlat.webp",
+   "href": "/sabit/",
+   "actions": {
+    "read": "/sabit/",
+    "pdf": "https://acipayam.com/sabit/downloads/Bana_Koyunu_Anlat_Sabit_Kizilhan.pdf",
+    "audio": "https://acipayam.com/sabit/downloads/bana-koyunu-anlat-sesli-kitap.mp3"
+   }
+  },
+  {
+   "title": "Karanlık Odada Yedi Ay",
+   "author": "Mustafa Ünal",
+   "summary": "1990’da başlayan ve otuz beş yıl sonra yeniden açılan bir hafıza hikâyesi.",
+   "cover": "/img/karanlik-odada-yedi-ay-kapak.webp",
+   "href": "/karanlik-odada-yedi-ay/",
+   "actions": {
+    "read": "/karanlik-odada-yedi-ay/",
+    "pdf": "https://acipayam.com/karanlik-odada-yedi-ay/Karanlik_Odada_Yedi_Ay_WEB_KAPAKLI_1PDF_KAYNAK_NIHAI.pdf",
+    "audio": "https://acipayam.com/karanlik-odada-yedi-ay/Karanlik_Odada_Yedi_Ay_SESLI_KITAP_DUZELTILMIS_NIHAI.mp3"
+   }
+  },
+  {
+   "title": "İçimde Kalan Çocuk",
+   "author": "Mustafa Ünal",
+   "summary": "US’lu Anlatılar’ın ilk kitabı; çocukluğun ilk on dört yılı.",
+   "cover": "/img/kapak-icimde-kalan-cocuk.webp",
+   "href": "/icimde-kalan-cocuk/",
+   "actions": {
+    "read": "/icimde-kalan-cocuk/",
+    "pdf": "https://mustafaunal.tr/books/icimde-kalan-cocuk.pdf",
+    "audio": "https://acipayam.com/icimde-kalan-cocuk/Icimde_Kalan_Cocuk_SESLI_KITAP_Onyx_Yuzde_10_Hizli.mp3"
+   }
+  },
+  {
+   "title": "Kelekçi'de Yaşamak",
+   "author": "Dr. Oktar Öner",
+   "summary": "Kelekçi’nin yazıları, mektupları ve fotoğraflarından derlenen hafıza kitabı.",
+   "cover": "/img/kapak-kelekcide-yasamak.webp",
+   "href": "/kelekcide-yasamak/",
+   "actions": {
+    "read": "/kelekcide-yasamak/",
+    "pdf": "https://acipayam.com/kelekcide-yasamak/downloads/Kelekcide_Yasamak_Oktar_Oner.pdf",
+    "audio": "https://acipayam.com/kelekcide-yasamak/downloads/kelekcide-yasamak-sesli-kitap.mp3"
+   }
+  }
+ ],
+ "latest": {
+  "title": "US’lu Düşler — Olmuş Zekâ",
+  "paragraphs": [
+   "<p><strong>Kırk sayfalık, çerezlik görünen fakat zihni dürtmeyi sürdüren küçük bir beyin jimnastiği.</strong></p>",
+   "<p>Gerçek hatıralardan doğan, kurmacayla genişleyen bu bonus eser; mizahı, makinelerin belleğini ve insanın bitmeyen merakını aynı sohbette buluşturuyor. 21 bölümü okuyabilir, kitabın tamamını kesintisiz sesli kitap olarak dinleyebilirsiniz.</p>"
+  ],
+  "back": "/img/back.webp"
+ },
+ "upcoming": [
+  {
+   "title": "Gönül Dostu — Sabit Kızılhan ile Yol Yürümek",
+   "status": "2027’de yayımlanması planlanıyor",
+   "tagline": "Dostluğun, Memleketin ve Hak Mücadelesinin Canlı Tanıklığı",
+   "paragraphs": [
+    "Sabit Kızılhan’ın memleketine, doğaya, kültürel mirasa ve insanlara uzanan gönüllü çalışmalarını; Mustafa Ünal’ın yıllara yayılan yol arkadaşlığı ve kişisel tanıklığı üzerinden anlatan bir eser.",
+    "Dostluk, dayanışma, ortak emek ve yaşanmış hatıralar etrafında şekillenen bu kitap, yalnızca bir insanın hayatını değil, bir dönemin yerel hafızasını da geleceğe taşımayı amaçlıyor."
+   ],
+   "images": [
+    "/img/gonul-dostu-sabit-kizilhan-ile-yol-yurumek.webp",
+    "/img/gonul-dostu-sabit-kizilhan-ile-yol-yurumek-arka.webp"
+   ]
+  },
+  {
+   "title": "Adı Konmamış İşlere Don Biçen Adam",
+   "status": "2027’de yayımlanması planlanıyor",
+   "tagline": "GAMEKS’in kuruluşundan farklı işlere uzanan yaşanmış bir çalışma hayatı anlatısı.",
+   "paragraphs": [
+    "Mustafa Ünal; bilişim, internet, e-ticaret, kapari, tarım, emlak ve yıllar içinde denediği, sürdürebildiği ya da yarım bıraktığı işleri kendi yaşadıkları üzerinden anlatıyor."
+   ],
+   "images": [
+    "/img/adi-konmamis-islere-don-bicen-adam-on.webp",
+    "/img/adi-konmamis-islere-don-bicen-adam-arka.webp"
+   ]
+  },
+  {
+   "title": "US’lu Dimağ",
+   "status": "2027’de yayımlanması planlanıyor",
+   "tagline": "Bir ömrün süzgecinden kalan düşünceler.",
+   "paragraphs": [],
+   "images": []
+  }
+ ],
+ "history": {
+  "label": "Yeni · Sözlü Tarih",
+  "title": "Acıpayam Dünü Bugünü",
+  "by": "Hikmet Başaran'ın anlatımıyla",
+  "text": "Acıpayam'ın belediyecilik hafızası, kaybolan değerleri, su ve tarım meselesi ile Çanakkale'den Millî Mücadele'ye uzanan yerel tarih; üç video ve konuşma akışı korunarak düzenlenmiş metinleriyle.",
+  "image": "/img/hikmet-basaran.webp"
+ },
+ "radio": {
+  "kicker": "2000'li yıllardan sesli hafıza",
+  "title": "Radyo ACIPAYAM.com — Yayın Arşivi",
+  "text": "Canlı yayınlar, şiirler, türküler, buluşmalar ve memleketin sesleri."
+ },
+ "story": {
+  "kicker": "Yeniden...",
+  "title": "ACIPAYAM.com’un Hikâyesi",
+  "lead": "2004’ten beri... Memleketimin Kokusu.",
+  "body": "<p><a href=\"/\">ACIPAYAM.com</a>, 2004 yılında kuruldu. Facebook'un ve bugünkü sosyal medya platformlarının henüz hayatımıza hâkim olmadığı o yıllarda, Acıpayamlıların buluştuğu, haberleştiği, tartıştığı ve memleket hasretini giderdiği bir ortak yaşam alanına dönüştü.</p>\n<p>On yıl boyunca binlerce insanı bir araya getirdi. Üye sayısı 35.000'e ulaştı. Acıpayam'dan Türkiye'nin dört bir yanına, oradan dünyanın farklı ülkelerine uzanan dostluklara ve paylaşımlara ev sahipliği yaptı.</p>\n<p>Sosyal medyanın yaygınlaşmasıyla birlikte 2014 yılında yayın hayatına ara verdi.</p>\n<p>Ancak ACIPAYAM.com'un hikâyesi orada bitmedi.</p>\n<p>Bugün, aynı isimle ve aynı bağımsız ruhla yeniden yola çıktık. Bu kez amacımız yalnızca insanları buluşturmak değil; onların hikâyelerini, eserlerini, seslerini ve yaşadıkları dönemin izlerini gelecek kuşaklara bırakmak.</p>\n<p>Çünkü biz artık yalnızca eskiyi arşivlemeyeceğiz. <strong>Yenileri de eskiteceğiz.</strong></p>\n<p>Bugünün fotoğrafları yarının tarihî belgeleri, bugünün sesleri yarının hatıraları, bugün yazılan kitaplar gelecek kuşakların kültürel mirası olacak.</p>\n<p>ACIPAYAM.com, işte bu anlayışla yaşayan ve zaman içinde büyüyen bağımsız bir kültür ve hafıza platformu olarak yoluna devam ediyor.</p>\n<h3>Neden Buradayız?</h3>\n<p>Bugünün internetinde her şey hızla tüketiliyor. Bir fotoğraf, bir yazı, bir hatıra birkaç saat içinde sosyal medya akışının derinliklerinde kaybolabiliyor.</p>\n<p>Biz buna karşı başka bir yol seçtik.</p>\n<p>Üretilen, anlatılan ve paylaşılan değerli hiçbir şeyin yalnızca zaman geçtiği için unutulmasını istemiyoruz.</p>\n<p>Bu amaçla kitaplar yayımlıyor, sözlü tarih görüşmeleri derliyor, fotoğrafları ve belgeleri kayıt altına alıyor, insanlarımızın yaşamlarından izler topluyoruz.</p>\n<p>Bugün ACIPAYAM.com'da yayımlanmış beş kitap bulunuyor. Okurlarımız bu eserlere internet üzerinden ulaşabiliyor, PDF sürümlerini açabiliyor ve hazırlanan sesli kitapları dinleyebiliyor.</p>\n<p>Kültür hizmetimizi basılı kitaplarla da yaşatmayı, kâğıdın kokusunu ve bir kitabı elde tutmanın değerini korumayı önemsiyoruz.</p>\n<p>Bununla da yetinmeyeceğiz.</p>\n<p>Memleket Kokusu YouTube kanalımızı, kitaplarımızın, anılarımızın ve belgesel çalışmalarımızın görüntülü yayın alanı olarak geliştirmeyi hedefliyoruz. Yazarların kendi sesleri ve görüntüleriyle eserlerini tanıttığı, kitapların özgün sayfaları korunarak sesli ve görsel biçimde takip edilebildiği yeni bir yayıncılık anlayışı üzerinde çalışıyoruz.</p>\n<p>Yapay zekâ ve yeni teknolojilerden yararlanacağız. Ancak teknolojiyi insanın, tarihin ve gerçeğin önüne koymayacağız. Özgün belgeleri korumak ve anlatılanları doğru aktarmak temel ilkemiz olacak.</p>\n<p>Yayımladığımız yeni içerikler zamanla ana sayfamızdan arşivimize taşınacak; eski çalışmalarımız kalıcı bağlantılarıyla erişilebilir olmaya devam edecek.</p>\n<p>Çünkü bugün yeni olan her şey, bir gün geçmişimizin parçası olacak.</p>\n<h3>Bir Kültür Hizmeti, Bir Memleket Sevdası</h3>\n<p>ACIPAYAM.com'un kuruluşundan bu yana temelinde ticari bir amaç bulunmadı. Bundan sonra da yayın anlayışımızı kazanç değil, kültürel paylaşım ve toplumsal fayda belirleyecek.</p>\n<p>Eserlerimizi mümkün olduğunca herkesin ücretsiz erişimine sunmaya devam edeceğiz.</p>\n<p>Bu platform yalnızca benim kitaplarımdan veya hatıralarımdan ibaret olmayacak. Acıpayam'la bağı bulunan yazarların, araştırmacıların, sanatçıların, fotoğrafçıların ve anlatacak bir hikâyesi olan herkesin katkısına açık olacak.</p>\n<p>Bir köyün unutulmuş hatırası, bir insanın yaşam öyküsü, eski bir mektup, yeni çekilmiş bir fotoğraf, kaleme alınmış bir kitap veya kaydedilmiş bir ses…</p>\n<p>Hepsinin bu hafızada bir yeri olabilir.</p>\n<p>Okurlarımızın ve ziyaretçilerimizin görüşleri, önerileri ve katkıları da bu yolculuğun önemli bir parçası olacak.</p>\n<p>ACIPAYAM.com hiçbir siyasi yapının, kurumun veya ticari kuruluşun yayın organı değildir. Bağımsızlığımızı ve özgür yayın anlayışımızı koruyacağız.</p>\n<p>Bu yolculukta bütün Acıpayam halkına, dünyanın neresinde yaşarsa yaşasın Acıpayam'ı yüreğinde taşıyan herkese çağrımız var:</p>\n<p>Gelin, bugünümüzü birlikte kaydedelim ki yarınlarımız geçmişini aramak zorunda kalmasın.</p>\n<p>2004'te ne söylediysek bugün de aynı yerdeyiz:</p>\n<p>ORTAK PAYDAMIZ MEMLEKETİMİZ.</p>",
+  "signature": [
+   "Mustafa Ünal",
+   "ACIPAYAM.com",
+   "Kurucusu"
+  ],
+  "highlights": [
+   "Çünkü biz artık yalnızca eskiyi arşivlemeyeceğiz. Yenileri de eskiteceğiz.",
+   "Gelin, bugünümüzü birlikte kaydedelim ki yarınlarımız geçmişini aramak zorunda kalmasın."
+  ],
+  "motto": "ORTAK PAYDAMIZ MEMLEKETİMİZ."
+ },
+ "april": {
+  "kicker": "ACIPAYAM.com arşivinden",
+  "title": "1 Nisan Geleneği",
+  "intro": "ACIPAYAM.com'un 1 Nisan haberleri yalnızca güldürmek için hazırlanmadı. İlçenin unutulan sözlerini, ihtiyaçlarını ve bölgesel meselelerini mizah yoluyla yeniden kamuoyunun önüne getiren bir yayın geleneğine dönüştü.",
+  "items": [
+   {
+    "year": "2008",
+    "title": "Acıpayam'da 28 ton altın bulundu",
+    "text": "Çamlık'a yapılması söz verilen amfi tiyatro, mizahla yeniden gündeme taşındı."
+   },
+   {
+    "year": "2009",
+    "title": "NASA Türkiye'ye uzay üssü kuruyor",
+    "text": "Video kaydıyla günümüze ulaşan ikinci ACIPAYAM.com 1 Nisan haberi."
+   },
+   {
+    "year": "2010",
+    "title": "Pamukkale travertenleri pembeleşti",
+    "text": "“Pinkosyum” adlı hayalî element üzerinden kurulan haber ulusal basına taşındı."
+   },
+   {
+    "year": "2017",
+    "title": "Çameli ve Gireniz Muğla'ya bağlanıyor",
+    "text": "Mustafa Ünal ve Sabit Kızılhan, bölgenin yol ve çevre meselelerini mizahla anlattı."
+   }
+  ],
+  "feature": {
+   "title": "2009 kaydı yeniden arşivde",
+   "text": "“NASA Türkiye'ye Uzay Üssü Kuruyor” videosu, 2008 ile 2010 arasındaki eksik kaydı tamamlayarak geleneğin kesintisiz kronolojisini ortaya koyuyor.",
+   "links": [
+    {
+     "label": "2009 videosu",
+     "href": "https://www.youtube.com/watch?v=tn9V11_W29Q"
+    },
+    {
+     "label": "2008 basın kaydı",
+     "href": "https://www.yenisafak.com/gundem/belediyeden-herkese-altin-108988"
+    },
+    {
+     "label": "2010 basın kaydı",
+     "href": "https://www.cumhuriyet.com.tr/haber/bu-saka-gazete-yalatti-132352"
+    },
+    {
+     "label": "2017 basın kaydı",
+     "href": "https://www.denizli24haber.com/denizli/oyle-bir-saka-yaptilar-ki/6266"
+    }
+   ]
+  }
+ },
+ "videos": [
+  {
+   "id": "UoujlU7TAOc",
+   "title": "Sanaldan Gerçeğe"
+  },
+  {
+   "id": "wdykNYyTLyE",
+   "title": "Acıpayam kültür arşivi"
+  },
+  {
+   "id": "Lbgxm11LEZ0",
+   "title": "Acıpayam kültür arşivi"
+  },
+  {
+   "id": "FXLVqmtEHfs",
+   "title": "Acıpayam kültür arşivi"
+  }
+ ],
+ "memorial": {
+  "kicker": "Kalıcı Anma Arşivi",
+  "title": "Denizli Şehit Bilgi Kapısı",
+  "text": "1853–1928 yılları arasında şehit olan Denizlili askerlerin adlarını, memleketlerini ve görev yaptıkları cepheleri yaşatan; savaş ve ilçeye göre aranabilen özel hafıza alanı.",
+  "stat": "3.290",
+  "stat_label": "Denizlili şehit kaydı"
+ },
+ "contacts": [
+  {
+   "label": "E-posta",
+   "value": "acipayam.com@gmail.com",
+   "href": "mailto:acipayam.com@gmail.com"
+  },
+  {
+   "label": "E-posta",
+   "value": "mustafaunal.us@gmail.com",
+   "href": "mailto:mustafaunal.us@gmail.com"
+  },
+  {
+   "label": "Facebook",
+   "value": "facebook.com/acipayamcom",
+   "href": "https://www.facebook.com/acipayamcom"
+  },
+  {
+   "label": "YouTube",
+   "value": "Memleket Kokusu",
+   "href": "https://www.youtube.com/@memleketkokusu"
+  }
+ ],
+ "sisters": [
+  {
+   "group": "Facebook",
+   "links": [
+    {
+     "label": "Eski Acıpayam",
+     "href": "https://www.facebook.com/groups/eskiacipayam"
+    },
+    {
+     "label": "Eski Denizli (grup)",
+     "href": "https://www.facebook.com/groups/eskidenizli"
+    },
+    {
+     "label": "Eski Denizli (sayfa)",
+     "href": "https://www.facebook.com/eskidenizli/"
+    },
+    {
+     "label": "Gireniz Cennettir",
+     "href": "https://www.facebook.com/girenizcennettir"
+    },
+    {
+     "label": "Dalaman Çayını Kurtarın",
+     "href": "https://www.facebook.com/groups/dalamancayinikurtarin"
+    },
+    {
+     "label": "Bağbaşı Yaylası",
+     "href": "https://www.facebook.com/groups/bagbasiyaylasi"
+    },
+    {
+     "label": "Avdan Vatandır",
+     "href": "https://www.facebook.com/groups/avdanvatandir"
+    },
+    {
+     "label": "Gireniz Sevdası",
+     "href": "https://www.facebook.com/girenizsevdasi"
+    },
+    {
+     "label": "Gireniz Kelekçi",
+     "href": "https://www.facebook.com/Girenizkelekci"
+    },
+    {
+     "label": "Gireniz Vadisi",
+     "href": "https://www.facebook.com/profile.php?id=100091324682166"
+    }
+   ]
+  },
+  {
+   "group": "YouTube",
+   "links": [
+    {
+     "label": "Acıpayam Dernekler Birliği",
+     "href": "https://www.youtube.com/@adebir2016"
+    },
+    {
+     "label": "Eski Gireniz",
+     "href": "https://www.youtube.com/@gireniz"
+    },
+    {
+     "label": "Eski Denizli",
+     "href": "https://www.youtube.com/@eskidenizli"
+    },
+    {
+     "label": "Sabit Kızılhan",
+     "href": "https://www.youtube.com/@SabitKizilhan"
+    },
+    {
+     "label": "Doç. Dr. Devrim Alkaya",
+     "href": "https://www.youtube.com/@doc.dr.devrimalkaya"
+    },
+    {
+     "label": "Foto Ayfa (Mustafa Dağ)",
+     "href": "https://www.youtube.com/@fotoayfa"
+    },
+    {
+     "label": "Uğur Can Uludağ",
+     "href": "https://www.youtube.com/@U%C4%9FurCanUluda%C4%9F"
+    },
+    {
+     "label": "Dr. Özcan Özçelik",
+     "href": "https://www.youtube.com/@ozcanozcelik7869"
+    },
+    {
+     "label": "Girenizliler Derneği",
+     "href": "https://www.youtube.com/@girenizdernek"
+    }
+   ]
+  },
+  {
+   "group": "Instagram",
+   "links": [
+    {
+     "label": "eskidenizlim",
+     "href": "https://www.instagram.com/eskidenizlim"
+    },
+    {
+     "label": "eskittim",
+     "href": "https://www.instagram.com/eskittim"
+    },
+    {
+     "label": "mustafaunal_tr",
+     "href": "https://www.instagram.com/mustafaunal_tr"
+    },
+    {
+     "label": "girenizvadisi",
+     "href": "https://www.instagram.com/girenizvadisi"
+    }
+   ]
+  },
+  {
+   "group": "Web Sitesi",
+   "links": [
+    {
+     "label": "mustafaunal.tr",
+     "href": "https://mustafaunal.tr"
+    },
+    {
+     "label": "eskidenizli.com",
+     "href": "https://eskidenizli.com"
+    }
+   ]
+  }
+ ],
+ "sisters_intro": "Aynı ruhla, bölgemizin hafızasını yaşatan diğer topluluklar:"
+}

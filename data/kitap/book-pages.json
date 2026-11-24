@@ -1,0 +1,480 @@
+{
+ "icimde-kalan-cocuk": {
+  "eyebrow": "US'lu Anlatılar · Kitap I · Yayında",
+  "title": "İçimde Kalan Çocuk",
+  "intro": "Çocukluğun ilk on dört yılına uzanan hatıralar; Bozdağ'ın eteklerinden Hisar'a, Alcı'ya, Kelekçi'ye ve Denizli'ye açılan bir hayat yolculuğu.",
+  "badge": "67 bölüm · 2 saat 57 dakika",
+  "covers": [
+   "/img/icimde-kalan-cocuk-on.webp",
+   "/img/icimde-kalan-cocuk-arka.webp"
+  ],
+  "pdf": "https://acipayam.com/icimde-kalan-cocuk/downloads/Icimde_Kalan_Cocuk_PREMIUM.pdf",
+  "audio_full": "https://acipayam.com/icimde-kalan-cocuk/Icimde_Kalan_Cocuk_SESLI_KITAP_Onyx_Yuzde_10_Hizli.mp3",
+  "audio_intro": "Balkıca, Hisar, Alcı ve Kelekçi'de geçen çocukluk yıllarından, ilkokul ve ortaokul sıralarından, aile büyüklerinden dinlenen anılarla harmanlanmış anı kırıntıları.",
+  "chapters_audio_base": "https://acipayam.com/icimde-kalan-cocuk/bolumler/",
+  "sections": [
+   {
+    "title": "Yazar Hakkında",
+    "html": "<p>Mustafa Ünal, 2004 yılında acipayam.com'u kurarak on yıl boyunca Acıpayamlıların buluştuğu, 35.000 üyeye ulaşan çok aktif bir topluluk sitesi işletti. Şimdi aynı ruhla, memleketin hafızasını kalıcı bir hizmet olarak yeniden yaşatıyor.</p><p><strong>İçimde Kalan Çocuk</strong>, dört kitaplık US'lu Anlatılar serisinin ilk kitabıdır.</p>"
+   }
+  ],
+  "tracks": [
+   {
+    "track": 1,
+    "title": "İTHAF",
+    "file": "01_ITHAF.mp3",
+    "planned_duration_seconds": 19.454
+   },
+   {
+    "track": 2,
+    "title": "SUNUŞ",
+    "file": "02_SUNUS.mp3",
+    "planned_duration_seconds": 94.364
+   },
+   {
+    "track": 3,
+    "title": "PROLOG: İÇIMDE KALAN ÇOCUK",
+    "file": "03_PROLOG_ICIMDE_KALAN_COCUK.mp3",
+    "planned_duration_seconds": 142.681
+   },
+   {
+    "track": 4,
+    "title": "US NEDİR?",
+    "file": "04_US_NEDIR.mp3",
+    "planned_duration_seconds": 199.728
+   },
+   {
+    "track": 5,
+    "title": "Hatırlamak",
+    "file": "05_Hatirlamak.mp3",
+    "planned_duration_seconds": 200.636
+   },
+   {
+    "track": 6,
+    "title": "Hafızamdan Önce",
+    "file": "06_Hafizamdan_Once.mp3",
+    "planned_duration_seconds": 160.864
+   },
+   {
+    "track": 7,
+    "title": "Doğum Gecesi",
+    "file": "07_Dogum_Gecesi.mp3",
+    "planned_duration_seconds": 153.272
+   },
+   {
+    "track": 8,
+    "title": "İlk Hatırladığım Yer: Hisar",
+    "file": "08_Ilk_Hatirladigim_Yer_Hisar.mp3",
+    "planned_duration_seconds": 226.546
+   },
+   {
+    "track": 9,
+    "title": "Gözlerini Kapamak",
+    "file": "09_Gozlerini_Kapamak.mp3",
+    "planned_duration_seconds": 160.136
+   },
+   {
+    "track": 10,
+    "title": "Hisar'da Bir Nine ve Bir Yumurta",
+    "file": "10_Hisarda_Bir_Nine_ve_Bir_Yumurta.mp3",
+    "planned_duration_seconds": 127.909
+   },
+   {
+    "track": 11,
+    "title": "Oyun alanımız: Alcı",
+    "file": "11_Oyun_alanimiz_Alci.mp3",
+    "planned_duration_seconds": 113.909
+   },
+   {
+    "track": 12,
+    "title": "Dört Duvardan İbaret Olmayan Ev",
+    "file": "12_Dort_Duvardan_Ibaret_Olmayan_Ev.mp3",
+    "planned_duration_seconds": 233.0
+   },
+   {
+    "track": 13,
+    "title": "Teslime Ünal",
+    "file": "13_Teslime_Unal.mp3",
+    "planned_duration_seconds": 115.91
+   },
+   {
+    "track": 14,
+    "title": "Annem ve Kursağı Dikilen Tavuklar",
+    "file": "14_Annem_ve_Kursagi_Dikilen_Tavuklar.mp3",
+    "planned_duration_seconds": 185.545
+   },
+   {
+    "track": 15,
+    "title": "Yanan Otomobil ve Ormancının Gölgesi",
+    "file": "15_Yanan_Otomobil_ve_Ormancinin_Golgesi.mp3",
+    "planned_duration_seconds": 169.136
+   },
+   {
+    "track": 16,
+    "title": "İlk Televizyon",
+    "file": "16_Ilk_Televizyon.mp3",
+    "planned_duration_seconds": 183.0
+   },
+   {
+    "track": 17,
+    "title": "Okumayı Söktüğümü Sandıkları Gün",
+    "file": "17_Okumayi_Soktugumu_Sandiklari_Gun.mp3",
+    "planned_duration_seconds": 189.955
+   },
+   {
+    "track": 18,
+    "title": "Eren'in Altındaki Hazineler",
+    "file": "18_Erenin_Altindaki_Hazineler.mp3",
+    "planned_duration_seconds": 181.954
+   },
+   {
+    "track": 19,
+    "title": "Tahta Arabalar",
+    "file": "19_Tahta_Arabalar.mp3",
+    "planned_duration_seconds": 189.728
+   },
+   {
+    "track": 20,
+    "title": "Dalaman Çayı",
+    "file": "20_Dalaman_Cayi.mp3",
+    "planned_duration_seconds": 122.136
+   },
+   {
+    "track": 21,
+    "title": "Söğüt Dalından Olta",
+    "file": "21_Sogut_Dalindan_Olta.mp3",
+    "planned_duration_seconds": 218.136
+   },
+   {
+    "track": 22,
+    "title": "Zengin Mustafa",
+    "file": "22_Zengin_Mustafa.mp3",
+    "planned_duration_seconds": 147.591
+   },
+   {
+    "track": 23,
+    "title": "Sıfır Numaralı Bilet",
+    "file": "23_Sifir_Numarali_Bilet.mp3",
+    "planned_duration_seconds": 94.0
+   },
+   {
+    "track": 24,
+    "title": "Sünnetçi Gelmiş",
+    "file": "24_Sunnetci_Gelmis.mp3",
+    "planned_duration_seconds": 170.909
+   },
+   {
+    "track": 25,
+    "title": "Tomruğun Açtığı Yol",
+    "file": "25_Tomrugun_Actigi_Yol.mp3",
+    "planned_duration_seconds": 129.955
+   },
+   {
+    "track": 26,
+    "title": "Kelekçi'ye Giden Yol",
+    "file": "26_Kelekciye_Giden_Yol.mp3",
+    "planned_duration_seconds": 181.182
+   },
+   {
+    "track": 27,
+    "title": "Beyaz Toprak ve Değiş Tonton",
+    "file": "27_Beyaz_Toprak_ve_Degis_Tonton.mp3",
+    "planned_duration_seconds": 173.409
+   },
+   {
+    "track": 28,
+    "title": "Don Düştü!",
+    "file": "28_Don_Dustu.mp3",
+    "planned_duration_seconds": 121.818
+   },
+   {
+    "track": 29,
+    "title": "Karnem, Köpek ve Annem",
+    "file": "29_Karnem_Kopek_ve_Annem.mp3",
+    "planned_duration_seconds": 182.727
+   },
+   {
+    "track": 30,
+    "title": "Kemal Dayı'nın Eczanesi",
+    "file": "30_Kemal_Dayinin_Eczanesi.mp3",
+    "planned_duration_seconds": 149.5
+   },
+   {
+    "track": 31,
+    "title": "Elime Yapışan Tahta",
+    "file": "31_Elime_Yapisan_Tahta.mp3",
+    "planned_duration_seconds": 144.091
+   },
+   {
+    "track": 32,
+    "title": "Elmalar, Lahanalar ve Dedem",
+    "file": "32_Elmalar_Lahanalar_ve_Dedem.mp3",
+    "planned_duration_seconds": 234.273
+   },
+   {
+    "track": 33,
+    "title": "Ölümü İlk Kez Beklemek",
+    "file": "33_Olumu_Ilk_Kez_Beklemek.mp3",
+    "planned_duration_seconds": 201.636
+   },
+   {
+    "track": 34,
+    "title": "Ödev (Bir Milyona Kadar Yazın)",
+    "file": "34_Odev_Bir_Milyona_Kadar_Yazin.mp3",
+    "planned_duration_seconds": 112.273
+   },
+   {
+    "track": 35,
+    "title": "Bir Daha O Okula Gitmiyorsun",
+    "file": "35_Bir_Daha_O_Okula_Gitmiyorsun.mp3",
+    "planned_duration_seconds": 114.591
+   },
+   {
+    "track": 36,
+    "title": "Anneannemin Yanında",
+    "file": "36_Anneannemin_Yaninda.mp3",
+    "planned_duration_seconds": 140.045
+   },
+   {
+    "track": 37,
+    "title": "12 Eylül Sabahı",
+    "file": "37_12_Eylul_Sabahi.mp3",
+    "planned_duration_seconds": 126.0
+   },
+   {
+    "track": 38,
+    "title": "Kilitli Dolap",
+    "file": "38_Kilitli_Dolap.mp3",
+    "planned_duration_seconds": 134.0
+   },
+   {
+    "track": 39,
+    "title": "Babamın Tabancası",
+    "file": "39_Babamin_Tabancasi.mp3",
+    "planned_duration_seconds": 116.864
+   },
+   {
+    "track": 40,
+    "title": "Bir Tetik Mesafesi",
+    "file": "40_Bir_Tetik_Mesafesi.mp3",
+    "planned_duration_seconds": 112.591
+   },
+   {
+    "track": 41,
+    "title": "Mermi Kovanı",
+    "file": "41_Mermi_Kovani.mp3",
+    "planned_duration_seconds": 141.545
+   },
+   {
+    "track": 42,
+    "title": "Karacaören Sürgünü",
+    "file": "42_Karacaoren_Surgunu.mp3",
+    "planned_duration_seconds": 105.137
+   },
+   {
+    "track": 43,
+    "title": "Karacaören'e Uzun Yürüyüş",
+    "file": "43_Karacaorene_Uzun_Yuruyus.mp3",
+    "planned_duration_seconds": 101.363
+   },
+   {
+    "track": 44,
+    "title": "Dere",
+    "file": "44_Dere.mp3",
+    "planned_duration_seconds": 109.728
+   },
+   {
+    "track": 45,
+    "title": "Ufkun Olmadığı Yer",
+    "file": "45_Ufkun_Olmadigi_Yer.mp3",
+    "planned_duration_seconds": 123.272
+   },
+   {
+    "track": 46,
+    "title": "Cebime Dikilen Para",
+    "file": "46_Cebime_Dikilen_Para.mp3",
+    "planned_duration_seconds": 122.728
+   },
+   {
+    "track": 47,
+    "title": "Düşen Valiz",
+    "file": "47_Dusen_Valiz.mp3",
+    "planned_duration_seconds": 107.091
+   },
+   {
+    "track": 48,
+    "title": "Akrep Hikâyesi",
+    "file": "48_Akrep_Hik_yesi.mp3",
+    "planned_duration_seconds": 133.454
+   },
+   {
+    "track": 49,
+    "title": "Ardıç Kabuğu",
+    "file": "49_Ardic_Kabugu.mp3",
+    "planned_duration_seconds": 158.591
+   },
+   {
+    "track": 50,
+    "title": "Üç Tekerlekli Bisikletim",
+    "file": "50_Uc_Tekerlekli_Bisikletim.mp3",
+    "planned_duration_seconds": 133.591
+   },
+   {
+    "track": 51,
+    "title": "Atlayamadığım Duvar",
+    "file": "51_Atlayamadigim_Duvar.mp3",
+    "planned_duration_seconds": 146.864
+   },
+   {
+    "track": 52,
+    "title": "Vakıflar Yurdu",
+    "file": "52_Vakiflar_Yurdu.mp3",
+    "planned_duration_seconds": 122.045
+   },
+   {
+    "track": 53,
+    "title": "Ekmek ve Türbe",
+    "file": "53_Ekmek_ve_Turbe.mp3",
+    "planned_duration_seconds": 153.773
+   },
+   {
+    "track": 54,
+    "title": "Tasdikname",
+    "file": "54_Tasdikname.mp3",
+    "planned_duration_seconds": 193.863
+   },
+   {
+    "track": 55,
+    "title": "Hafızanın Sildiği Yıllar",
+    "file": "55_Hafizanin_Sildigi_Yillar.mp3",
+    "planned_duration_seconds": 105.728
+   },
+   {
+    "track": 56,
+    "title": "Bekçi Abdurrahman",
+    "file": "56_Bekci_Abdurrahman.mp3",
+    "planned_duration_seconds": 173.818
+   },
+   {
+    "track": 57,
+    "title": "Hiç Doyamadığım Abim",
+    "file": "57_Hic_Doyamadigim_Abim.mp3",
+    "planned_duration_seconds": 189.0
+   },
+   {
+    "track": 58,
+    "title": "Bilmiyorum",
+    "file": "58_Bilmiyorum.mp3",
+    "planned_duration_seconds": 100.727
+   },
+   {
+    "track": 59,
+    "title": "Dağların Yaya Yolu (Babamın Vicdanı)",
+    "file": "59_Daglarin_Yaya_Yolu_Babamin_Vicdani.mp3",
+    "planned_duration_seconds": 199.0
+   },
+   {
+    "track": 60,
+    "title": "Ormanın Hafızası ve Toprak Altındaki Sır",
+    "file": "60_Ormanin_Hafizasi_ve_Toprak_Altindaki_Sir.mp3",
+    "planned_duration_seconds": 208.0
+   },
+   {
+    "track": 61,
+    "title": "Sesini Anlamaya Başladığımda",
+    "file": "61_Sesini_Anlamaya_Basladigimda.mp3",
+    "planned_duration_seconds": 109.5
+   },
+   {
+    "track": 62,
+    "title": "Baba... Sağ mı Sol mu?",
+    "file": "62_Baba_Sag_mi_Sol_mu.mp3",
+    "planned_duration_seconds": 138.727
+   },
+   {
+    "track": 63,
+    "title": "EPİLOG: İÇIMDE KALAN ÇOCUK",
+    "file": "63_EPILOG_ICIMDE_KALAN_COCUK.mp3",
+    "planned_duration_seconds": 209.864
+   },
+   {
+    "track": 64,
+    "title": "BENDEN SİZE KALAN",
+    "file": "64_BENDEN_SIZE_KALAN.mp3",
+    "planned_duration_seconds": 387.136
+   },
+   {
+    "track": 65,
+    "title": "HAFIZANIN KARELERİ",
+    "file": "65_HAFIZANIN_KARELERI.mp3",
+    "planned_duration_seconds": 461.091
+   },
+   {
+    "track": 66,
+    "title": "US",
+    "file": "66_US.mp3",
+    "planned_duration_seconds": 8.591
+   },
+   {
+    "track": 67,
+    "title": "YAZAR HAKKINDA",
+    "file": "67_YAZAR_HAKKINDA.mp3",
+    "planned_duration_seconds": 306.591
+   }
+  ]
+ },
+ "karanlik-odada-yedi-ay": {
+  "eyebrow": "Us'lu Anlatılar · Kitap II",
+  "title": "Karanlık Odada Yedi Ay",
+  "intro": "Bir program. İki zaman. Değişen bir dünya. 21 yaşındaki bir gencin, karanlık bir odada geleceğe yazdığı program.",
+  "badge": "Mustafa Ünal · 2026",
+  "covers": [
+   "/img/karanlik-odada-yedi-ay-kapak.webp",
+   "/img/karanlik-odada-yedi-ay-arka.webp"
+  ],
+  "pdf": "https://acipayam.com/karanlik-odada-yedi-ay/Karanlik_Odada_Yedi_Ay_WEB_KAPAKLI_1PDF_KAYNAK_NIHAI.pdf",
+  "audio_full": "https://acipayam.com/karanlik-odada-yedi-ay/Karanlik_Odada_Yedi_Ay_SESLI_KITAP_DUZELTILMIS_NIHAI.mp3",
+  "sections": [
+   {
+    "title": "Mustafa Ünal",
+    "html": "<p>1990 yılında Ankara–Akyurt'ta yazılan Kuluçkahane İşletim Paketi'nin ve otuz beş yıl sonra yeniden açılan bir hafızanın hikâyesi.</p>"
+   }
+  ]
+ },
+ "kelekcide-yasamak": {
+  "eyebrow": "Acıpayam.com Kültür Hizmeti",
+  "title": "Kelekçi'de Yaşamak",
+  "byline": "Yazan: Dr. Oktar Öner (1938–2010) · Yayına hazırlayan: Mustafa Ünal",
+  "intro": "Kelekçi kasabasına dair köşe yazıları, el yazması mektupları ve fotoğraflarından derlenen bir hafıza kitabı. Oktar Öner'in vasiyeti üzerine, anısına acipayam.com adına yayına hazırlandı.",
+  "badge": "178 sayfa · EB Garamond · A5 · Özel kültür baskısı, 5 nüsha",
+  "covers": [
+   "/img/kapak-kelekcide-yasamak.webp"
+  ],
+  "pdf": "https://acipayam.com/kelekcide-yasamak/downloads/Kelekcide_Yasamak_Oktar_Oner.pdf",
+  "audio_full": "https://acipayam.com/kelekcide-yasamak/downloads/kelekcide-yasamak-sesli-kitap.mp3",
+  "quote": "“Yaralıyım, o halde insan varlığındayım!” — Oktar Öner",
+  "meta": "Ağustos 2026 · Acıpayam.com Kültür Hizmetidir",
+  "sections": [
+   {
+    "title": "Yazar Hakkında",
+    "html": "1938 – 2010\n<p>Dr. Oktar Öner, Orman Fakültesi mezunu bir Orman Yüksek Mühendisi olarak başladığı kariyerinde, bir dönem yurt dışında basın ataşeliği ve müsteşarlık gibi resmî görevlerde de bulundu. 1983'te kurulan Yeni Doğuş Partisi'nin kurucu üyelerinden oldu; sonrasında parti içi anlaşmazlık nedeniyle diğer bazı kurucu arkadaşlarıyla birlikte istifa etti.</p>\n<p>Kelekçi'deyken acipayam.com için köşe yazıları yazdı — el yazısıyla kâğıda döktüğü bu yazıları PTT ile Denizli'ye, Mustafa Ünal'a postalıyor, Mustafa da onları bilgisayarda yeniden yazıp siteye ekliyordu. 19 Ocak 2010'da Acıpayam'daki evinde, 72 yaşında kalp krizi sonucu hayatını kaybetti.</p>"
+   },
+   {
+    "title": "Kitabın Hikâyesi",
+    "html": "<p>Oktar Öner, kitabın metnini hayattayken tamamlamıştı — geriye kalan tek şey bastırılıp yayınlanmasıydı. Mustafa Ünal'a bu konuda bir vasiyette bulunmuştu: <i>“Ömrüm yetmezse sen bu eseri düzenler önce acipayam.com'da yayınlarsın Mustafa'm, bir de bastırırsan sana el sallarım bir yerlerden.”</i> Vasiyetinin bir bölümü — kendi kaleme aldığı asıl kitap — ölümünün 1. yılında (2011) acipayam.com'dan PDF olarak yayınlandı.</p><p>Aynı vasiyetin devamı olarak kitap şimdi genişletildi. Mustafa'nın arşivinde sakladığı, Oktar Öner'in Kelekçi'den Denizli'ye PTT ile postaladığı el yazması mektuplar ve zarflar kitaba eklendi — hem orijinal görüntüleriyle hem günümüz yazısına aktarılmış hâlleriyle. Oktar Öner'in Kelekçi'deki bir internet kafeden acipayam.com radyosunda canlı yayınladığı bir programın hem dökümü hem YouTube'daki orijinal kaydı bir araya getirildi. Ve Mustafa'nın kendi çektiği fotoğraflardan oluşan bir albüm eklenerek kitap bugünkü hâline ulaştı.</p>"
+   },
+   {
+    "title": "Mektuplar",
+    "html": "<p>Oktar Öner, Kelekçi kasabasından Denizli'ye köşe yazılarını elle yazıp PTT ile postalıyordu. Mustafa'nın arşivinde saklı kalan bu 14 mektubun hem el yazısı asılları hem de okunaklı hâle getirilmiş (kitap yazısına aktarılmış) versiyonları, kitabın <b>“Arşivden”</b> bölümünde yan yana yer alıyor.</p>"
+   },
+   {
+    "title": "Radyo Yayını",
+    "html": "<p>Oktar Öner, Kelekçi'deki bir internet kafeden acipayam.com radyosunda canlı bir program da yapmıştı. Bu yayının hem dökümü kitapta yer alıyor, hem de orijinal kaydı YouTube'da izlenebiliyor.</p>\n<p><a href=\"https://youtu.be/LJRwJqt6Ouo\" rel=\"noopener\">YouTube'da dinle: youtu.be/LJRwJqt6Ouo →</a></p>"
+   },
+   {
+    "title": "Baskı Hakkında",
+    "html": "<p>Bu eser <b>“Özel Kültür Baskısı”</b> olarak yalnızca 5 fiziksel nüsha basılmıştır; dijital sürüm herkese ücretsiz olarak sunulmaktadır.</p>\n<ul>\n<li>İlk 3 nüsha Oktar Öner'in hatırasına ayrılmıştır.</li>\n<li>4/5 ve 5/5 nüshalar açık artırmayla satışa sunulacak, geliri bağışlanacaktır.</li>\n<li>Yayına hazırlayan: Mustafa Ünal · Ağustos 2026 · Acıpayam.com Kültür Hizmetidir.</li>\n</ul>"
+   }
+  ]
+ }
+}
