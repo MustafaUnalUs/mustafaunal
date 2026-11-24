@@ -31,12 +31,12 @@ SERIES = [
     {"slug": "adi-konmamis-islere-don-bicen-adam", "no": "IV", "tag": "Hazırlanıyor", "soon": True,
      "title": "Adı Konmamış İşlere Don Biçen Adam", "path": "/kitaplar/adi-konmamis-islere-don-bicen-adam/",
      "line": "GAMEKS, işler, fikirler ve internet. 2027’de yayımlanması planlanıyor."},
-    {"slug": "uslu-dimag", "no": "V", "tag": "Final", "title": "US’lu Dimağ", "path": "/kitaplar/uslu-dimag/",
-     "line": "Doksan öğretide ölçüsü oturmuş bir zihin."},
+    {"slug": "uslu-dimag", "no": "V", "tag": "Final · Hazırlanıyor", "soon": True, "title": "US’lu Dimağ", "path": "/kitaplar/uslu-dimag/",
+     "line": "Doksan öğretide ölçüsü oturmuş bir zihin. 2027’de yayımlanması planlanıyor."},
 ]
 OTHERS = [
-    {"slug": "gonul-dostu", "title": "Gönül Dostu", "role": "Yazar", "path": "/kitaplar/gonul-dostu/",
-     "line": "Sabit Kızılhan ile yol yürümek: 2005–2026 arasından dostluğun ve hak mücadelesinin tanıklığı."},
+    {"slug": "gonul-dostu", "title": "Gönül Dostu", "role": "Yazar · Hazırlanıyor", "soon": True, "path": "/kitaplar/gonul-dostu/",
+     "line": "Sabit Kızılhan ile yol yürümek: 2005–2026 arasından dostluğun ve hak mücadelesinin tanıklığı. 2027’de yayımlanması planlanıyor."},
     {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "role": "Editör · Sabit Kızılhan’ın derlemesi", "path": "/kitaplar/bana-koyunu-anlat/",
      "line": "Acıpayam köylerinin anlatıcılarıyla hazırlanan sözlü tarih çalışması."},
     {"slug": "kelekcide-yasamak", "title": "Kelekçi’de Yaşamak", "role": "Yayına hazırlayan · Dr. Oktar Öner’in kitabı",
