@@ -1,0 +1,22 @@
+name: Alan adını ayarla
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/alan-adi.yml"]
+  workflow_dispatch:
+
+permissions:
+  pages: write
+  contents: read
+
+jobs:
+  cname:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Pages özel alan adını kaydet
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X PUT "repos/${{ github.repository }}/pages" -f cname="mustafaunal.gunerunal.com.tr" -f build_type="workflow"
+          gh api "repos/${{ github.repository }}/pages" --jq '{cname: .cname, status: .status, url: .html_url}'
