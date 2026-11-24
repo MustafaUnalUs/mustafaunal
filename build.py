@@ -13,7 +13,7 @@ OUT = ROOT / "docs"
 D = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
 ORIGIN = "https://mustafaunal.tr"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "2"
+ASSET_V = "3"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -39,7 +39,7 @@ OTHERS = [
 ]
 
 SALONS = [("kitaplar", "Kitaplar"), ("fotograflar", "Fotoğraflar"), ("mazi", "Mazi"), ("doga", "Doğa"),
-          ("calismalar", "Çalışmalar"), ("hakkimda", "Hakkımda")]
+          ("calismalar", "Çalışmalar"), ("basin", "Basın"), ("hakkimda", "Hakkımda")]
 NAV = [(f"#{a}", t) for a, t in SALONS[:4]] + [("/gameks/", "GAMEKS"), ("#hakkimda", "Hakkımda")]
 
 
@@ -105,12 +105,18 @@ def salon_head(no, anchor, title, text):
 def book(b, series=False):
     soon = b.get("soon")
     sub = (f"US’lu Anlatılar · Kitap {b['no']}" + (f" · {b['tag']}" if b.get("tag") else "")) if series else b["role"]
-    action = ('<span class="soon">Henüz yayında değil</span>' if soon else
-              f'<a class="read" href="{READER}{b["path"]}">Kitabı oku</a>')
-    zoom = (f'<button type="button" class="zoom" data-full="/img/kapak/{b["slug"]}-buyuk.webp" data-back="/img/kapak/{b["slug"]}-arka-buyuk.webp" '
-            f'data-label="{E(b["title"])}" aria-label="{E(b["title"])} kapağını büyüt">'
-            f'{ph("/img/kapak/" + b["slug"] + ".webp", b["title"] + " kapağı", "cover", 400, 620)}</button>')
-    return f'<li class="book{" is-soon" if soon else ""}"><div class="spot">{zoom}</div>{label(b["title"], [sub, b["line"]], action)}</li>'
+    btn = "Kitabın sayfası" if soon else "Kitabı aç"
+    status = '<span class="soon">Henüz yayında değil</span>' if soon else ""
+    return (f'<li class="book{" is-soon" if soon else ""}"><a class="book-link" href="{READER}{b["path"]}">'
+            f'<span class="spot">{ph("/img/kapak/" + b["slug"] + ".webp", b["title"] + " kapağı", "cover", 400, 620)}</span>'
+            f'<span class="label"><b>{E(b["title"])}</b><span>{E(sub)}</span><span>{E(b["line"])}</span>{status}'
+            f'<span class="btn">{btn}</span></span></a></li>')
+
+
+def card(img, kicker, title, text, href, btn, alt=""):
+    pic = f'<span class="card-pic">{ph(img, alt or title)}</span>' if img else ""
+    return (f'<li class="card"><a href="{E(href)}">{pic}<span class="card-body"><span class="card-kicker">{E(kicker)}</span>'
+            f'<b>{E(title)}</b><span class="card-text">{E(text)}</span><span class="btn">{E(btn)}</span></span></a></li>')
 
 
 def build_home():
@@ -119,101 +125,93 @@ def build_home():
     guide = "".join(f'<li><a href="#{a}"><span>{i}</span>{E(t)}</a></li>' for i, (a, t) in enumerate(SALONS, 1))
     series = "".join(book(b, True) for b in SERIES)
     others = "".join(book(b) for b in OTHERS)
-    caps = ["Acıpayam’dan bir yol", "Köy evi", "Denizli üzerinde şimşek", "Dalaman Çayı kirliliği", "Sohbet",
-            "Kayada çiçek", "Bir ömür", "Ova ve bulutlar", "Toplu iftar", "Keşkek kazanı", "Örümcek"]
-    photos = ""
-    for i, p in enumerate(D["photos"], 1):
-        shape = p["shape"] or ""
-        photos += (f'<li class="hang {E(shape)}"><button type="button" class="photo" data-full="{p["img"]}" '
-                   f'data-label="Fotoğraf {i:02d}" aria-label="Fotoğraf {i:02d}: büyüt"><span class="mat">'
-                   f'{ph(p["img"], p.get("alt") or "Mustafa Ünal fotoğrafı", "", p.get("w"), p.get("h"))}</span></button>'
-                   f'<p class="tag">No. {i:02d} · Mustafa Ünal</p></li>')
+    photos = "".join(
+        f'<li><button type="button" class="photo" data-full="{p["img"]}" data-label="Fotoğraf {i:02d}" aria-label="Fotoğraf {i:02d}: büyüt">'
+        f'<span class="mat">{ph(p["img"], p.get("alt") or "Mustafa Ünal fotoğrafı")}</span></button><p class="tag">No. {i:02d}</p></li>'
+        for i, p in enumerate(D["photos"], 1))
+    life = "".join(
+        f'<li><button type="button" class="photo" data-full="{p["img"]}" data-label="{E(p["cap"])}" aria-label="{E(p["cap"])}: büyüt">'
+        f'<span class="mat">{ph(p["img"], p["cap"])}</span></button><p class="tag">{E(p["cap"])}</p></li>'
+        for p in D["life"]["photos"])
     tl = ""
     for t in D["timeline"]:
         links = "".join(f'<a href="{E("/gameks/" if l["href"] == "#gameks" else l["href"])}">{E(l["label"])}</a>' for l in t["links"])
-        pic = ""
-        if t["img"]:
-            pic = f'<span class="tl-pic{" is-logo" if t["logo"] else ""}">{ph(t["img"], t["title"])}</span>'
-        tl += (f'<li><p class="tl-year">{"<br>".join(E(x) for x in t["time"])}</p>'
-               f'<div class="tl-card">{pic}<h3>{E(t["title"])}</h3><p>{E(t["text"])}</p>{f"<p class=links>{links}</p>" if links else ""}</div></li>')
-    life = "".join(f'<figure class="framed small"><span class="mat">{ph(p["img"], p["cap"], "", p.get("w"), p.get("h"))}</span>'
-                   f'<figcaption>{label(p["cap"].split(" · ")[0], [" · ".join(p["cap"].split(" · ")[1:]), "Fotoğraf: Mustafa Ünal"])}</figcaption></figure>'
-                   for p in D["life"]["photos"])
+        pic = f'<span class="tl-pic{" is-logo" if t["logo"] else ""}">{ph(t["img"], t["title"])}</span>' if t["img"] else '<span class="tl-pic is-empty"></span>'
+        tl += (f'<li><p class="tl-year">{" ".join(E(x) for x in t["time"])}</p><div class="tl-text"><h3>{E(t["title"])}</h3><p>{E(t["text"])}</p>'
+               f'{f"<p class=links>{links}</p>" if links else ""}</div>{pic}</li>')
     n = D["nature"]
     nature_links = "".join(f'<li><a href="{E(l["href"])}">{E(l["label"])}</a></li>' for l in n["links"])
+    g = D["gameks"]
     works = "".join(
-        f'<li class="case">{ph(w["img"], w["title"], "", w.get("w"), w.get("h"))}<div>{label(w["title"], [w["kicker"], w["text"]])}'
-        f'<a class="case-link" href="{E("/gameks/" if w["link"]["href"] == "#gameks" else w["link"]["href"])}">{E(w["link"]["label"])}</a></div></li>'
+        card(w["img"], w["kicker"], w["title"].replace("GAMEKS — Bilişimden Üretime", "GAMEKS"), w["text"],
+             "/gameks/" if w["link"]["href"] == "#gameks" else w["link"]["href"],
+             "Tarihçeyi oku" if w["link"]["href"] == "#gameks" else w["link"]["label"])
         for w in D["works"])
     press = "".join(
-        f'<div><h3>{E(g["title"])}</h3><ul>' + "".join(f'<li><a href="{E(l["href"])}">{E(l["label"])}</a></li>' for l in g["links"]) + "</ul></div>"
-        for g in D["press"]["groups"])
+        f'<div class="press-col"><h3>{E(gr["title"])}</h3><ul>' + "".join(f'<li><a href="{E(l["href"])}">{E(l["label"])}</a></li>' for l in gr["links"]) + "</ul></div>"
+        for gr in D["press"]["groups"])
     a = D["about"]
-    g = D["gameks"]
     body = f"""
 <section class="lobby">
   <figure class="framed hero-frame">
     <span class="mat">{ph(hero_photo["img"], "Denizli üzerinde şimşek, Mustafa Ünal fotoğrafı", "", hero_photo.get("w"), hero_photo.get("h"), lazy=False)}</span>
-    <figcaption>{label("Denizli’de gece", ["Fotoğraf: Mustafa Ünal", "Yaklaşık 250 bin karelik arşivden"])}</figcaption>
+    <figcaption><span class="label"><b>Denizli’de gece</b><span>Fotoğraf: Mustafa Ünal</span></span></figcaption>
   </figure>
   <div class="lobby-text">
     <p class="salon-no">Giriş</p>
     <h1>Bir ömür,<br>birçok iz.</h1>
-    <p class="lobby-lead">{E(h["text"])} Sergi, Mustafa Ünal’ın kitaplarını, fotoğraflarını ve yerel hafıza çalışmalarını bir araya getiriyor.</p>
+    <p class="lobby-lead">{E(h["text"])}</p>
     <nav class="guide" aria-label="Sergi rehberi"><p>Sergi rehberi</p><ol>{guide}</ol></nav>
   </div>
 </section>
 
 <section class="salon" id="kitaplar" aria-labelledby="kitaplar-baslik">
-  {salon_head(1, "kitaplar", "Kitaplar", "Şimdi kitaplarımı yazıyorum. Hepsi ücretsiz; internette okunur, PDF olarak indirilir. Kapağa dokunun; büyür, arka kapağı da okunur.")}
-  <h3 class="shelf-title">US’lu Anlatılar <span>beş kitaplık seri</span></h3>
+  {salon_head(1, "kitaplar", "Kitaplar", "Hepsi ücretsiz; internette okunur, PDF olarak indirilir. Bir kitaba dokunun, sayfası açılsın.")}
+  <h3 class="row-title">US’lu Anlatılar <span>Beş kitaplık seri</span></h3>
   <ol class="shelf">{series}</ol>
-  <h3 class="shelf-title">Yazarlık, editörlük, yayına hazırlık</h3>
+  <h3 class="row-title">Yazarlık, editörlük, yayına hazırlık</h3>
   <ul class="shelf">{others}</ul>
 </section>
 
 <section class="salon" id="fotograflar" aria-labelledby="fotograflar-baslik">
   {salon_head(2, "fotograflar", "Fotoğraflar", "Yaklaşık 250 bin kareden küçük bir seçki. Bir kareye dokunun; büyür, oklarla gezilir.")}
-  <ul class="wall">{photos}</ul>
-  <p class="more-link"><a href="{E(D['photos_link']['href'])}">{E(D['photos_link']['label'])}</a></p>
-  <h3 class="shelf-title">{E(D['life']['title'])} <span>{E(D['life']['text'])}</span></h3>
-  <div class="wall-small">{life}</div>
+  <ul class="grid3">{photos}</ul>
+  <h3 class="row-title">{E(D['life']['title'])} <span>{E(D['life']['text'])}</span></h3>
+  <ul class="grid4">{life}</ul>
+  <p class="more-link"><a class="btn btn-line" href="{E(D['photos_link']['href'])}">{E(D['photos_link']['label'])}</a></p>
 </section>
 
 <section class="salon" id="mazi" aria-labelledby="mazi-baslik">
-  {salon_head(3, "mazi", "Mazi", "Bugünden geriye, 2026’dan Balkıca’ya: birikenler kaybolmasın.")}
-  <ol class="corridor">{tl}</ol>
+  {salon_head(3, "mazi", "Mazi", "Bugünden geriye: 2026’dan Balkıca’ya uzanan yol.")}
+  <ol class="years">{tl}</ol>
 </section>
 
-<section class="salon salon-split" id="doga" aria-labelledby="doga-baslik">
-  <figure class="framed">
-    <span class="mat">{ph(n["img"], n["cap"], lazy=False)}</span>
-    <figcaption>{label("Dalaman Çayı, Saimin Köprüsü", ["2016", "Fotoğraf: çeken kişi bilinmiyor"])}</figcaption>
-  </figure>
-  <div>
-    {salon_head(4, "doga", "Fotoğraf bazen itirazın kaydıdır.", n["text"])}
-    <ul class="link-list">{nature_links}</ul>
+<section class="salon" id="doga" aria-labelledby="doga-baslik">
+  {salon_head(4, "doga", "Doğa", "Fotoğraf bazen itirazın kaydıdır.")}
+  <div class="split">
+    <figure class="framed"><span class="mat">{ph(n["img"], n["cap"], lazy=False)}</span>
+      <figcaption><span class="label"><b>Dalaman Çayı, Saimin Köprüsü</b><span>2016 · Fotoğraf: çeken kişi bilinmiyor</span></span></figcaption></figure>
+    <div><p class="body-text">{E(n["text"])}</p><h3 class="list-title">Basında</h3><ul class="link-list">{nature_links}</ul></div>
   </div>
 </section>
 
 <section class="salon" id="calismalar" aria-labelledby="calismalar-baslik">
   {salon_head(5, "calismalar", "Çalışmalar", "Ayrı projeler değil, ortak bir emek.")}
-  <ul class="cases">{works}</ul>
-  <a class="gameks-door" href="/gameks/">
-    {ph(g["logo"], "GAMEKS logosu", "gameks-logo")}
-    <span><b>GAMEKS tarihçesi</b><em>{E(g["lead"])}</em></span>
-  </a>
-  <div class="press"><h3 class="shelf-title">{E(D['press']['title'])} <span>{E(D['press']['text'])}</span></h3><div class="press-grid">{press}</div></div>
+  <ul class="cards">{works}</ul>
 </section>
 
-<section class="salon salon-split about" id="hakkimda" aria-labelledby="hakkimda-baslik">
-  <figure class="framed oval"><span class="mat">{ph(a["img"], "Fotoğraf makinesiyle Mustafa Ünal")}</span>
-    <figcaption>{label("Mustafa Ünal", ["1969, Balkıca", "Yazar, fotoğrafçı"])}</figcaption></figure>
-  <div>
-    {salon_head(6, "hakkimda", "Hakkımda", "")}
-    {"".join(f"<p>{E(p)}</p>" for p in a["text"])}
-    <p class="now"><b>Şu sıralar</b> {E(a["now"])}</p>
-    <blockquote>{E(a["quote"])}</blockquote>
+<section class="salon" id="basin" aria-labelledby="basin-baslik">
+  {salon_head(6, "basin", "Basın ve arşiv", D["press"]["text"])}
+  <div class="press">{press}</div>
+</section>
+
+<section class="salon" id="hakkimda" aria-labelledby="hakkimda-baslik">
+  {salon_head(7, "hakkimda", "Hakkımda", "")}
+  <div class="split about">
+    <figure class="framed oval"><span class="mat">{ph(a["img"], "Fotoğraf makinesiyle Mustafa Ünal")}</span></figure>
+    <div>{"".join(f'<p class="body-text">{E(p)}</p>' for p in a["text"])}
+      <p class="now"><b>Şu sıralar</b> {E(a["now"])}</p>
+      <blockquote>{E(a["quote"])}</blockquote></div>
   </div>
 </section>
 """
@@ -227,8 +225,10 @@ def build_gameks():
         imgs = "".join(f'<span class="tl-pic{" is-logo" if i["logo"] else ""}">{ph(i["src"], x["title"])}</span>' for i in x["imgs"])
         links = "".join(f'<a href="{E(l["href"])}">{E(l["label"])}</a>' for l in x["links"])
         cap = f'<p class="note">{E(x["note"])}</p>' if x["note"] else ""
-        items += (f'<li><p class="tl-year">{"<br>".join(E(t) for t in x["time"])}</p><div class="tl-card">{imgs}{cap}<h3>{E(x["title"])}</h3>'
-                  + "".join(f"<p>{E(p)}</p>" for p in x["text"]) + (f"<p class=links>{links}</p>" if links else "") + "</div></li>")
+        if not imgs:
+            imgs = '<span class="tl-pic is-empty"></span>'
+        items += (f'<li><p class="tl-year">{" ".join(E(t) for t in x["time"])}</p><div class="tl-text"><h3>{E(x["title"])}</h3>'
+                  + "".join(f"<p>{E(p)}</p>" for p in x["text"]) + cap + (f"<p class=links>{links}</p>" if links else "") + f"</div>{imgs[:imgs.find('</span>')+7] if 'tl-pic' in imgs else imgs}</li>")
     body = f"""
 <section class="lobby lobby-gameks">
   <figure class="framed hero-frame logo-frame"><span class="mat">{ph(g['logo'], 'GAMEKS logosu', lazy=False)}</span>
@@ -236,7 +236,7 @@ def build_gameks():
   <div class="lobby-text"><p class="salon-no">Özel salon</p><h1>Bilişimden<br>üretime.</h1><p class="lobby-lead">{E(g['lead'])}</p>
     <p class="lobby-lead">{" ".join(E(p) for p in g['intro'])}</p></div>
 </section>
-<section class="salon"><ol class="corridor">{items}</ol>
+<section class="salon"><ol class="years">{items}</ol>
   <p class="more-link"><a href="/">Sergiye dön</a> · <a href="{READER}/adi-konmamis-islere-don-bicen-adam/">Kitap: Adı Konmamış İşlere Don Biçen Adam</a></p></section>"""
     return layout("/gameks/", "GAMEKS: Bilişimden üretime · Mustafa Ünal", body, desc=g["lead"], cls="page-gameks")
 
