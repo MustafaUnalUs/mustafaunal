@@ -5,11 +5,14 @@ Veriler data/kitap/ altında: düzenlenmiş PDF'lerden çıkarılmış bölümle
 import html
 import json
 import math
+import os
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 K = ROOT / "data" / "kitap"
+MEDIA_BASE = os.environ.get("MEDIA_BASE", "https://acipayam.com/")
+MEDIA_RE = re.compile(r"https://acipayam\.com/([^\"\s<>]*?(?:\.mp3|/bolumler/))")
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 
@@ -259,7 +262,9 @@ def build_chapter(b, i, layout):
     return layout(chapter_url(b, i), f"{title} · {b['title']}", body, desc=f"{b['title']} — {title}", cls="page-reader")
 
 
-def build_all(write, layout):
+def build_all(write_raw, layout):
+    def write(path, content):
+        write_raw(path, MEDIA_RE.sub(lambda m: MEDIA_BASE + m.group(1), content))
     n = 0
     for b in BOOKS:
         write(b["base"], build_book(b, layout))
