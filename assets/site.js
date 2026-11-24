@@ -50,3 +50,18 @@
   $(".lb-close", dlg).addEventListener("click", () => dlg.close());
   dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.classList.contains("lb-stage")) dlg.close(); });
 })();
+
+// El feneri: imleç duvarı aydınlatır
+(() => {
+  const root = document.documentElement;
+  if (matchMedia("(hover: none), (prefers-reduced-motion: reduce)").matches) return;
+  let raf = 0;
+  addEventListener("pointermove", (e) => {
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      root.style.setProperty("--mx", e.clientX + "px");
+      root.style.setProperty("--my", e.clientY + "px");
+      raf = 0;
+    });
+  }, { passive: true });
+})();
