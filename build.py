@@ -13,7 +13,7 @@ OUT = ROOT / "docs"
 D = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
 ORIGIN = "https://mustafaunal.tr"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "3"
+ASSET_V = "4"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -104,13 +104,12 @@ def salon_head(no, anchor, title, text):
 
 def book(b, series=False):
     soon = b.get("soon")
-    sub = (f"US’lu Anlatılar · Kitap {b['no']}" + (f" · {b['tag']}" if b.get("tag") else "")) if series else b["role"]
-    btn = "Kitabın sayfası" if soon else "Kitabı aç"
-    status = '<span class="soon">Henüz yayında değil</span>' if soon else ""
+    sub = (f"Kitap {b['no']}" + (f" · {b['tag']}" if b.get("tag") else "")) if series else b["role"]
+    act = "Kitabın sayfası" if soon else "Kitabı aç"
     return (f'<li class="book{" is-soon" if soon else ""}"><a class="book-link" href="{READER}{b["path"]}">'
             f'<span class="spot">{ph("/img/kapak/" + b["slug"] + ".webp", b["title"] + " kapağı", "cover", 400, 620)}</span>'
-            f'<span class="label"><b>{E(b["title"])}</b><span>{E(sub)}</span><span>{E(b["line"])}</span>{status}'
-            f'<span class="btn">{btn}</span></span></a></li>')
+            f'<span class="book-meta">{E(sub)}</span><span class="book-title">{E(b["title"])}</span>'
+            f'<span class="book-line">{E(b["line"])}</span><span class="book-act">{act}</span></a></li>')
 
 
 def card(img, kicker, title, text, href, btn, alt=""):
@@ -152,17 +151,18 @@ def build_home():
         for gr in D["press"]["groups"])
     a = D["about"]
     body = f"""
-<section class="lobby">
-  <figure class="framed hero-frame">
-    <span class="mat">{ph(hero_photo["img"], "Denizli üzerinde şimşek, Mustafa Ünal fotoğrafı", "", hero_photo.get("w"), hero_photo.get("h"), lazy=False)}</span>
-    <figcaption><span class="label"><b>Denizli’de gece</b><span>Fotoğraf: Mustafa Ünal</span></span></figcaption>
-  </figure>
-  <div class="lobby-text">
-    <p class="salon-no">Giriş</p>
-    <h1>Bir ömür,<br>birçok iz.</h1>
-    <p class="lobby-lead">{E(h["text"])}</p>
-    <nav class="guide" aria-label="Sergi rehberi"><p>Sergi rehberi</p><ol>{guide}</ol></nav>
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-roles">Yazar · Fotoğrafçı · Yerel hafıza</p>
+    <h1>Mustafa<br>Ünal</h1>
+    <p class="hero-motto">Bir ömür, birçok iz.</p>
+    <p class="hero-lead">1969’da Balkıca’da başlayan bir hayat. Kitaplar, yaklaşık 250 bin fotoğraf, Acıpayam.com ve Eski Denizli ile yaşananları kaybolmadan görmek, unutmadan aktarmak için.</p>
+    <p class="hero-actions"><a class="btn" href="#kitaplar">Kitaplarım</a><a class="btn btn-line" href="#fotograflar">Fotoğraflarım</a></p>
   </div>
+  <figure class="hero-portrait">
+    <span class="halo" aria-hidden="true"></span>
+    <img src="{h["portrait"]}" alt="Mustafa Ünal" width="700" height="700">
+  </figure>
 </section>
 
 <section class="salon" id="kitaplar" aria-labelledby="kitaplar-baslik">

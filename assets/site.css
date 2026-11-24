@@ -289,3 +289,33 @@ main, .bar, .foot { position: relative; z-index: 1; }
 .years .tl-pic { grid-column: auto; grid-row: auto; }
 .years > li > .tl-text { min-width: 0; }
 .years .tl-pic.is-empty { aspect-ratio: auto; height: 0; }
+
+/* ===== v4: giriş ve kitap etiketleri ===== */
+.hero { position: relative; max-width: calc(var(--wide) + 2 * var(--gutter)); margin: 0 auto; padding: clamp(2rem, 5vw, 4rem) var(--gutter) 0;
+  display: grid; gap: 1rem 3rem; align-items: end; min-height: min(86vh, 820px); }
+@media (min-width: 960px) { .hero { grid-template-columns: 1.1fr 1fr; } }
+.hero-text { align-self: center; padding-bottom: clamp(1rem, 4vw, 3rem); }
+.hero-roles { font: 600 .9rem var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--pirinc-acik); margin: 0 0 1.4rem; }
+.hero h1 { font-size: clamp(4rem, 9vw, 8rem); line-height: .92; letter-spacing: -.01em; margin: 0 0 1.4rem; }
+.hero-motto { font: italic 400 clamp(1.6rem, 2.6vw, 2.2rem)/1.2 var(--serif); color: var(--pirinc-acik); margin: 0 0 1.4rem; }
+.hero-lead { color: var(--soluk); font-size: 1.2rem; max-width: 34rem; margin-bottom: 2rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0; }
+.hero-actions .btn { margin: 0; padding: 1rem 1.5rem; font-size: 1.05rem; }
+.hero-portrait { position: relative; margin: 0; align-self: end; justify-self: center; width: min(100%, 560px); }
+.hero-portrait img { position: relative; width: 100%; filter: drop-shadow(0 30px 40px rgba(0,0,0,.55)); }
+.halo { position: absolute; left: 50%; top: 2%; width: 92%; aspect-ratio: 1; transform: translateX(-50%); border-radius: 50%;
+  background: radial-gradient(circle, rgba(246, 222, 170, .30) 0%, rgba(217, 189, 133, .12) 40%, transparent 68%); }
+.halo::after { content: ""; position: absolute; inset: 8%; border-radius: 50%; border: 1px solid rgba(217, 189, 133, .45); }
+.hero + .salon { border-top: 1px solid rgba(217,189,133,.3); }
+@media (max-width: 959px) { .hero { min-height: 0; } .hero-portrait { width: min(80%, 380px); } }
+
+/* kitap etiketleri: duvarda, kutusuz */
+.book .label { display: none; }
+.book-link { gap: .35rem; }
+.book-meta { margin-top: 1.2rem; font: 600 .82rem var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--pirinc-acik); }
+.book-title { font: 400 1.5rem/1.2 var(--serif); color: var(--isik); }
+.book-line { color: var(--soluk); font-size: 1rem; line-height: 1.55; }
+.book-act { margin-top: .7rem; font-weight: 700; color: var(--isik); text-decoration: underline; text-decoration-color: var(--pirinc); text-underline-offset: 6px; }
+.book.is-soon .book-act { color: var(--soluk); }
+.book-link:hover .book-title, .book-link:hover .book-act { color: var(--pirinc-acik); }
+@media (max-width: 959px) { .hero-portrait { order: -1; width: min(70%, 300px); } .hero h1 { font-size: clamp(3.4rem, 16vw, 5rem); } }
