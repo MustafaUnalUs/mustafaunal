@@ -5,6 +5,7 @@ data/ ve static/ klasörlerinden docs/ altına statik site üretir:  python3 bui
 """
 import html
 import json
+import os
 import shutil
 
 import books
@@ -14,6 +15,8 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
 D = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
 ORIGIN = "https://mustafaunal.tr"
+# SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
+CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
 ASSET_V = "5"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
@@ -45,6 +48,10 @@ SALONS = [("kitaplar", "Kitaplar"), ("fotograflar", "Fotoğraflar"), ("mazi", "M
 NAV = [(f"#{a}", t) for a, t in SALONS[:4]] + [("/gameks/", "GAMEKS"), ("#hakkimda", "Hakkımda")]
 
 
+TEST_NOTE = ('<p class="foot-note">Bu adres, mustafaunal.tr içeriğiyle hazırlanmış yeni tasarımın test sürümüdür. '
+             f'Asıl site: <a href="{ORIGIN}/">mustafaunal.tr</a></p>')
+
+
 def layout(path, title, body, desc="", cls=""):
     nav = "".join(f'<a href="{("/" + h) if h.startswith("#") and path != "/" else h}">{t}</a>' for h, t in NAV)
     contact = "".join(f'<a href="{E(c["href"])}">{E(c["label"])}</a>' for c in D["contact"])
@@ -55,7 +62,7 @@ def layout(path, title, body, desc="", cls=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc or D['hero']['text'])}">
-<meta name="robots" content="noindex">
+{"" if CANLI else chr(60) + "meta name=" + chr(34) + "robots" + chr(34) + " content=" + chr(34) + "noindex" + chr(34) + ">"}
 <link rel="canonical" href="{ORIGIN}{path}">
 <meta name="theme-color" content="#16231d">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
@@ -80,7 +87,7 @@ def layout(path, title, body, desc="", cls=""):
     <p class="foot-line">Bir ömür, birçok iz. Sergi her zaman açık.</p>
     <nav aria-label="İletişim">{contact}<a href="{READER}/">ACIPAYAM.com</a><a href="https://eskidenizli.com">Eski Denizli</a></nav>
   </div>
-  <p class="foot-note">Bu adres, mustafaunal.tr içeriğiyle hazırlanmış yeni tasarımın test sürümüdür. Asıl site: <a href="{ORIGIN}/">mustafaunal.tr</a></p>
+  {"" if CANLI else TEST_NOTE}
 </footer>
 <script src="/assets/site.js?v={ASSET_V}" defer></script>
 </body>
@@ -248,9 +255,10 @@ def main():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "static", OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
-    (OUT / "CNAME").write_text("mustafaunal.gunerunal.com.tr\n")
+    if not CANLI:
+        (OUT / "CNAME").write_text("mustafaunal.gunerunal.com.tr\n")
     (OUT / ".nojekyll").write_text("")
-    (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
+    (OUT / "robots.txt").write_text("User-agent: *\n" + ("Allow: /\n" if CANLI else "Disallow: /\n"))
     (OUT / "index.html").write_text(build_home(), encoding="utf-8")
     def write(path, content):
         f = OUT / path.lstrip("/") / "index.html"
