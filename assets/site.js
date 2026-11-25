@@ -188,3 +188,35 @@ document.querySelectorAll("[data-share]").forEach((a) => {
     }
   }, { passive: true });
 })();
+
+/* okuma alanının iki yanında oklar + telefonda kaydırma ipucu */
+(() => {
+  const reader = document.querySelector(".reader");
+  const prevA = document.querySelector(".pager-prev, .r-pager a:not(.nx)");
+  const nextA = document.querySelector(".pager-next, .r-pager a.nx");
+  if (!reader || (!prevA && !nextA)) return;
+  const mk = (a, cls, ch, lab) => {
+    const el = document.createElement(a ? "a" : "span");
+    el.className = "yan-ok " + cls + (a ? "" : " is-off");
+    if (a) { el.href = a.href; el.setAttribute("aria-label", lab); el.title = lab; }
+    el.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ch}"/></svg>`;
+    document.body.append(el);
+    return el;
+  };
+  const L = mk(prevA, "yan-sol", "M15 5l-7 7 7 7", "Önceki bölüm");
+  const R = mk(nextA, "yan-sag", "M9 5l7 7-7 7", nextA && /sonu|sayfasına/i.test(nextA.textContent) ? "Kitaba dön" : "Sonraki bölüm");
+  const place = () => {
+    const r = reader.getBoundingClientRect();
+    L.style.left = Math.max(8, r.left - 64) + "px";
+    R.style.left = Math.min(innerWidth - 56, r.right + 16) + "px";
+    const room = r.left > 80;
+    L.hidden = R.hidden = !room;
+  };
+  place();
+  addEventListener("resize", place);
+  const hint = document.createElement("p");
+  hint.className = "kaydir-ipucu";
+  hint.innerHTML = "<span aria-hidden=\"true\">←</span> Bölüm değiştirmek için yazıyı sağa ya da sola kaydırın <span aria-hidden=\"true\">→</span>";
+  const pager = document.querySelector(".pager, .r-pager");
+  (pager ? pager.parentNode : reader).insertBefore(hint, pager || null);
+})();
