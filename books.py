@@ -201,6 +201,18 @@ def share_bar():
             f'<div class="share-row">{share_links()}</div></div></aside>')
 
 
+def build_pdf(b, layout):
+    """Kitabın PDF'ini site içinde sayfa sayfa gösterir."""
+    body = (f'<div class="po" id="pdfoku" data-pdf="{b["pdf"]}">'
+            f'<div class="po-bar"><a href="{b["base"]}">← Kitap</a><span class="po-title">{E(b["title"])}</span>'
+            f'<span class="po-info">Yükleniyor…</span>'
+            f'<button type="button" data-zoom="-0.2" aria-label="Küçült">A−</button><button type="button" data-zoom="0.2" aria-label="Büyüt">A+</button>'
+            f'<button type="button" data-start>Başa dön</button><a href="{b["pdf"]}" download>İndir</a></div>'
+            f'<div class="po-pages"></div></div>'
+            f'<script src="/assets/pdfjs/pdf.min.js"></script><script src="/assets/pdfoku.js"></script>')
+    return layout(b["base"] + "pdf/", f"{b['title']} · PDF · Mustafa Ünal", body, desc=f"{b['title']} — PDF olarak oku", cls="page-pdf")
+
+
 def build_book(b, layout):
     by = E(b["author"]) + (f" · Editör: {E(b['editor'])}" if b.get("editor") else "")
     kicker = f"US’lu Anlatılar · {b['seri']}" if b.get("seri") else b.get("role", "")
@@ -212,6 +224,7 @@ def build_book(b, layout):
     else:
         facts = ""
         acts = [f'<a class="btn" href="{chapter_url(b, 0)}">Okumaya başla</a>',
+                f'<a class="btn btn-line" href="{b["base"]}pdf/">Sitede PDF oku</a>',
                 f'<a class="btn btn-line" href="{b["pdf"]}" download>PDF indir <small>{mb(b["pdf_size"])}</small></a>']
         if b.get("audio"):
             acts.append('<a class="btn btn-line" href="#dinle">Sesli kitap</a>')
@@ -295,6 +308,8 @@ def build_all(write_raw, layout):
         n += 1
         if b.get("soon"):
             continue
+        write(b["base"] + "pdf/", build_pdf(b, layout))
+        n += 1
         for i in range(len(b["data"]["chapters"])):
             write(chapter_url(b, i), build_chapter(b, i, layout))
             n += 1
