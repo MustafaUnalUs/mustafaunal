@@ -172,9 +172,33 @@ def toc(book):
             rows.append((f'<h3 class="toc-part">{E(tr_title(part))}</h3>' if part else "") + '<ol class="toc">')
         title = c["interview"]["title"] + " · " + c["interview"]["subtitle"] if c.get("interview") else tr_title(c["title"])
         rows.append(f'<li><a href="{chapter_url(book, i)}"><span class="toc-n">{i + 1:02d}</span>'
-                    f'<span class="toc-t">{E(title)}</span><span class="toc-m">{minutes(c["words"])} dk</span></a></li>')
+                    f'<span class="toc-t">{E(title)}</span></a></li>')
     rows.append("</ol>")
     return "\n".join(rows)
+
+
+SHARE_IC = {
+    "wa": '<path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1.2-.5-2.4-1.7-2.9-2.9l1-1-1-2z"/>',
+    "fb": '<path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/>',
+    "x": '<path d="M4 4l16 16M20 4 4 20"/>',
+}
+SHARE_FALLBACK = {"wa": "https://wa.me/", "fb": "https://www.facebook.com/", "x": "https://x.com/"}
+
+
+def share_links():
+    return "".join(
+        f'<a class="sh sh-{k}" data-share="{k}" href="{SHARE_FALLBACK[k]}" target="_blank" rel="noopener" aria-label="{n} ile paylaş">'
+        f'<svg viewBox="0 0 24 24" aria-hidden="true">{SHARE_IC[k]}</svg><span>{n}</span></a>'
+        for k, n in (("wa", "WhatsApp"), ("fb", "Facebook"), ("x", "X")))
+
+
+def share_mini():
+    return f'<div class="share-mini"><span>Paylaş:</span>{share_links()}</div>'
+
+
+def share_bar():
+    return (f'<aside class="share" aria-label="Paylaş"><div class="share-in"><p>Bu bölümü paylaşın</p>'
+            f'<div class="share-row">{share_links()}</div></div></aside>')
 
 
 def build_book(b, layout):
@@ -186,12 +210,9 @@ def build_book(b, layout):
         actions = f'<p class="bk-status"><b>Henüz yayında değil.</b> {E(b["status"])}. Yayımlandığında burada okunabilecek, PDF olarak indirilebilecek.</p>'
         body_main = ""
     else:
-        hours = b["words"] / 200 / 60
-        read = f"yaklaşık {format(hours, '.1f').replace('.', ',')} saat" if hours >= 1 else f"{minutes(b['words'])} dakika"
-        facts = (f'<dl class="bk-facts"><div><dt>Bölüm</dt><dd>{len(b["data"]["chapters"])}</dd></div>'
-                 f'<div><dt>Okuma</dt><dd>{read}</dd></div><div><dt>PDF</dt><dd>{mb(b["pdf_size"])}</dd></div></dl>')
+        facts = ""
         acts = [f'<a class="btn" href="{chapter_url(b, 0)}">Okumaya başla</a>',
-                f'<a class="btn btn-line" href="{b["pdf"]}" download>PDF indir</a>']
+                f'<a class="btn btn-line" href="{b["pdf"]}" download>PDF indir <small>{mb(b["pdf_size"])}</small></a>']
         if b.get("audio"):
             acts.append('<a class="btn btn-line" href="#dinle">Sesli kitap</a>')
         actions = '<p class="bk-actions">' + "".join(acts) + "</p>"
@@ -220,6 +241,7 @@ def build_book(b, layout):
     <p class="bk-by">{by}</p>
     <p class="bk-intro">{E(b['intro'])}</p>
     {facts}{actions}
+    {share_mini()}
   </div>
 </section>
 {series_strip(b)}
@@ -249,9 +271,10 @@ def build_chapter(b, i, layout):
   <header class="r-head">
     <p class="r-num" aria-hidden="true">{i + 1:02d}</p>{part}
     <h1>{E(title)}</h1>{lead}
-    <div class="r-tools" role="group" aria-label="Okuma ayarları"><span>{minutes(c['words'])} dakikalık okuma</span>
+    <div class="r-tools" role="group" aria-label="Okuma ayarları"><span>Yazı boyutu</span>
       <button type="button" data-size="-1" aria-label="Yazıyı küçült">A−</button><button type="button" data-size="1" aria-label="Yazıyı büyüt">A+</button>
       <a href="{b['base']}#icindekiler">İçindekiler</a></div>
+    {share_mini()}
   </header>
   {video}
   <div class="r-text">

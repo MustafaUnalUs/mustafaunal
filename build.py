@@ -18,7 +18,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "5"
+ASSET_V = "6"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -80,6 +80,7 @@ def layout(path, title, body, desc="", cls=""):
 </header>
 <main id="icerik">
 {body}
+{books.share_bar()}
 </main>
 <footer class="foot" id="iletisim">
   <div class="foot-in">
@@ -167,6 +168,7 @@ def build_home():
     <p class="hero-motto">Bir ömür, birçok iz.</p>
     <p class="hero-lead">1969’da Balkıca’da başlayan bir hayat. Kitaplar, yaklaşık 250 bin fotoğraf, Acıpayam.com ve Eski Denizli ile yaşananları kaybolmadan görmek, unutmadan aktarmak için.</p>
     <p class="hero-actions"><a class="btn" href="#kitaplar">Kitaplarım</a><a class="btn btn-line" href="#fotograflar">Fotoğraflarım</a></p>
+    {books.share_mini()}
   </div>
   <figure class="hero-portrait">
     <span class="halo" aria-hidden="true"></span>

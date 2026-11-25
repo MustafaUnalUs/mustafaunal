@@ -100,3 +100,10 @@
   addEventListener("scroll", on, { passive: true });
   on();
 })();
+
+/* paylaş: bulunduğu adresi kullan */
+document.querySelectorAll("[data-share]").forEach((a) => {
+  const u = encodeURIComponent(location.href.split("#")[0]), t = encodeURIComponent(document.title);
+  a.href = { wa: `https://wa.me/?text=${t}%20${u}`, fb: `https://www.facebook.com/sharer/sharer.php?u=${u}`,
+             x: `https://x.com/intent/post?text=${t}&url=${u}` }[a.dataset.share];
+});
