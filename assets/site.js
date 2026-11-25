@@ -123,3 +123,68 @@ document.querySelectorAll("[data-share]").forEach((a) => {
     paint();
   });
 })();
+
+/* bölümler arası kolay geçiş: klavye okları, telefonda kaydırma, alttaki küçük çubuk */
+(() => {
+  const prevA = document.querySelector(".pager-prev, .r-pager a:not(.nx)");
+  const nextA = document.querySelector(".pager-next, .r-pager a.nx");
+  if (!prevA && !nextA) return;
+  const go = (a) => { if (a && a.href) location.href = a.href; };
+  const label = (a) => (a ? [...a.childNodes].filter((n) => n.nodeType === 3).map((n) => n.textContent).join("").trim() : "");
+
+  // 1) Bilgisayar: ← → tuşları
+  addEventListener("keydown", (e) => {
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    const t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    if (document.querySelector("dialog[open]")) return;
+    if (e.key === "ArrowRight") go(nextA);
+    else if (e.key === "ArrowLeft") go(prevA);
+  });
+
+  // 2) Alttaki küçük geçiş çubuğu
+  const pos = document.querySelector(".chap-band-in span, .r-band span");
+  const bar = document.createElement("nav");
+  bar.className = "gecis";
+  bar.setAttribute("aria-label", "Bölüm geçişi");
+  const mk = (a, cls, arrow, txt) => {
+    const el = document.createElement(a ? "a" : "span");
+    el.className = cls + (a ? "" : " is-off");
+    if (a) { el.href = a.href; el.title = label(a); }
+    el.innerHTML = cls === "g-prev" ? `<b aria-hidden="true">${arrow}</b><span>${txt}</span>` : `<span>${txt}</span><b aria-hidden="true">${arrow}</b>`;
+    return el;
+  };
+  const mid = document.createElement("span");
+  mid.className = "g-mid";
+  mid.textContent = pos ? pos.textContent.replace(/^Bölüm\s*/, "") : "";
+  bar.append(mk(prevA, "g-prev", "‹", "Önceki"), mid, mk(nextA, "g-next", "›", nextA && /sonu|sayfasına/i.test(nextA.textContent) ? "Kitaba dön" : "Sonraki"));
+  document.body.append(bar);
+  document.body.classList.add("has-gecis");
+
+  // aşağı okurken gizlen, yukarı kaydırınca ya da sona gelince görün
+  let lastY = scrollY;
+  const onScroll = () => {
+    const y = scrollY;
+    const nearEnd = y + innerHeight > document.documentElement.scrollHeight - 600;
+    bar.classList.toggle("is-hidden", y > lastY + 4 && y > 300 && !nearEnd);
+    if (y < lastY - 4 || nearEnd) bar.classList.remove("is-hidden");
+    lastY = y;
+  };
+  addEventListener("scroll", onScroll, { passive: true });
+
+  // 3) Telefon: metni sağa/sola kaydırarak geç
+  const area = document.querySelector(".reader") || document.body;
+  let sx = 0, sy = 0, st = 0, ok = false;
+  area.addEventListener("touchstart", (e) => {
+    if (e.touches.length !== 1) { ok = false; return; }
+    sx = e.touches[0].clientX; sy = e.touches[0].clientY; st = Date.now(); ok = true;
+  }, { passive: true });
+  area.addEventListener("touchend", (e) => {
+    if (!ok || getSelection().toString()) return;
+    const t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+    if (Date.now() - st < 700 && Math.abs(dx) > 90 && Math.abs(dx) > Math.abs(dy) * 2.2) {
+      bar.classList.add(dx < 0 ? "go-next" : "go-prev");
+      go(dx < 0 ? nextA : prevA);
+    }
+  }, { passive: true });
+})();
