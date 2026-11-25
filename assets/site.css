@@ -463,3 +463,32 @@ main, .bar, .foot { position: relative; z-index: 1; }
   .po-info { min-width: 0; flex: 1; font-size: .8rem; }
   .po-bar [data-start] { display: none; }
 }
+
+/* ===== GÜNDÜZ MÜZESİ (açık görünüm, düğmeyle) ===== */
+:root[data-theme="light"] { --duvar: #f4efe4; --duvar-2: #ebe4d5; --duvar-3: #fbf8f1; --isik: #1f1c17; --soluk: #5a564c;
+  --pirinc: #a07c45; --pirinc-acik: #7a5520; color-scheme: light; }
+:root[data-theme="light"] body { background-image: radial-gradient(120% 60% at 50% -10%, rgba(160,124,69,.10), transparent 60%); }
+:root[data-theme="light"] .torch { display: none; }
+:root[data-theme="light"] .btn { color: #fff; }
+:root[data-theme="light"] .book-link:hover .btn, :root[data-theme="light"] .card a:hover .btn { background: #5f4218; }
+:root[data-theme="light"] .btn-line { color: var(--isik); background: none; }
+:root[data-theme="light"] .lightbox { color: #f6ecd6; }
+:root[data-theme="light"] .lightbox button[aria-pressed="true"], :root[data-theme="light"] .lightbox button:hover { background: #d9bd85; color: #15130f; }
+:root[data-theme="light"] .guide a, :root[data-theme="light"] .press-grid li, :root[data-theme="light"] .press-col li { border-bottom-color: rgba(0,0,0,.1); }
+:root[data-theme="light"] .now { background: rgba(0,0,0,.03); }
+:root[data-theme="light"] .foot-note { border-top-color: rgba(0,0,0,.08); color: #6b675e; }
+:root[data-theme="light"] .card a, :root[data-theme="light"] .case, :root[data-theme="light"] .bk-panel { box-shadow: 0 0 0 1px rgba(160,124,69,.3) inset, 0 12px 24px -18px rgba(60,40,10,.35); }
+:root[data-theme="light"] .label, :root[data-theme="light"] .tl-card { box-shadow: 0 10px 24px -16px rgba(60,40,10,.45); }
+:root[data-theme="light"] .page-reader { --duvar: #e9e2d3; }
+/* tema düğmesi */
+.bar { gap: .7rem; }
+.bar .name { margin-right: auto; }
+.tema { display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; padding: 0; cursor: pointer;
+  background: none; border: 1px solid var(--pirinc); color: var(--isik); }
+.tema:hover { background: rgba(217,189,133,.15); }
+.tema svg { width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.tema .ay { display: none; }
+:root[data-theme="light"] .tema .gunes { display: none; }
+:root[data-theme="light"] .tema .ay { display: block; }
+@media (min-width: 980px) { .bar .tema { order: 3; } }
+:root[data-theme="light"] .bk-series img { opacity: .92; }

@@ -18,7 +18,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "8"
+ASSET_V = "9"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -65,6 +65,7 @@ def layout(path, title, body, desc="", cls=""):
 {"" if CANLI else chr(60) + "meta name=" + chr(34) + "robots" + chr(34) + " content=" + chr(34) + "noindex" + chr(34) + ">"}
 <link rel="canonical" href="{ORIGIN}{path}">
 <meta name="theme-color" content="#16231d">
+<script>(function(){{var t;try{{t=localStorage.getItem("tema")}}catch(e){{}}document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}})()</script>
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,6 +77,10 @@ def layout(path, title, body, desc="", cls=""):
 <a class="skip" href="#icerik">İçeriğe geç</a>
 <header class="bar">
   <a class="name" href="/"><span class="name-dot" aria-hidden="true"></span>Mustafa Ünal</a>
+  <button type="button" class="tema" id="tema" aria-label="Açık ya da koyu görünüme geç" title="Açık / koyu görünüm">
+    <svg class="gunes" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="ay" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
   <details class="menu"><summary>Salonlar</summary><nav aria-label="Ana menü">{nav}</nav></details>
 </header>
 <main id="icerik">

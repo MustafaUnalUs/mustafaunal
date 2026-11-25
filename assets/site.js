@@ -107,3 +107,19 @@ document.querySelectorAll("[data-share]").forEach((a) => {
   a.href = { wa: `https://wa.me/?text=${t}%20${u}`, fb: `https://www.facebook.com/sharer/sharer.php?u=${u}`,
              x: `https://x.com/intent/post?text=${t}&url=${u}` }[a.dataset.share];
 });
+
+/* açık / koyu görünüm düğmesi */
+(() => {
+  const b = document.getElementById("tema");
+  if (!b) return;
+  const root = document.documentElement;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  const paint = () => { if (meta) meta.content = root.getAttribute("data-theme") === "light" ? "#f4efe4" : "#16231d"; };
+  paint();
+  b.addEventListener("click", () => {
+    const t = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+    root.setAttribute("data-theme", t);
+    try { localStorage.setItem("tema", t); } catch { /* yok say */ }
+    paint();
+  });
+})();
