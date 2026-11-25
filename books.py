@@ -187,7 +187,7 @@ SHARE_FALLBACK = {"wa": "https://wa.me/", "fb": "https://www.facebook.com/", "x"
 
 def share_links():
     return "".join(
-        f'<a class="sh sh-{k}" data-share="{k}" href="{SHARE_FALLBACK[k]}" target="_blank" rel="noopener" aria-label="{n} ile paylaş">'
+        f'<a class="sh sh-{k}" data-share="{k}" href="{SHARE_FALLBACK[k]}" target="_blank" rel="noopener" aria-label="{n} ile paylaş" title="{n}">'
         f'<svg viewBox="0 0 24 24" aria-hidden="true">{SHARE_IC[k]}</svg><span>{n}</span></a>'
         for k, n in (("wa", "WhatsApp"), ("fb", "Facebook"), ("x", "X")))
 

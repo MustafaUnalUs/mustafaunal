@@ -492,3 +492,18 @@ main, .bar, .foot { position: relative; z-index: 1; }
 :root[data-theme="light"] .tema .ay { display: block; }
 @media (min-width: 980px) { .bar .tema { order: 3; } }
 :root[data-theme="light"] .bk-series img { opacity: .92; }
+
+/* paylaş: küçük, yazısız simgeler */
+.sh { width: 2.15rem; height: 2.15rem; padding: 0 !important; gap: 0; justify-content: center; border-radius: 50%;
+  background: transparent !important; color: var(--soluk) !important; box-shadow: inset 0 0 0 1px currentColor !important; filter: none !important; }
+.sh span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.sh svg { width: 1rem !important; height: 1rem !important; }
+.sh-wa:hover, .sh-wa:focus-visible { color: #1f8f4e !important; }
+.sh-fb:hover, .sh-fb:focus-visible { color: #1877f2 !important; }
+.sh-x:hover, .sh-x:focus-visible { color: var(--isik) !important; }
+.share-mini { gap: .4rem; margin-top: .9rem; }
+.share-mini > span { font-size: .78rem; margin-right: .2rem; flex-basis: auto !important; }
+.share-row { gap: .45rem; }
+.share-in { padding-top: 1.1rem; padding-bottom: 1.1rem; }
+.share-in p { font-size: 1rem !important; }
+.reader a.sh, .reader a.sh:hover { color: #6b675e !important; } .reader .sh-x:hover { color: #000 !important; }
