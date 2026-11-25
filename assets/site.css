@@ -522,3 +522,15 @@ main, .bar, .foot { position: relative; z-index: 1; }
 body.has-gecis { padding-bottom: 4.5rem; }
 @media (hover: hover) and (pointer: fine) { .gecis::after { content: "← → tuşlarıyla da geçebilirsiniz"; position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); white-space: nowrap; font: 500 .75rem system-ui, sans-serif; color: rgba(255,255,255,.9); background: rgba(14,24,19,.85); padding: .3rem .6rem; border-radius: 6px; opacity: 0; transition: opacity .2s; pointer-events: none; } .gecis:hover::after { opacity: 1; } }
 @media print { .gecis { display: none; } }
+
+/* paylaş: uygulamaların kendi renkleri */
+.sh { color: #fff !important; box-shadow: none !important; }
+.sh-wa { background: #25d366 !important; }
+.sh-fb { background: #1877f2 !important; }
+.sh-x { background: #000 !important; }
+.sh:hover, .sh:focus-visible { color: #fff !important; filter: brightness(1.12) !important; }
+.sh svg path.xl { fill: currentColor; stroke: none; }
+.sh-x svg { width: .9rem !important; height: .9rem !important; }
+.reader a.sh, .reader a.sh:hover { color: #fff !important; }
+:root[data-theme="dark"] .sh-x, .page-reader .sh-x { box-shadow: inset 0 0 0 1px rgba(255,255,255,.35) !important; }
+.sh-x { box-shadow: inset 0 0 0 1px rgba(255,255,255,.35) !important; }
