@@ -302,3 +302,10 @@ document.querySelectorAll("[data-share]").forEach((a) => {
   const init = new URLSearchParams(location.search).get("q");
   if (init) { q.value = init; run(); } else q.focus();
 })();
+
+/* bölüm sesi: tam kaydın yalnızca bu bölüme ait kısmı */
+document.querySelectorAll(".dinle-kutu audio[data-start]").forEach((au) => {
+  const a = parseFloat(au.dataset.start), z = parseFloat(au.dataset.end);
+  au.addEventListener("play", () => { if (au.currentTime < a - 1 || au.currentTime >= z) au.currentTime = a; });
+  au.addEventListener("timeupdate", () => { if (au.currentTime >= z) { au.pause(); au.currentTime = a; } });
+});

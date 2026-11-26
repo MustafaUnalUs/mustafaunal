@@ -283,15 +283,29 @@ def chapter_track(book, title):
     return (book["tracks_base"] + t["file"], int(t["planned_duration_seconds"])) if t else None
 
 
+def _segments():
+    p = ROOT / "data/kitap/bolum-sesleri.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+SEGMENTS = _segments()
+
+
 def listen_box(book, title):
     t = chapter_track(book, title)
+    extra = ""
     if not t:
-        return ""
+        seg = SEGMENTS.get(book["slug"], {}).get(title)
+        if not seg or not book.get("audio"):
+            return ""
+        a, z = seg
+        t = (f'{book["audio"]}#t={a},{z}', int(z - a))
+        extra = f' data-start="{a}" data-end="{z}"'
     src, sec = t
     return (f'<figure class="dinle-kutu"><figcaption><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/>'
             f'<rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>'
             f'<span>Bu bölümü dinleyin</span><small>{sec // 60}:{sec % 60:02d} · sesli kitap</small></figcaption>'
-            f'<audio controls preload="none" src="{html.escape(src)}"></audio></figure>')
+            f'<audio controls preload="none" src="{html.escape(src)}"{extra}></audio></figure>')
 
 def build_chapter(b, i, layout):
     ch = b["data"]["chapters"]
