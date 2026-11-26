@@ -18,7 +18,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "13"
+ASSET_V = "14"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -31,12 +31,12 @@ SERIES = [
     {"slug": "adi-konmamis-islere-don-bicen-adam", "no": "IV", "tag": "Hazırlanıyor", "soon": True,
      "title": "Adı Konmamış İşlere Don Biçen Adam", "path": "/kitaplar/adi-konmamis-islere-don-bicen-adam/",
      "line": "GAMEKS, işler, fikirler ve internet. 2027’de yayımlanması planlanıyor."},
-    {"slug": "uslu-dimag", "no": "V", "tag": "Final · Hazırlanıyor", "soon": True, "title": "US’lu Dimağ", "path": "/kitaplar/uslu-dimag/",
+    {"slug": "gonul-dostu", "no": "V", "tag": "Hazırlanıyor", "soon": True, "title": "Gönül Dostu", "path": "/kitaplar/gonul-dostu/",
+     "line": "Sabit Kızılhan ile yol yürümek: 2005–2026 arasından dostluğun ve hak mücadelesinin tanıklığı. 2027’de yayımlanması planlanıyor."},
+    {"slug": "uslu-dimag", "no": "VI", "tag": "Final · Hazırlanıyor", "soon": True, "title": "US’lu Dimağ", "path": "/kitaplar/uslu-dimag/",
      "line": "Doksan öğretide ölçüsü oturmuş bir zihin. 2027’de yayımlanması planlanıyor."},
 ]
 OTHERS = [
-    {"slug": "gonul-dostu", "title": "Gönül Dostu", "role": "Yazar · Hazırlanıyor", "soon": True, "path": "/kitaplar/gonul-dostu/",
-     "line": "Sabit Kızılhan ile yol yürümek: 2005–2026 arasından dostluğun ve hak mücadelesinin tanıklığı. 2027’de yayımlanması planlanıyor."},
     {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "role": "Editör · Sabit Kızılhan’ın derlemesi", "path": "/kitaplar/bana-koyunu-anlat/",
      "line": "Acıpayam köylerinin anlatıcılarıyla hazırlanan sözlü tarih çalışması."},
     {"slug": "kelekcide-yasamak", "title": "Kelekçi’de Yaşamak", "role": "Yayına hazırlayan · Dr. Oktar Öner’in kitabı",
@@ -183,8 +183,8 @@ def build_home():
 
 <section class="salon" id="kitaplar" aria-labelledby="kitaplar-baslik">
   {salon_head(1, "kitaplar", "Kitaplar", "Hepsi ücretsiz; internette okunur, PDF olarak indirilir. Bir kitaba dokunun, sayfası açılsın.")}
-  <h3 class="row-title">US’lu Anlatılar <span>Beş kitaplık seri</span></h3>
-  <ol class="shelf">{series}</ol>
+  <h3 class="row-title">US’lu Anlatılar <span>Altı kitaplık seri</span></h3>
+  <ol class="shelf is-series">{series}</ol>
   <h3 class="row-title">Yazarlık, editörlük, yayına hazırlık</h3>
   <ul class="shelf">{others}</ul>
 </section>

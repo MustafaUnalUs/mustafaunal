@@ -69,11 +69,11 @@ BOOKS = [
     {"slug": "adi-konmamis-islere-don-bicen-adam", "title": "Adı Konmamış İşlere Don Biçen Adam", "author": "Mustafa Ünal",
      "seri": "Kitap IV · Hazırlanıyor", "soon": True, "status": SOON_SRC["status"],
      "intro": SOON_SRC["tagline"] + " " + " ".join(SOON_SRC["paragraphs"])},
-    {"slug": "uslu-dimag", "title": "US’lu Dimağ", "author": "Mustafa Ünal", "seri": "Kitap V · Final · Hazırlanıyor",
+    {"slug": "gonul-dostu", "title": "Gönül Dostu", "subtitle": "Sabit Kızılhan ile Yol Yürümek", "author": "Mustafa Ünal",
+     "seri": "Kitap V · Hazırlanıyor", "soon": True, "status": "2027’de yayımlanması planlanıyor", "intro": next(u for u in HOME["upcoming"] if u["title"].startswith("Gönül"))["paragraphs"][0]},
+    {"slug": "uslu-dimag", "title": "US’lu Dimağ", "author": "Mustafa Ünal", "seri": "Kitap VI · Final · Hazırlanıyor",
      "soon": True, "status": "2027’de yayımlanması planlanıyor",
      "intro": "Bu kitap öğretmek ya da ikna etmek için yazılmadı. Bir insanın hayatın içinde düşe kalka, zamanla oluşmuş us izlerinin kaydı; davranıştan zamana, güvenden vedaya doksan kısa öğreti."},
-    {"slug": "gonul-dostu", "title": "Gönül Dostu", "subtitle": "Sabit Kızılhan ile Yol Yürümek", "author": "Mustafa Ünal",
-     "role": "Bağımsız eser · Hazırlanıyor", "soon": True, "status": "2027’de yayımlanması planlanıyor", "intro": next(u for u in HOME["upcoming"] if u["title"].startswith("Gönül"))["paragraphs"][0]},
     {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "author": "Sabit Kızılhan", "editor": "Mustafa Ünal",
      "role": "Sözlü tarih · Editörlük", "intro": SABIT["lead"], "audio": SABIT["audio_full"]},
     {"slug": "kelekcide-yasamak", "title": "Kelekçi’de Yaşamak", "author": "Dr. Oktar Öner", "editor": "Mustafa Ünal",
@@ -158,7 +158,7 @@ def series_strip(book):
         f'<li><a href="{b["base"]}"{" aria-current=" + chr(34) + "page" + chr(34) if b is book else ""}>'
         f'<img src="{b["cover"]}" alt="" width="400" height="620" loading="lazy"><span class="s-no">{E(b["seri"])}</span>'
         f'<span class="s-t">{E(b["title"])}</span></a></li>' for b in SERIES)
-    return (f'<section class="bk-series"><h2>US’lu Anlatılar</h2><p>Beş kitaplık seri. Her kitap tek başına da okunabilir.</p>'
+    return (f'<section class="bk-series"><h2>US’lu Anlatılar</h2><p>Altı kitaplık seri. Her kitap tek başına da okunabilir.</p>'
             f'<ol>{li}</ol></section>')
 
 
