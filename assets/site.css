@@ -570,3 +570,6 @@ body.has-gecis { padding-bottom: 4.5rem; }
 .rozet { position: absolute; left: 50%; bottom: 1.8rem; transform: translateX(-50%); white-space: nowrap; padding: .35rem .7rem;
   background: var(--pirinc-acik); color: #15130f; font: 700 .7rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; box-shadow: 0 6px 14px -6px rgba(0,0,0,.6); }
 :root[data-theme="light"] .rozet { color: #fff; }
+/* rozet: acipayam.com'daki gibi sol üst köşe şerit */
+.rozet { left: calc(1.2rem - .4rem); top: calc(2.2rem + .7rem); bottom: auto; transform: none; padding: .38rem .65rem; border-radius: 0 3px 3px 0; }
+.book-link:hover .rozet { transform: translateY(-6px); transition: transform .35s ease; }
