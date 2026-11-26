@@ -220,3 +220,46 @@ document.querySelectorAll("[data-share]").forEach((a) => {
   const pager = document.querySelector(".pager, .r-pager");
   (pager ? pager.parentNode : reader).insertBefore(hint, pager || null);
 })();
+
+/* kaldığın yerden devam et */
+(() => {
+  const K = (base) => "devam:" + base;
+  const get = (k) => { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch { return null; } };
+  const set = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* yok say */ } };
+  const band = document.querySelector(".chap-band-in > a, .r-band > a");
+  const reader = document.querySelector(".reader");
+  if (band && reader) {
+    const base = band.getAttribute("href");
+    const num = (document.querySelector(".chap-num, .r-num") || {}).textContent || "";
+    const title = (reader.querySelector("h1") || {}).textContent || "";
+    const frac = () => { const h = document.documentElement.scrollHeight - innerHeight; return h > 0 ? scrollY / h : 0; };
+    const save = () => {
+      const f = frac();
+      if (Number(num) > 1 || f > .08) set(K(base), { u: location.pathname, n: num.trim(), t: title.trim(), f: Math.round(f * 1000) / 1000 });
+    };
+    if (location.hash === "#devam") {
+      const s = get(K(base));
+      if (s && s.u === location.pathname && s.f > .02) {
+        addEventListener("load", () => scrollTo(0, s.f * (document.documentElement.scrollHeight - innerHeight)));
+      }
+    }
+    let t;
+    addEventListener("scroll", () => { clearTimeout(t); t = setTimeout(save, 400); }, { passive: true });
+    addEventListener("pagehide", save);
+    if (Number(num) > 1) setTimeout(save, 1500);
+    return;
+  }
+  const acts = document.querySelector(".bk-actions");
+  if (!acts) return;
+  const s = get(K(location.pathname));
+  if (!s || !s.u) return;
+  const a = document.createElement("a");
+  a.className = "devam";
+  a.href = s.u + "#devam";
+  const pct = s.f ? ` · %${Math.max(1, Math.round(s.f * 100))}` : "";
+  a.innerHTML = `<span class="devam-k">Kaldığınız yer${pct}</span><b></b><span class="devam-go">Devam et <span aria-hidden="true">→</span></span>`;
+  a.querySelector("b").textContent = (s.n ? s.n + " · " : "") + s.t;
+  acts.parentNode.insertBefore(a, acts);
+  const main = acts.querySelector(".ba-main span");
+  if (main) main.textContent = "Baştan başla";
+})();
