@@ -577,3 +577,24 @@ body.has-gecis { padding-bottom: 4.5rem; }
 @media (min-width: 700px) { .shelf.is-series { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; column-gap: clamp(2rem, 5vw, 4.5rem); row-gap: 3.5rem; } }
 .shelf.is-series .spot { padding-left: 2.2rem; padding-right: 2.2rem; }
 .shelf.is-series .rozet { left: calc(2.2rem - .4rem); }
+
+/* kitap düğmeleri: modern */
+.bk-actions { display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); gap: .6rem; margin: 1.6rem 0 0; max-width: 34rem; }
+.bk-actions.ba-n2 { --n: 2; } .bk-actions.ba-n3 { --n: 3; }
+.ba { display: flex; align-items: center; justify-content: center; gap: .55rem; min-height: 3.4rem; padding: .7rem .9rem; border-radius: 14px;
+  text-decoration: none; font: 700 1rem/1.15 var(--sans); color: var(--isik); background: rgba(217,189,133,.12);
+  box-shadow: inset 0 0 0 1px rgba(217,189,133,.28); transition: background .2s, transform .15s, box-shadow .2s; }
+.ba svg { width: 1.3rem; height: 1.3rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.ba small { display: block; font-weight: 500; font-size: .75rem; opacity: .7; }
+.ba:hover { background: rgba(217,189,133,.22); color: var(--isik); transform: translateY(-1px); }
+.ba-main { grid-column: 1 / -1; min-height: 3.8rem; font-size: 1.1rem; background: var(--pirinc-acik); color: #15130f; box-shadow: 0 10px 24px -14px rgba(0,0,0,.7); }
+.ba-main:hover { background: #f0d8a4; color: #15130f; }
+:root[data-theme="light"] .ba { background: rgba(122,85,32,.08); box-shadow: inset 0 0 0 1px rgba(122,85,32,.22); color: #1f1c17; }
+:root[data-theme="light"] .ba:hover { background: rgba(122,85,32,.15); }
+:root[data-theme="light"] .ba-main { background: #7a5520; color: #fff; }
+:root[data-theme="light"] .ba-main:hover { background: #5f4218; color: #fff; }
+@media (max-width: 560px) {
+  .bk-actions { max-width: none; }
+  .ba:not(.ba-main) { flex-direction: column; gap: .35rem; min-height: 4.6rem; font-size: .9rem; text-align: center; }
+  .ba:not(.ba-main) svg { width: 1.45rem; height: 1.45rem; }
+}

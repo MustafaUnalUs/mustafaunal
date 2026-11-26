@@ -223,12 +223,17 @@ def build_book(b, layout):
         body_main = ""
     else:
         facts = ""
-        acts = [f'<a class="btn" href="{chapter_url(b, 0)}">Okumaya başla</a>',
-                f'<a class="btn btn-line" href="{b["base"]}pdf/">Sitede PDF oku</a>',
-                f'<a class="btn btn-line" href="{b["pdf"]}" download>PDF indir <small>{mb(b["pdf_size"])}</small></a>']
+        ic = lambda d: f'<svg viewBox="0 0 24 24" aria-hidden="true">{d}</svg>'
+        I_READ = '<path d="M3 5.5c3-1.2 6-1.2 9 .8 3-2 6-2 9-.8V19c-3-1.2-6-1.2-9 .8-3-2-6-2-9-.8z"/><path d="M12 6.3v13.5"/>'
+        I_PDF = '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>'
+        I_DL = '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>'
+        I_AU = '<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/>'
+        acts = [f'<a class="ba ba-main" href="{chapter_url(b, 0)}">{ic(I_READ)}<span>Okumaya başla</span></a>',
+                f'<a class="ba" href="{b["base"]}pdf/">{ic(I_PDF)}<span>PDF oku</span></a>',
+                f'<a class="ba" href="{b["pdf"]}" download>{ic(I_DL)}<span>İndir <small>{mb(b["pdf_size"])}</small></span></a>']
         if b.get("audio"):
-            acts.append('<a class="btn btn-line" href="#dinle">Sesli kitap</a>')
-        actions = '<p class="bk-actions">' + "".join(acts) + "</p>"
+            acts.append(f'<a class="ba" href="#dinle">{ic(I_AU)}<span>Dinle</span></a>')
+        actions = f'<div class="bk-actions ba-n{len(acts) - 1}">' + "".join(acts) + "</div>"
         side = []
         if b.get("overview"):
             side.append('<section class="bk-panel"><h2>Kitabın içinden</h2>' + "".join(f"<p>{E(p)}</p>" for p in b["overview"]) + "</section>")
