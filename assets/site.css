@@ -598,3 +598,15 @@ body.has-gecis { padding-bottom: 4.5rem; }
   .ba:not(.ba-main) { flex-direction: column; gap: .35rem; min-height: 4.6rem; font-size: .9rem; text-align: center; }
   .ba:not(.ba-main) svg { width: 1.45rem; height: 1.45rem; }
 }
+/* raf: Kitabı aç düğmesi */
+.book-act { display: inline-flex; align-items: center; gap: .5rem; margin-top: auto; padding: .7rem 1.1rem; border-radius: 12px; text-decoration: none !important;
+  font: 700 .95rem/1 var(--sans); background: var(--pirinc-acik); color: #15130f !important; box-shadow: 0 8px 18px -12px rgba(0,0,0,.7); transition: background .2s, transform .15s; }
+.book-act::after { content: "→"; font-size: 1.05rem; }
+.book-link:hover .book-act { background: #f0d8a4; color: #15130f !important; transform: translateY(-1px); }
+.book.is-soon .book-act { background: rgba(217,189,133,.12); color: var(--isik) !important; box-shadow: inset 0 0 0 1px rgba(217,189,133,.3); }
+.book.is-soon .book-link:hover .book-act { background: rgba(217,189,133,.22); color: var(--isik) !important; }
+:root[data-theme="light"] .book-act { background: #7a5520; color: #fff !important; }
+:root[data-theme="light"] .book-link:hover .book-act { background: #5f4218; color: #fff !important; }
+:root[data-theme="light"] .book.is-soon .book-act { background: rgba(122,85,32,.08); color: #1f1c17 !important; box-shadow: inset 0 0 0 1px rgba(122,85,32,.25); }
+.shelf > li .book-act { margin-top: auto; }
+.book-line { margin-bottom: 1rem; }
