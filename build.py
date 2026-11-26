@@ -277,6 +277,27 @@ def build_gameks():
     return layout("/gameks/", "GAMEKS: Bilişimden üretime · Mustafa Ünal", body, desc=g["lead"], cls="page-gameks")
 
 
+
+def write_sitemap():
+    """Google için site haritası: yönlendirme sayfaları hariç bütün sayfalar."""
+    from datetime import date
+    today = date.today().isoformat()
+    urls = []
+    for f in sorted(OUT.rglob("index.html")):
+        t = f.read_text(encoding="utf-8", errors="ignore")
+        if 'http-equiv="refresh"' in t or 'name="robots" content="noindex"' in t:
+            continue
+        rel = "/" + str(f.parent.relative_to(OUT)).replace("\\", "/")
+        rel = "/" if rel == "/." else rel + "/"
+        pr = "1.0" if rel == "/" else ("0.5" if "/bolum/" in rel else "0.8")
+        urls.append(f"  <url><loc>{ORIGIN}{rel}</loc><lastmod>{today}</lastmod><priority>{pr}</priority></url>")
+    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n", encoding="utf-8")
+    if CANLI:
+        with open(OUT / "robots.txt", "a") as r:
+            r.write(f"Sitemap: {ORIGIN}/sitemap.xml\n")
+    return len(urls)
+
 def main():
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -298,7 +319,7 @@ def main():
                 '<section class="lobby"><div class="lobby-text"><p class="salon-no">Kayıp eser</p><h1>Bu salon boş.</h1>'
                 '<p class="lobby-lead">Aradığınız sayfa taşınmış olabilir. <a href="/">Sergi girişine dönün.</a></p></div></section>')
     (OUT / "404.html").write_text(nf, encoding="utf-8")
-    print("site üretildi →", OUT)
+    print("site üretildi →", OUT, "· site haritası:", write_sitemap(), "adres")
 
 
 if __name__ == "__main__":
