@@ -18,7 +18,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "17"
+ASSET_V = "18"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -123,7 +123,7 @@ def book(b, series=False):
     act = "Kitabın sayfası" if soon else "Kitabı aç"
     return (f'<li class="book{" is-soon" if soon else ""}"><a class="book-link" href="{b["path"]}">'
             f'<span class="spot">{ph("/img/kapak/" + b["slug"] + ".webp?v=" + ASSET_V, b["title"] + " kapağı", "cover", 400, 620)}'
-            + ('<span class="rozet">Hazırlanıyor · 2027</span>' if soon else "") + '</span>'
+            + ('<span class="rozet">Hazırlanıyor</span>' if soon else "") + '</span>'
             f'<span class="book-meta">{E(sub)}</span><span class="book-title">{E(b["title"])}</span>'
             + "".join(f'<span class="book-who"><small>{E(r)}</small> {E(n)}</span>' for r, n in b.get("who", []))
             + f'<span class="book-line">{E(b["line"])}</span><span class="book-act">{act}</span></a></li>')

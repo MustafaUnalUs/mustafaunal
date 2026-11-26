@@ -573,3 +573,7 @@ body.has-gecis { padding-bottom: 4.5rem; }
 /* rozet: acipayam.com'daki gibi sol üst köşe şerit */
 .rozet { left: calc(1.2rem - .4rem); top: calc(2.2rem + .7rem); bottom: auto; transform: none; padding: .38rem .65rem; border-radius: 0 3px 3px 0; }
 .book-link:hover .rozet { transform: translateY(-6px); transition: transform .35s ease; }
+/* seri: iki raf, üçerli */
+@media (min-width: 700px) { .shelf.is-series { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; column-gap: clamp(2rem, 5vw, 4.5rem); row-gap: 3.5rem; } }
+.shelf.is-series .spot { padding-left: 2.2rem; padding-right: 2.2rem; }
+.shelf.is-series .rozet { left: calc(2.2rem - .4rem); }
