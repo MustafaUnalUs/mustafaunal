@@ -268,6 +268,31 @@ def build_book(b, layout):
     return layout(b["base"], f"{b['title']} · Mustafa Ünal", body, desc=b["intro"][:160], cls="page-book")
 
 
+
+def _tn(s):
+    s = s.replace("İ", "i").replace("I", "ı").lower().translate(str.maketrans("ışğüöçâî", "isguocai"))
+    return re.sub(r"[^a-z0-9]", "", s)
+
+
+def chapter_track(book, title):
+    """Bölümün kendi ses kaydı (başlık eşleştirmesiyle)."""
+    tr = book.get("tracks") or []
+    k = _tn(title)
+    t = next((t for t in tr if _tn(t["title"]) == k), None) or \
+        next((t for t in tr if _tn(t["title"])[:12] == k[:12]), None)
+    return (book["tracks_base"] + t["file"], int(t["planned_duration_seconds"])) if t else None
+
+
+def listen_box(book, title):
+    t = chapter_track(book, title)
+    if not t:
+        return ""
+    src, sec = t
+    return (f'<figure class="dinle-kutu"><figcaption><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/>'
+            f'<rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>'
+            f'<span>Bu bölümü dinleyin</span><small>{sec // 60}:{sec % 60:02d} · sesli kitap</small></figcaption>'
+            f'<audio controls preload="none" src="{html.escape(src)}"></audio></figure>')
+
 def build_chapter(b, i, layout):
     ch = b["data"]["chapters"]
     c = ch[i]
@@ -293,6 +318,7 @@ def build_chapter(b, i, layout):
       <button type="button" data-size="-1" aria-label="Yazıyı küçült">A−</button><button type="button" data-size="1" aria-label="Yazıyı büyüt">A+</button>
       <a href="{b['base']}#icindekiler">İçindekiler</a></div>
     {share_mini()}
+    {listen_box(b, c['title'])}
   </header>
   {video}
   <div class="r-text">
