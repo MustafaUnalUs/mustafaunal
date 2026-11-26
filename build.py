@@ -18,7 +18,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "21"
+ASSET_V = "22"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -52,6 +52,14 @@ TEST_NOTE = ('<p class="foot-note">Bu adres, mustafaunal.tr içeriğiyle hazırl
              f'Asıl site: <a href="{ORIGIN}/">mustafaunal.tr</a></p>')
 
 
+def og_slug(path):
+    """Paylaşım kartı: /kitaplar/<kitap>/ altındaki sayfalar o kitabın kartı."""
+    m = path.split("/")
+    if len(m) > 2 and m[1] == "kitaplar" and (ROOT / "static/img/paylas" / f"{m[2]}.jpg").exists():
+        return m[2]
+    return ""
+
+
 def layout(path, title, body, desc="", cls=""):
     nav = "".join(f'<a href="{("/" + h) if h.startswith("#") and path != "/" else h}">{t}</a>' for h, t in NAV)
     contact = "".join(f'<a href="{E(c["href"])}">{E(c["label"])}</a>' for c in D["contact"])
@@ -62,6 +70,16 @@ def layout(path, title, body, desc="", cls=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc or D['hero']['text'])}">
+<meta property="og:title" content="{E(title)}">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:type" content="{'book' if og_slug(path) else 'website'}">
+<meta property="og:site_name" content="Mustafa Ünal">
+<meta property="og:url" content="{ORIGIN}{path}">
+<meta property="og:description" content="{E(desc or D['hero']['text'])}">
+<meta property="og:image" content="{ORIGIN}/img/paylas/{og_slug(path) or 'mustafaunal'}.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 {"" if CANLI else chr(60) + "meta name=" + chr(34) + "robots" + chr(34) + " content=" + chr(34) + "noindex" + chr(34) + ">"}
 <link rel="canonical" href="{ORIGIN}{path}">
 <meta name="theme-color" content="#16231d">
