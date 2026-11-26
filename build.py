@@ -18,7 +18,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "15"
+ASSET_V = "16"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -28,13 +28,13 @@ SERIES = [
      "line": "1990’da Ankara-Akyurt’ta geçen yedi ay ve otuz beş yıl sonra yeniden açılan bir hayat."},
     {"slug": "uslu-dusler", "no": "III", "tag": "Bonus", "title": "US’lu Düşler", "path": "/kitaplar/uslu-dusler/",
      "line": "Kırk sayfa civarında; aç, oku, bitir. Zihni dürtmeyi sürdüren küçük bir beyin jimnastiği."},
-    {"slug": "adi-konmamis-islere-don-bicen-adam", "no": "IV", "tag": "Hazırlanıyor", "soon": True,
+    {"slug": "adi-konmamis-islere-don-bicen-adam", "no": "IV", "soon": True,
      "title": "Adı Konmamış İşlere Don Biçen Adam", "path": "/kitaplar/adi-konmamis-islere-don-bicen-adam/",
-     "line": "GAMEKS, işler, fikirler ve internet. 2027’de yayımlanması planlanıyor."},
-    {"slug": "gonul-dostu", "no": "V", "tag": "Hazırlanıyor", "soon": True, "title": "Gönül Dostu", "path": "/kitaplar/gonul-dostu/",
-     "line": "Sabit Kızılhan ile yol yürümek: 2005–2026 arasından dostluğun ve hak mücadelesinin tanıklığı. 2027’de yayımlanması planlanıyor."},
-    {"slug": "uslu-dimag", "no": "VI", "tag": "Final · Hazırlanıyor", "soon": True, "title": "US’lu Dimağ", "path": "/kitaplar/uslu-dimag/",
-     "line": "Doksan öğretide ölçüsü oturmuş bir zihin. 2027’de yayımlanması planlanıyor."},
+     "line": "GAMEKS, işler, fikirler ve internet: adı konmamış işlerle geçen bir çalışma hayatı."},
+    {"slug": "gonul-dostu", "no": "V", "soon": True, "title": "Gönül Dostu", "path": "/kitaplar/gonul-dostu/",
+     "line": "Sabit Kızılhan ile yol yürümek: dostluğun ve hak mücadelesinin tanıklığı."},
+    {"slug": "uslu-dimag", "no": "VI", "tag": "Final", "soon": True, "title": "US’lu Dimağ", "path": "/kitaplar/uslu-dimag/",
+     "line": "Doksan öğretide ölçüsü oturmuş bir zihin."},
 ]
 OTHERS = [
     {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "role": "Sözlü tarih", "who": [("Yazar", "Sabit Kızılhan"), ("Editör", "Mustafa Ünal")], "path": "/kitaplar/bana-koyunu-anlat/",
@@ -122,7 +122,8 @@ def book(b, series=False):
     sub = (f"Kitap {b['no']}" + (f" · {b['tag']}" if b.get("tag") else "")) if series else b["role"]
     act = "Kitabın sayfası" if soon else "Kitabı aç"
     return (f'<li class="book{" is-soon" if soon else ""}"><a class="book-link" href="{b["path"]}">'
-            f'<span class="spot">{ph("/img/kapak/" + b["slug"] + ".webp", b["title"] + " kapağı", "cover", 400, 620)}</span>'
+            f'<span class="spot">{ph("/img/kapak/" + b["slug"] + ".webp?v=" + ASSET_V, b["title"] + " kapağı", "cover", 400, 620)}'
+            + ('<span class="rozet">Hazırlanıyor · 2027</span>' if soon else "") + '</span>'
             f'<span class="book-meta">{E(sub)}</span><span class="book-title">{E(b["title"])}</span>'
             + "".join(f'<span class="book-who"><small>{E(r)}</small> {E(n)}</span>' for r, n in b.get("who", []))
             + f'<span class="book-line">{E(b["line"])}</span><span class="book-act">{act}</span></a></li>')

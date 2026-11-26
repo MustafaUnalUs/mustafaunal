@@ -83,7 +83,7 @@ BOOKS = [
 SERIES = [b for b in BOOKS if b.get("seri")]
 for b in BOOKS:
     b["base"] = f"/kitaplar/{b['slug']}/"
-    b["cover"] = f"/img/kapak/{b['slug']}.webp"
+    b["cover"] = f"/img/kapak/{b['slug']}.webp?v=6"
     if not b.get("soon"):
         b["data"] = J(f"kitaplar/{b['slug']}.json")
         b["pdf"] = f"/indir/{b['slug']}.pdf"
@@ -144,9 +144,9 @@ def render_blocks(blocks, slug):
 def covers(b):
     items = ""
     for side, label in (("", "Ön kapak"), ("-arka", "Arka kapak")):
-        items += (f'<button type="button" class="zoom" data-full="/img/kapak/{b["slug"]}{side}-buyuk.webp" '
-                  f'data-back="/img/kapak/{b["slug"]}{"-arka" if not side else ""}-buyuk.webp" data-label="{E(b["title"])} · {label}" '
-                  f'aria-label="{E(b["title"])}, {label.lower()}: büyüt"><img src="/img/kapak/{b["slug"]}{side}.webp" '
+        items += (f'<button type="button" class="zoom" data-full="/img/kapak/{b["slug"]}{side}-buyuk.webp?v=6" '
+                  f'data-back="/img/kapak/{b["slug"]}{"-arka" if not side else ""}-buyuk.webp?v=6" data-label="{E(b["title"])} · {label}" '
+                  f'aria-label="{E(b["title"])}, {label.lower()}: büyüt"><img src="/img/kapak/{b["slug"]}{side}.webp?v=6" '
                   f'alt="{E(b["title"])} {label.lower()}" width="400" height="620"><span>{label}</span></button>')
     return f'<figure class="bk-covers">{items}<figcaption>Büyütmek ve okumak için kapağa dokunun</figcaption></figure>'
 

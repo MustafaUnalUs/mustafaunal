@@ -560,3 +560,13 @@ body.has-gecis { padding-bottom: 4.5rem; }
 .book-who { display: block; font: 600 1rem/1.35 var(--sans); color: var(--isik); }
 .book-who small { font: 600 .72rem var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--pirinc-acik); margin-right: .2rem; }
 .book-who + .book-line { margin-top: .4rem; }
+
+/* raf: kartlar aynı hizada */
+.shelf > li { display: flex; }
+.book-link { height: 100%; }
+.book-meta { min-height: 1.2em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.book-act { margin-top: auto; padding-top: .8rem; align-self: flex-start; }
+.book .spot { position: relative; }
+.rozet { position: absolute; left: 50%; bottom: 1.8rem; transform: translateX(-50%); white-space: nowrap; padding: .35rem .7rem;
+  background: var(--pirinc-acik); color: #15130f; font: 700 .7rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; box-shadow: 0 6px 14px -6px rgba(0,0,0,.6); }
+:root[data-theme="light"] .rozet { color: #fff; }
