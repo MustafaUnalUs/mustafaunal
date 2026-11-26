@@ -640,3 +640,29 @@ body.has-gecis { padding-bottom: 4.5rem; }
 .devam:hover { background: rgba(217,189,133,.2); color: var(--isik); }
 .devam + .bk-actions { margin-top: .7rem; }
 :root[data-theme="light"] .devam-go { color: #fff; }
+
+/* arama */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.ara-btn { text-decoration: none; }
+.ara-btn svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+@media (min-width: 980px) { .bar .ara-btn { order: 3; } .bar .tema:not(.ara-btn) { order: 4; } }
+.bar .tema { flex: none; }
+@media (max-width: 420px) { .bar .name { font-size: 1.3rem; } .bar { gap: .45rem; } .bar .tema { width: 2.3rem; height: 2.3rem; } .menu summary { padding-left: .7rem; padding-right: .7rem; } }
+.ara-sayfa { position: relative; z-index: 1; max-width: calc(48rem + 2 * var(--gutter)); margin: 0 auto; padding: clamp(2rem, 5vw, 3.5rem) var(--gutter) 4rem; }
+.ara-sayfa h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); margin-bottom: .3rem; }
+.ara-lead { color: var(--soluk); margin-bottom: 1.6rem; }
+.ara-form { display: flex; gap: .6rem; margin: 0 0 1rem; }
+.ara-form input { flex: 1; min-width: 0; font: 600 1.15rem var(--sans); padding: .9rem 1.1rem; border-radius: 12px; border: 1px solid rgba(217,189,133,.4); background: var(--duvar-2); color: var(--isik); }
+.ara-form input:focus { outline: none; border-color: var(--pirinc-acik); }
+.ara-durum { color: var(--soluk); font: 600 .95rem var(--sans); }
+.ara-grup { margin: 2rem 0 0; }
+.ara-grup h2 { font: 600 .85rem var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--pirinc-acik); margin: 0 0 .6rem; }
+.ara-list { list-style: none; padding: 0; margin: 0; }
+.ara-list li { border-top: 1px solid rgba(217,189,133,.22); }
+.ara-list a { display: block; padding: .95rem .2rem; text-decoration: none; color: var(--isik); }
+.ara-list a:hover b { color: var(--pirinc-acik); }
+.ara-list b { display: block; font: 400 1.3rem/1.25 var(--serif); }
+.ara-list small { display: block; font: 600 .82rem var(--sans); color: var(--soluk); margin: .15rem 0 .35rem; }
+.ara-list p { margin: 0; font-size: 1rem; line-height: 1.55; color: var(--soluk); }
+.ara-list mark { background: rgba(217,189,133,.4); color: inherit; border-radius: 3px; padding: 0 .1em; }
+.page-ara .share { display: none; }

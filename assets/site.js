@@ -263,3 +263,42 @@ document.querySelectorAll("[data-share]").forEach((a) => {
   const main = acts.querySelector(".ba-main span");
   if (main) main.textContent = "Baştan başla";
 })();
+
+/* site içi arama */
+(() => {
+  const q = document.getElementById("ara-q");
+  if (!q) return;
+  const out = document.getElementById("ara-sonuc"), st = document.getElementById("ara-durum");
+  const MAP = { "ı": "i", "ş": "s", "ğ": "g", "ü": "u", "ö": "o", "ç": "c", "â": "a", "î": "i", "û": "u" };
+  const norm = (s) => s.toLocaleLowerCase("tr").replace(/[ışğüöçâîû]/g, (c) => MAP[c]);
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  let DOC = null;
+  const load = () => DOC ? Promise.resolve() : fetch("/veri/ara.json").then((r) => r.json()).then((d) => (DOC = d.map((x) => ({ ...x, n: norm(x.x), nt: norm(x.t + " " + x.b) }))));
+  const snip = (x, nx, w) => {
+    const i = nx.indexOf(w);
+    if (i < 0) return esc(x.slice(0, 160)) + "…";
+    const a = Math.max(0, i - 70), b = Math.min(x.length, i + w.length + 110);
+    return (a ? "…" : "") + esc(x.slice(a, i)) + "<mark>" + esc(x.slice(i, i + w.length)) + "</mark>" + esc(x.slice(i + w.length, b)) + (b < x.length ? "…" : "");
+  };
+  const group = (title, rows, all) => rows.length ? `<section class="ara-grup"><h2>${title} (${all})</h2><ul class="ara-list">${rows.join("")}</ul></section>` : "";
+  const run = () => {
+    const raw = q.value.trim(), w = norm(raw);
+    history.replaceState(null, "", raw ? "?q=" + encodeURIComponent(raw) : location.pathname);
+    if (w.length < 2) { out.innerHTML = ""; st.textContent = "En az iki harf yazın."; return; }
+    st.textContent = "Aranıyor…";
+    load().then(() => {
+      const hits = DOC.filter((d) => d.n.includes(w) || d.nt.includes(w))
+        .map((d) => ({ d, s: (d.nt.includes(w) ? 50 : 0) + d.n.split(w).length - 1 })).sort((a, b) => b.s - a.s);
+      const row = ({ d }) => `<li><a href="${d.u}"><b>${esc(d.t || d.b)}</b><small>${esc(d.k)}${d.b && d.b !== d.t ? " · " + esc(d.b) : ""}</small><p>${snip(d.x, d.n, w)}</p></a></li>`;
+      const by = (k) => hits.filter((h) => h.d.k === k);
+      const kit = by("Kitap"), ana = by("Ana sayfa"), say = by("Sayfa");
+      out.innerHTML = group("Sergi salonları", ana.map(row), ana.length) + group("Kitaplar", kit.slice(0, 40).map(row), kit.length) + group("Diğer sayfalar", say.slice(0, 15).map(row), say.length);
+      st.textContent = hits.length ? `“${raw}” için ${hits.length.toLocaleString("tr-TR")} sonuç` : `“${raw}” için sonuç bulunamadı. Yazımı değiştirmeyi deneyin.`;
+    }).catch(() => { st.textContent = "Arama yüklenemedi. Sayfayı yenileyin."; });
+  };
+  let t;
+  q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(run, 250); });
+  q.form.addEventListener("submit", (e) => { e.preventDefault(); run(); });
+  const init = new URLSearchParams(location.search).get("q");
+  if (init) { q.value = init; run(); } else q.focus();
+})();

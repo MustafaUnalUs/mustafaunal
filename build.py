@@ -6,6 +6,7 @@ data/ ve static/ klasörlerinden docs/ altına statik site üretir:  python3 bui
 import html
 import json
 import os
+import re
 import shutil
 
 import books
@@ -18,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "24"
+ASSET_V = "25"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -95,6 +96,7 @@ def layout(path, title, body, desc="", cls=""):
 <a class="skip" href="#icerik">İçeriğe geç</a>
 <header class="bar">
   <a class="name" href="/"><span class="name-dot" aria-hidden="true"></span>Mustafa Ünal</a>
+  <a class="tema ara-btn" href="/ara/" aria-label="Sitede ara" title="Sitede ara"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></a>
   <button type="button" class="tema" id="tema" aria-label="Açık ya da koyu görünüme geç" title="Açık / koyu görünüm">
     <svg class="gunes" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
     <svg class="ay" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -278,6 +280,57 @@ def build_gameks():
 
 
 
+
+def _strip(h):
+    h = re.sub(r"<(script|style|svg|nav|aside|button)\b.*?</\1>", " ", h, flags=re.S)
+    h = re.sub(r"<[^>]+>", " ", h)
+    return re.sub(r"\s+", " ", html.unescape(h)).strip()
+
+
+def write_search_index():
+    """Site içi arama için dizin: /veri/ara.json"""
+    items = []
+    for f in sorted(OUT.rglob("index.html")):
+        rel = "/" + str(f.parent.relative_to(OUT)).replace("\\", "/")
+        rel = "/" if rel == "/." else rel + "/"
+        t = f.read_text(encoding="utf-8")
+        if 'http-equiv="refresh"' in t or rel.endswith("/pdf/") or rel == "/ara/":
+            continue
+        if rel == "/":
+            for m in re.finditer(r'<section[^>]*\bid="([^"]+)"[^>]*>(.*?)</section>', t, re.S):
+                h2 = re.search(r"<h2[^>]*>(.*?)</h2>", m.group(2), re.S)
+                if h2:
+                    items.append({"u": "/#" + m.group(1), "t": _strip(h2.group(1)), "k": "Ana sayfa", "b": "", "x": _strip(m.group(2))})
+            continue
+        h1 = re.search(r"<h1[^>]*>(.*?)</h1>", t, re.S)
+        title = _strip(h1.group(1)) if h1 else ""
+        band = re.search(r'class="r-band"[^>]*><a [^>]*>.*?>([^<]+)</a>', t, re.S)
+        book = band.group(1).strip() if band else ""
+        art = re.search(r'<article class="reader".*?</article>', t, re.S)
+        m = art or re.search(r'<main id="icerik">(.*)</main>', t, re.S)
+        text = _strip(m.group(0) if art else (m.group(1) if m else ""))
+        kind = "Kitap" if (book or rel.startswith("/kitaplar/")) else "Sayfa"
+        if title and title in text[:len(title) + 40]:
+            text = text[text.index(title) + len(title):].strip()
+        items.append({"u": rel, "t": title, "k": kind, "b": book, "x": text})
+    (OUT / "veri").mkdir(exist_ok=True)
+    (OUT / "veri" / "ara.json").write_text(json.dumps(items, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return len(items)
+
+
+def build_ara():
+    body = """<section class="ara-sayfa">
+  <p class="salon-no">Arama</p><h1>Ne arıyorsunuz?</h1>
+  <p class="ara-lead">Kitapların bütün bölümlerinde ve sergideki salonlarda arayın.</p>
+  <form class="ara-form" role="search" action="/ara/"><label class="sr-only" for="ara-q">Aranacak kelime</label>
+    <input type="search" id="ara-q" name="q" placeholder="Bir isim, yer, kelime… (ör. Balkıca)" autocomplete="off" enterkeyhint="search">
+    <button type="submit" class="btn">Ara</button></form>
+  <p class="ara-durum" id="ara-durum" aria-live="polite">En az iki harf yazın.</p>
+  <div id="ara-sonuc"></div>
+</section>"""
+    (OUT / "ara").mkdir(exist_ok=True)
+    (OUT / "ara" / "index.html").write_text(layout("/ara/", "Sitede ara · Mustafa Ünal", body, desc="mustafaunal.tr içinde arama", cls="page-ara"), encoding="utf-8")
+
 def write_sitemap():
     """Google için site haritası: yönlendirme sayfaları hariç bütün sayfalar."""
     from datetime import date
@@ -319,7 +372,8 @@ def main():
                 '<section class="lobby"><div class="lobby-text"><p class="salon-no">Kayıp eser</p><h1>Bu salon boş.</h1>'
                 '<p class="lobby-lead">Aradığınız sayfa taşınmış olabilir. <a href="/">Sergi girişine dönün.</a></p></div></section>')
     (OUT / "404.html").write_text(nf, encoding="utf-8")
-    print("site üretildi →", OUT, "· site haritası:", write_sitemap(), "adres")
+    build_ara()
+    print("site üretildi →", OUT, "· arama dizini:", write_search_index(), "· site haritası:", write_sitemap(), "adres")
 
 
 if __name__ == "__main__":
