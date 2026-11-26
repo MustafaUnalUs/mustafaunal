@@ -18,7 +18,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.gunerunal.com.tr"   # kitapların okunduğu site
-ASSET_V = "14"
+ASSET_V = "15"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -37,9 +37,9 @@ SERIES = [
      "line": "Doksan öğretide ölçüsü oturmuş bir zihin. 2027’de yayımlanması planlanıyor."},
 ]
 OTHERS = [
-    {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "role": "Editör · Sabit Kızılhan’ın derlemesi", "path": "/kitaplar/bana-koyunu-anlat/",
+    {"slug": "bana-koyunu-anlat", "title": "Bana Köyünü Anlat", "role": "Sözlü tarih", "who": [("Yazar", "Sabit Kızılhan"), ("Editör", "Mustafa Ünal")], "path": "/kitaplar/bana-koyunu-anlat/",
      "line": "Acıpayam köylerinin anlatıcılarıyla hazırlanan sözlü tarih çalışması."},
-    {"slug": "kelekcide-yasamak", "title": "Kelekçi’de Yaşamak", "role": "Yayına hazırlayan · Dr. Oktar Öner’in kitabı",
+    {"slug": "kelekcide-yasamak", "title": "Kelekçi’de Yaşamak", "role": "Hatıra kitabı", "who": [("Yazar", "Dr. Oktar Öner"), ("Yayına hazırlayan", "Mustafa Ünal")],
      "path": "/kitaplar/kelekcide-yasamak/", "line": "El yazmaları, mektuplar ve radyo kayıtlarıyla bir Kelekçi hafızası."},
 ]
 
@@ -124,7 +124,8 @@ def book(b, series=False):
     return (f'<li class="book{" is-soon" if soon else ""}"><a class="book-link" href="{b["path"]}">'
             f'<span class="spot">{ph("/img/kapak/" + b["slug"] + ".webp", b["title"] + " kapağı", "cover", 400, 620)}</span>'
             f'<span class="book-meta">{E(sub)}</span><span class="book-title">{E(b["title"])}</span>'
-            f'<span class="book-line">{E(b["line"])}</span><span class="book-act">{act}</span></a></li>')
+            + "".join(f'<span class="book-who"><small>{E(r)}</small> {E(n)}</span>' for r, n in b.get("who", []))
+            + f'<span class="book-line">{E(b["line"])}</span><span class="book-act">{act}</span></a></li>')
 
 
 def card(img, kicker, title, text, href, btn, alt=""):
@@ -185,7 +186,7 @@ def build_home():
   {salon_head(1, "kitaplar", "Kitaplar", "Hepsi ücretsiz; internette okunur, PDF olarak indirilir. Bir kitaba dokunun, sayfası açılsın.")}
   <h3 class="row-title">US’lu Anlatılar <span>Altı kitaplık seri</span></h3>
   <ol class="shelf is-series">{series}</ol>
-  <h3 class="row-title">Yazarlık, editörlük, yayına hazırlık</h3>
+  <h3 class="row-title">Editörlüğünü yaptığım kitaplar <span>Başka yazarların eserleri</span></h3>
   <ul class="shelf">{others}</ul>
 </section>
 
