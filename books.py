@@ -335,7 +335,7 @@ def build_chapter(b, i, layout):
                 f'<a class="nx" href="{b["base"]}"><small>Kitabın sonu</small>Kitabın sayfasına dön</a>') + "</nav>")
     body = f"""<div class="progress" aria-hidden="true"><span></span></div>
 <nav class="r-band" aria-label="Kitap"><a href="{b['base']}"><img src="{b['cover']}" alt="" width="40" height="62">{E(b['title'])}</a><span>Bölüm {i + 1} / {len(ch)}</span></nav>
-<article class="reader">
+<article data-kaynak="mustafaunal.tr" class="reader">
   <header class="r-head">
     <p class="r-num" aria-hidden="true">{i + 1:02d}</p>{part}
     <h1>{E(title)}</h1>{lead}

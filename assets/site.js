@@ -235,7 +235,7 @@ document.querySelectorAll("[data-share]").forEach((a) => {
     const frac = () => { const h = document.documentElement.scrollHeight - innerHeight; return h > 0 ? scrollY / h : 0; };
     const save = () => {
       const f = frac();
-      if (Number(num) > 1 || f > .08) set(K(base), { u: location.pathname, n: num.trim(), t: title.trim(), f: Math.round(f * 1000) / 1000 });
+      if (Number(num) > 1 || f > .08) set(K(base), { u: location.pathname, n: num.trim(), t: title.trim(), f: Math.round(f * 1000) / 1000, z: Date.now(), k: (band.textContent || "").trim() });
     };
     if (location.hash === "#devam") {
       const s = get(K(base));
@@ -314,3 +314,26 @@ document.querySelectorAll(".dinle-kutu audio[data-start]").forEach((au) => {
 
 /* çevrimdışı okuma */
 if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("/sw.js").catch(() => {});
+
+/* ana sayfa: son okunan kitaba devam */
+(() => {
+  const yer = document.querySelector("[data-devam-yer]");
+  if (!yer) return;
+  let son = null;
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (!k || !k.startsWith("devam:")) continue;
+      const v = JSON.parse(localStorage.getItem(k) || "null");
+      if (v && v.u && (!son || (v.z || 0) > (son.z || 0))) son = Object.assign({ base: k.slice(6) }, v);
+    }
+  } catch (e) { return; }
+  if (!son) return;
+  const kitap = son.k || (document.querySelector(`a[href="${son.base}"] .book-title`) || {}).textContent || "";
+  const a = document.createElement("a");
+  a.className = "devam devam-ana";
+  a.href = son.u + "#devam";
+  a.innerHTML = `<span class="devam-k">Okumaya devam edin${son.f ? " · %" + Math.max(1, Math.round(son.f * 100)) : ""}</span><b></b><span class="devam-go">Devam et <span aria-hidden="true">→</span></span>`;
+  a.querySelector("b").textContent = (kitap ? kitap.trim() + " · " : "") + (son.n ? son.n + ". " : "") + (son.t || "");
+  yer.appendChild(a);
+})();

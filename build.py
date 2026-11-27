@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "45"
+ASSET_V = "47"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -242,6 +242,7 @@ def build_home():
   </figure>
 </section>
 
+<div class="devam-yer devam-yer-mu" data-devam-yer></div>
 <section class="salon" id="kitaplar" aria-labelledby="kitaplar-baslik">
   {salon_head(1, "kitaplar", "Kitaplar", "Hepsi ücretsiz; internette okunur, PDF olarak indirilir. Bir kitaba dokunun, sayfası açılsın.")}
   <p class="kit-ust"><a class="btn" href="/kitaplar/icimde-kalan-cocuk/">Seriye <em>İçimde Kalan Çocuk</em> ile başlayın →</a><a class="btn btn-line" href="/yazilar/">Yazı defteri</a></p>
@@ -379,7 +380,7 @@ def build_yazilar(write):
             return '<blockquote class="belge">' + "".join(f"<p>{E(p)}</p>" for p in x["t"]) + "</blockquote>"
         return f"<p>{E(x['t'])}</p>"
     for y in YAZILAR:
-        body = f"""<article class="yazi">
+        body = f"""<article data-kaynak="mustafaunal.tr" class="yazi">
   <p class="salon-no"><a href="/yazilar/">Yazı defteri</a> · {E(y["date"])}</p>
   <h1>{E(y["title"])}</h1>
   <p class="yazi-konu">{E(y["konu"])}</p>
