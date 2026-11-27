@@ -31,14 +31,6 @@
    "big": true
   },
   {
-   "name": "Acıpayam Merkez",
-   "href": "/sabit/acipayam-suleyman-ersoy/",
-   "video": "xH7lj91cDMY",
-   "left": "61.07%",
-   "top": "38.52%",
-   "big": true
-  },
-  {
    "name": "Akalan",
    "href": "/sabit/akalan-mustafa-oztas/",
    "video": "VXZuLPS2kLk",
@@ -100,14 +92,6 @@
    "video": "IzNrHyQuo9I",
    "left": "59.44%",
    "top": "69.0%",
-   "big": false
-  },
-  {
-   "name": "Eskiköy — KINTEŞ ŞÜKÜR (Şükrü Kızılhan)",
-   "href": "/sabit/kintez-sukru/",
-   "video": "IzNrHyQuo9I",
-   "left": "57.9%",
-   "top": "70.1%",
    "big": false
   },
   {
@@ -407,7 +391,7 @@
    "big": false
   },
   {
-   "name": "Dodurgalar",
+   "name": "Dodurga",
    "href": null,
    "video": null,
    "left": "86.98%",
@@ -487,16 +471,12 @@
  ],
  "themes_title": "Dört ana anlatı ekseni",
  "themes_lead": "Görüşmeler boyunca tekrar eden dört tema, kitabın omurgasını oluşturuyor.",
- "villages_title": "Acıpayam'ın köyleri",
- "villages_lead": "Acıpayam'ın tüm mahalleleri alfabetik sırayla listelenmiştir. Görüşmesi tamamlanan köy adları haritaya ve ilgili görüşme sayfasına bağlanır; henüz görüşme yapılmayan köyler soluk renkte, isim olarak listede yer alır.",
+ "villages_title": "Acıpayam'ın mahalleleri",
+ "villages_lead": "2014'teki büyükşehir düzenlemesiyle Acıpayam'daki bütün köy ve beldeler mahalle oldu. İlçede bugün 56 mahalle var: 4'ü merkezde, 52'si kırsalda (eski köyler). Sabit Kızılhan'ın görüşme yaptığı yerler koyu renkte ve görüşme sayfasına bağlı; görüşme yapılmayanlar soluk renkte.",
  "villages": [
   {
    "name": "Acıpayam Merkez",
    "href": "/sabit/acipayam-ali-riza-ozturk/"
-  },
-  {
-   "name": "Acıpayam Merkez",
-   "href": "/sabit/acipayam-suleyman-ersoy/"
   },
   {
    "name": "Akalan",
@@ -567,16 +547,12 @@
    "href": "/sabit/dedebag-ahmet-tekin/"
   },
   {
-   "name": "Dodurgalar",
+   "name": "Dodurga",
    "href": null
   },
   {
    "name": "Eskiköy",
    "href": "/sabit/eskikoy-koy-bellegi/"
-  },
-  {
-   "name": "Eskiköy — KINTEŞ ŞÜKÜR",
-   "href": "/sabit/kintez-sukru/"
   },
   {
    "name": "Gedikli",
@@ -1040,18 +1016,18 @@
   {
    "no": "27",
    "slug": "kintez-sukru",
-   "village": "Eskiköy (Kınteş)",
-   "people": "KINTEŞ ŞÜKÜR (Şükrü Kızılhan) — Şükür Dede",
+   "village": "Eskiköy",
+   "people": "Şükrü Kızılhan (Kınteş Şükür, Şükür Dede)",
    "eyebrow": "Görüşme 26 / 26",
-   "title": "KINTEŞ ŞÜKÜR",
-   "subtitle": "Şükrü Kızılhan · Köyde Şükür Dede olarak da bilinirdi",
+   "title": "Kınteş Şükür",
+   "subtitle": "Eskiköy · Şükrü Kızılhan · Köyde Şükür Dede olarak da bilinirdi",
    "video": "IzNrHyQuo9I",
    "html": "<p><strong>KINTEŞ ŞÜKÜR (Şükrü Kızılhan)</strong>, Eskiköy’de “Kınteş Şükür” adıyla tanınır; köy halkı ona “Şükür Dede” de derdi. Köyün uzun ömürlü hafıza taşıyıcılarından biriydi. Resmî kayıtlarda 1912 doğumlu görünmekle birlikte ailesi gerçek yaşının daha ileri olduğunu, 117 yaşına ulaştığını aktarmaktadır. Osmanlı’nın son yıllarından Cumhuriyet dönemine uzanan ömründe köy hayatının büyük dönüşümüne tanıklık etti. Şükrü Kızılhan 2018 yılında vefat etti. Yer aldığı 2004 Eskiköy bayramlaşma kaydı yukarıda izlenebilir.</p>\n<p><strong>TRT Haber kaydı · 14 Haziran 2015</strong><br/>Şükür Dede’nin 114 yaşındayken TRT Haber’de yer aldığı kayıt, ACIPAYAM.com arşivinde korunmaktadır. <a href=\"https://www.facebook.com/reel/1068350459859855\" rel=\"noopener\">Videoyu Facebook’ta izle →</a></p>",
    "extra": []
   }
  ],
  "index_title": "27 sözlü tarih kaydı",
- "index_lead": "Sabit Kızılhan'ın derlediği tüm görüşmelerin listesi. Bir satıra tıklayarak o görüşmenin video kaydını izleyebilir, anlatıcının kendi sesinden dinleyebilir ve tam metnini okuyabilirsiniz.",
+ "index_lead": "Sabit Kızılhan'ın derlediği tüm görüşmelerin listesi. Bir satıra tıklayarak o görüşmenin video kaydını izleyebilir, sesli kitaptan dinleyebilir ve tam metnini okuyabilirsiniz.",
  "glossary": {
   "title": "Yerel Ağız ve Kültür Sözlüğü",
   "lead": "Kitapta geçen köylerin kendine özgü konuşma biçimini korumak amacıyla, anlatılarda kullanılan yöresel sözler, oyun adları, gelenek ve yer adları burada bir sözlük hâlinde toplanmıştır. Anlamı kitap metninden veya kaynak kişilerden kesin olarak doğrulanabilenler yazılmış; emin olunmayan maddeler alt çizgiyle (____) boş bırakılmıştır.",

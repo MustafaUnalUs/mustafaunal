@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "26"
+ASSET_V = "27"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -61,6 +61,10 @@ def og_slug(path):
     return ""
 
 
+WA_URL = "https://wa.me/mustafaunal_tr"
+WA_IC = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1.2-.5-2.4-1.7-2.9-2.9l1-1-1-2z"/></svg>'
+
+
 def layout(path, title, body, desc="", cls=""):
     nav = "".join(f'<a href="{("/" + h) if h.startswith("#") and path != "/" else h}">{t}</a>' for h, t in NAV)
     contact = "".join(f'<a href="{E(c["href"])}">{E(c["label"])}</a>' for c in D["contact"])
@@ -77,7 +81,7 @@ def layout(path, title, body, desc="", cls=""):
 <meta property="og:site_name" content="Mustafa Ünal">
 <meta property="og:url" content="{ORIGIN}{path}">
 <meta property="og:description" content="{E(desc or D['hero']['text'])}">
-<meta property="og:image" content="{ORIGIN}/img/paylas/{og_slug(path) or 'mustafaunal'}.jpg">
+<meta property="og:image" content="{ORIGIN}/img/paylas/{og_slug(path) or 'mustafaunal-v2'}.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -111,10 +115,12 @@ def layout(path, title, body, desc="", cls=""):
   <div class="foot-in">
     <p class="foot-name">Mustafa Ünal</p>
     <p class="foot-line">Bir ömür, birçok iz. Sergi her zaman açık.</p>
+    <p class="foot-wa-row"><a class="foot-wa" href="{WA_URL}" target="_blank" rel="noopener">{WA_IC}<span><b>WhatsApp’tan yazın</b>@mustafaunal_tr</span></a></p>
     <nav aria-label="İletişim">{contact}<a href="{READER}/">ACIPAYAM.com</a><a href="https://eskidenizli.com">Eski Denizli</a></nav>
   </div>
   {"" if CANLI else TEST_NOTE}
 </footer>
+<a class="wa-yuzen" href="{WA_URL}" target="_blank" rel="noopener" aria-label="WhatsApp’tan bana yazın">{WA_IC}<span>Bana yazın</span></a>
 <script src="/assets/site.js?v={ASSET_V}" defer></script>
 </body>
 </html>
