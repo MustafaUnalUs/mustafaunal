@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "34"
+ASSET_V = "35"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -348,6 +348,8 @@ YAZILAR = json.loads((ROOT / "data" / "yazilar.json").read_text(encoding="utf-8"
 def build_yazilar(write):
     """Yazı defteri: kitap dışındaki kısa yazılar."""
     def blok(x):
+        if x["k"] == "not":
+            return f'<p class="yazi-not">{E(x["t"])}</p>'
         if x["k"] == "belge":
             return '<blockquote class="belge">' + "".join(f"<p>{E(p)}</p>" for p in x["t"]) + "</blockquote>"
         return f"<p>{E(x['t'])}</p>"

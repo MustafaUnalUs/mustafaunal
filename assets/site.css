@@ -758,3 +758,4 @@ body.has-gecis { padding-bottom: 4.5rem; }
 .belge { margin: 1.6rem 0; padding: 1.2rem 1.4rem; background: #efe9dc; color: #1b1a17; border-radius: 4px; font: 400 1.02rem/1.6 Georgia, serif; box-shadow: 0 14px 28px -16px rgba(0,0,0,.6); }
 .belge p { margin: 0 0 .5rem; }
 .yazi-imza { margin-top: 2rem; font: 400 1.3rem var(--serif); font-style: italic; color: var(--pirinc-acik); }
+.yazi-not { margin-top: 1.6rem !important; padding: .8rem 1rem; border-left: 3px solid var(--pirinc); background: rgba(217,189,133,.08); font-size: 1rem; color: var(--soluk); }
