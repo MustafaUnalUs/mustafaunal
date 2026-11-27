@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "33"
+ASSET_V = "34"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -225,6 +225,9 @@ def build_home():
   <ol class="shelf is-series">{series}</ol>
   <h3 class="row-title">Editörlüğünü yaptığım kitaplar <span>Başka yazarların eserleri</span></h3>
   <ul class="shelf">{others}</ul>
+  <h3 class="row-title" id="yazilar">Yazı defteri <span>Kitap dışındaki kısa yazılar</span></h3>
+  <ul class="yz-list yz-ana">{"".join(f'<li><a href="/yazilar/{y["slug"]}/"><span class="yz-t">{E(y["date"])}</span><b>{E(y["title"])}</b><span>{E(y["ozet"])}</span></a></li>' for y in YAZILAR[:3])}</ul>
+  <p class="more-link"><a href="/yazilar/">Bütün yazılar</a></p>
   <h3 class="row-title" id="alintilar">Kitaplardan <span>Bir cümle, bir kitap. Kartı paylaşın; okuyan bölüme ulaşsın.</span></h3>
   <ul class="alinti-list">{alinti}</ul>
 </section>
@@ -339,6 +342,33 @@ def build_seri():
                   desc="Mustafa Ünal’ın altı kitaplık US’lu Anlatılar serisi: okuma sırası, yayımlananlar ve hazırlananlar.", cls="page-seri")
 
 
+YAZILAR = json.loads((ROOT / "data" / "yazilar.json").read_text(encoding="utf-8"))
+
+
+def build_yazilar(write):
+    """Yazı defteri: kitap dışındaki kısa yazılar."""
+    def blok(x):
+        if x["k"] == "belge":
+            return '<blockquote class="belge">' + "".join(f"<p>{E(p)}</p>" for p in x["t"]) + "</blockquote>"
+        return f"<p>{E(x['t'])}</p>"
+    for y in YAZILAR:
+        body = f"""<article class="yazi">
+  <p class="salon-no"><a href="/yazilar/">Yazı defteri</a> · {E(y["date"])}</p>
+  <h1>{E(y["title"])}</h1>
+  <p class="yazi-konu">{E(y["konu"])}</p>
+  {books.share_mini()}
+  <div class="yazi-metin">{"".join(blok(x) for x in y["blocks"])}</div>
+  <p class="yazi-imza">Mustafa Ünal · {E(y["date"])}</p>
+  <p class="more-link"><a href="/yazilar/">Bütün yazılar</a> · <a href="/">Sergiye dön</a></p>
+</article>"""
+        write(f"/yazilar/{y['slug']}/", layout(f"/yazilar/{y['slug']}/", f"{y['title']} · Mustafa Ünal", body, desc=y["ozet"], cls="page-yazi"))
+    li = "".join(f'<li><a href="/yazilar/{y["slug"]}/"><span class="yz-t">{E(y["date"])}</span><b>{E(y["title"])}</b><span>{E(y["ozet"])}</span></a></li>' for y in YAZILAR)
+    body = f"""<section class="lobby seri-lobi"><div class="lobby-text"><p class="salon-no">Kitap dışında</p><h1>Yazı defteri</h1>
+  <p class="lobby-lead">Yıllar içinde yazılmış kısa yazılar, denemeler ve notlar. Eskiler bulundukça eklenir.</p></div></section>
+<section class="salon seri-salon"><ul class="yz-list">{li}</ul></section>"""
+    write("/yazilar/", layout("/yazilar/", "Yazı defteri · Mustafa Ünal", body, desc="Mustafa Ünal’ın kitap dışındaki kısa yazıları.", cls="page-yazi"))
+
+
 def _strip(h):
     h = re.sub(r"<(script|style|svg|nav|aside|button)\b.*?</\1>", " ", h, flags=re.S)
     h = re.sub(r"<[^>]+>", " ", h)
@@ -430,6 +460,7 @@ def main():
     (OUT / "gameks").mkdir()
     (OUT / "gameks" / "index.html").write_text(build_gameks(), encoding="utf-8")
     write("/uslu-anlatilar/", build_seri())
+    build_yazilar(write)
     nf = layout("/404", "Sayfa bulunamadı · Mustafa Ünal",
                 '<section class="lobby"><div class="lobby-text"><p class="salon-no">Kayıp eser</p><h1>Bu salon boş.</h1>'
                 '<p class="lobby-lead">Aradığınız sayfa taşınmış olabilir. <a href="/">Sergi girişine dönün.</a></p></div></section>')
