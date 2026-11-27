@@ -112,7 +112,18 @@ def fix_yt(htm):
                   lambda m: yt(m.group(1), html.unescape(m.group(2))), htm)
 
 
+_IDS = {}
+
+
+def uniq_id(base):
+    """Aynı sayfada aynı başlık birden çok kez geçerse -2, -3 eki."""
+    n = _IDS.get(base, 0) + 1
+    _IDS[base] = n
+    return base if n == 1 else f"{base}-{n}"
+
+
 def render_blocks(blocks, slug):
+    _IDS.clear()
     out, first = [], True
     for b in blocks:
         k, h = b["k"], b.get("h", "")
@@ -124,7 +135,7 @@ def render_blocks(blocks, slug):
         elif k == "orn":
             out.append('<p class="orn" aria-hidden="true">◆</p>')
         elif k == "h3":
-            out.append(f'<h2 class="sub" id="{slugify(t)}">{h}</h2>')
+            out.append(f'<h2 class="sub" id="{uniq_id(slugify(t))}">{h}</h2>')
         elif k == "verse":
             out.append(f'<p class="verse">{h}</p>')
         elif k == "small":
