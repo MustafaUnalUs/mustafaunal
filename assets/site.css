@@ -765,3 +765,7 @@ body.has-gecis { padding-bottom: 4.5rem; }
 .ses-daha > summary::-webkit-details-marker { display: none; }
 .ses-daha[open] > summary { margin-bottom: 1.4rem; }
 .name-ikon { width: 1.9rem; height: 1.9rem; flex: none; margin-right: .15rem; } .name { display: inline-flex; align-items: center; gap: .5rem; }
+.press .yayin { display: block; font: 600 .78rem var(--sans); letter-spacing: .04em; color: var(--pirinc-acik); margin-top: .15rem; }
+.kit-ust { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 1.6rem; }
+.kit-ust em { font-style: italic; }
+.ilgili { margin: .2rem 0 0; font: 600 .85rem var(--sans); } .ilgili a { color: var(--pirinc-acik); }

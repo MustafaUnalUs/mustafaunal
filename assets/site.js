@@ -292,7 +292,9 @@ document.querySelectorAll("[data-share]").forEach((a) => {
       const row = ({ d }) => `<li><a href="${d.u}"><b>${esc(d.t || d.b)}</b><small>${esc(d.k)}${d.b && d.b !== d.t ? " · " + esc(d.b) : ""}</small><p>${snip(d.x, d.n, w)}</p></a></li>`;
       const by = (k) => hits.filter((h) => h.d.k === k);
       const kit = by("Kitap"), ana = by("Ana sayfa"), say = by("Sayfa");
-      out.innerHTML = group("Sergi salonları", ana.map(row), ana.length) + group("Kitaplar", kit.slice(0, 40).map(row), kit.length) + group("Diğer sayfalar", say.slice(0, 15).map(row), say.length);
+      const bol = by("Bölüm"), yaz = by("Yazı");
+      out.innerHTML = group("Kitaplar", kit.map(row), kit.length) + group("Kitap bölümleri", bol.slice(0, 40).map(row), bol.length) +
+        group("Yazı defteri", yaz.map(row), yaz.length) + group("Sergi salonları", ana.map(row), ana.length) + group("Diğer sayfalar", say.slice(0, 15).map(row), say.length);
       st.textContent = hits.length ? `“${raw}” için ${hits.length.toLocaleString("tr-TR")} sonuç` : `“${raw}” için sonuç bulunamadı. Yazımı değiştirmeyi deneyin.`;
     }).catch(() => { st.textContent = "Arama yüklenemedi. Sayfayı yenileyin."; });
   };

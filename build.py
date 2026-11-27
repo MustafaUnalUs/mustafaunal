@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "42"
+ASSET_V = "45"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -46,7 +46,7 @@ OTHERS = [
 
 SALONS = [("kitaplar", "Kitaplar"), ("fotograflar", "Fotoğraflar"), ("mazi", "Mazi"), ("doga", "Doğa"),
           ("calismalar", "Çalışmalar"), ("basin", "Basın"), ("hakkimda", "Hakkımda")]
-NAV = [(f"#{a}", t) for a, t in SALONS[:4]] + [("/gameks/", "GAMEKS"), ("#hakkimda", "Hakkımda")]
+NAV = [(f"#{a}", t) for a, t in SALONS[:2]] + [("/yazilar/", "Yazılar")] + [(f"#{a}", t) for a, t in SALONS[2:4]] + [("/gameks/", "GAMEKS"), ("#hakkimda", "Hakkımda")]
 
 
 TEST_NOTE = ('<p class="foot-note">Bu adres, mustafaunal.tr içeriğiyle hazırlanmış yeni tasarımın test sürümüdür. '
@@ -164,6 +164,27 @@ def card(img, kicker, title, text, href, btn, alt=""):
             f'<b>{E(title)}</b><span class="card-text">{E(text)}</span><span class="btn">{E(btn)}</span></span></a></li>')
 
 
+
+YAYIN = {"denizli24haber.com": "Denizli 24 Haber", "denizliekspres.com.tr": "Denizli Ekspres", "denizlimuhabir.com": "Denizli Muhabir",
+         "evrensel.net": "Evrensel", "milliyet.com.tr": "Milliyet", "youtube.com": "YouTube · Memleket Kokusu", "instagram.com": "Instagram",
+         "facebook.com": "Facebook", "change.org": "Change.org", "d20haber.com": "D20 Haber", "haberler.com": "Haberler.com", "yuzhaber.com.tr": "Yüz Haber"}
+
+
+def yayin_adi(u):
+    h = re.sub(r"^www\.", "", re.sub(r"^https?://", "", u).split("/")[0])
+    return YAYIN.get(h, h)
+
+
+ILGILI = [("Kelekçi", "/kitaplar/kelekcide-yasamak/", "Kelekçi üzerine daha fazla: Kelekçi’de Yaşamak"),
+          ("Benlik", READER + "/mahalle/benlik/", "Benlik mahallesi · ACIPAYAM.com")]
+
+
+def ilgili(cap):
+    for k, u, t in ILGILI:
+        if k in cap:
+            return f'<p class="ilgili"><a href="{u}">{E(t)} →</a></p>'
+    return ""
+
 def build_home():
     h = D["hero"]
     hero_photo = next((p for p in D["photos"] if "photo-18" in p["img"]), D["photos"][0])   # şimşek
@@ -176,7 +197,7 @@ def build_home():
         for i, p in enumerate(D["photos"], 1))
     life = "".join(
         f'<li><button type="button" class="photo" data-full="{p["img"]}" data-label="{E(p["cap"])}" aria-label="{E(p["cap"])}: büyüt">'
-        f'<span class="mat">{ph(p["img"], p["cap"])}</span></button><p class="tag">{E(p["cap"])}</p></li>'
+        f'<span class="mat">{ph(p["img"], p["cap"])}</span></button><p class="tag">{E(p["cap"])}</p>{ilgili(p["cap"])}</li>'
         for p in D["life"]["photos"])
     tl = ""
     for t in D["timeline"]:
@@ -193,7 +214,7 @@ def build_home():
              "Tarihçeyi oku" if w["link"]["href"] == "#gameks" else w["link"]["label"])
         for w in D["works"])
     press = "".join(
-        f'<div class="press-col"><h3>{E(gr["title"])}</h3><ul>' + "".join(f'<li><a href="{E(l["href"])}">{E(l["label"])}</a></li>' for l in gr["links"]) + "</ul></div>"
+        f'<div class="press-col"><h3>{E(gr["title"])}</h3><ul>' + "".join(f'<li><a href="{E(l["href"])}">{E(l["label"])}<small class="yayin">{E(yayin_adi(l["href"]))}</small></a></li>' for l in gr["links"]) + "</ul></div>"
         for gr in D["press"]["groups"])
     a = D["about"]
     VIDEOS = json.loads((ROOT / "data" / "videolar.json").read_text(encoding="utf-8"))
@@ -223,6 +244,7 @@ def build_home():
 
 <section class="salon" id="kitaplar" aria-labelledby="kitaplar-baslik">
   {salon_head(1, "kitaplar", "Kitaplar", "Hepsi ücretsiz; internette okunur, PDF olarak indirilir. Bir kitaba dokunun, sayfası açılsın.")}
+  <p class="kit-ust"><a class="btn" href="/kitaplar/icimde-kalan-cocuk/">Seriye <em>İçimde Kalan Çocuk</em> ile başlayın →</a><a class="btn btn-line" href="/yazilar/">Yazı defteri</a></p>
   <h3 class="row-title">US’lu Anlatılar <span>Altı kitaplık seri · <a href="/uslu-anlatilar/">Okuma sırası ve seri hakkında</a></span></h3>
   <ol class="shelf is-series">{series}</ol>
   <h3 class="row-title">Editörlüğünü yaptığım kitaplar <span>Başka yazarların eserleri</span></h3>
@@ -400,10 +422,26 @@ def write_search_index():
         title = _strip(h1.group(1)) if h1 else ""
         band = re.search(r'class="r-band"[^>]*><a [^>]*>.*?>([^<]+)</a>', t, re.S)
         book = band.group(1).strip() if band else ""
-        art = re.search(r'<article class="reader".*?</article>', t, re.S)
-        m = art or re.search(r'<main id="icerik">(.*)</main>', t, re.S)
-        text = _strip(m.group(0) if art else (m.group(1) if m else ""))
-        kind = "Kitap" if (book or rel.startswith("/kitaplar/")) else "Sayfa"
+        govde = re.search(r'<div class="text"[^>]*>(.*?)</div>\s*(?:<section|<aside|<nav|</article>)', t, re.S) or \
+            re.search(r'<div class="yazi-metin">(.*?)</div>', t, re.S)
+        if govde:
+            text = _strip(govde.group(1))
+        else:
+            m = re.search(r'<main id="icerik">(.*)</main>', t, re.S)
+            gv = re.sub(r'<section class="(bk-series|more-books|bk-toc)".*?</section>|<a class="ba".*?</a>', " ", m.group(1), flags=re.S) if m else ""
+            text = _strip(re.sub(r'<(figure|form|dialog)\b.*?</\1>|<div class="(share-mini|tools|dinle-kutu|uc-yol)".*?</div>', " ", gv, flags=re.S))
+        text = re.sub(r"\b(Yazı boyutu|A−|A\+|İçindekiler|Paylaş:|WhatsApp|Facebook|Bu bölümü dinleyin|Okumaya başla|Bütün kitaplar)\b", " ", text)
+        text = re.sub(r"\s+", " ", text).strip()
+        text = re.sub(r"^([A-ZÇĞİÖŞÜ]) (?=[a-zçğıöşü])", r"\1", text)
+        parts = rel.strip("/").split("/")
+        if rel.startswith("/kitaplar/") and len(parts) == 2:
+            kind = "Kitap"
+        elif rel.startswith("/kitaplar/"):
+            kind = "Bölüm"
+        elif rel.startswith("/yazilar/") and len(parts) == 2:
+            kind = "Yazı"
+        else:
+            kind = "Sayfa"
         if title and title in text[:len(title) + 40]:
             text = text[text.index(title) + len(title):].strip()
         items.append({"u": rel, "t": title, "k": kind, "b": book, "x": text})
