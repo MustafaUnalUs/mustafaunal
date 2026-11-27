@@ -1,0 +1,74 @@
+[
+ {
+  "no": 1,
+  "slug": "icimde-kalan-cocuk",
+  "title": "İçimde Kalan Çocuk",
+  "text": "Çocukluk, insanın ömrü boyunca taşıdığı en saf pusuladır.",
+  "img": "/img/alinti/01.jpg",
+  "url": "/kitaplar/icimde-kalan-cocuk/bolum/02/",
+  "author": "Mustafa Ünal"
+ },
+ {
+  "no": 2,
+  "slug": "icimde-kalan-cocuk",
+  "title": "İçimde Kalan Çocuk",
+  "text": "Us, insanın büyüdükçe kaybetmemesi gereken meraktır.",
+  "img": "/img/alinti/02.jpg",
+  "url": "/kitaplar/icimde-kalan-cocuk/bolum/03/",
+  "author": "Mustafa Ünal"
+ },
+ {
+  "no": 3,
+  "slug": "icimde-kalan-cocuk",
+  "title": "İçimde Kalan Çocuk",
+  "text": "Hafızanın derinliklerindeki hiçbir şey bütünüyle silinmez; yalnızca üzeri zamanın tozlu yapraklarıyla örtülür.",
+  "img": "/img/alinti/03.jpg",
+  "url": "/kitaplar/icimde-kalan-cocuk/bolum/02/",
+  "author": "Mustafa Ünal"
+ },
+ {
+  "no": 4,
+  "slug": "karanlik-odada-yedi-ay",
+  "title": "Karanlık Odada Yedi Ay",
+  "text": "Bilgisayar, söylediğim şeyi eksiksiz yapıyor; yanlış söylediğimde ise aynı kesinlikle yanlış yapıyordu.",
+  "img": "/img/alinti/04.jpg",
+  "url": "/kitaplar/karanlik-odada-yedi-ay/bolum/02/",
+  "author": "Mustafa Ünal"
+ },
+ {
+  "no": 5,
+  "slug": "karanlik-odada-yedi-ay",
+  "title": "Karanlık Odada Yedi Ay",
+  "text": "Eski program açıldığında ilk anda sanki bilgisayar beni hatırlamış gibi hissettim.",
+  "img": "/img/alinti/05.jpg",
+  "url": "/kitaplar/karanlik-odada-yedi-ay/bolum/31/",
+  "author": "Mustafa Ünal"
+ },
+ {
+  "no": 6,
+  "slug": "uslu-dusler",
+  "title": "US’lu Düşler",
+  "text": "Bir isim vermek makineyi insan yapmıyordu.",
+  "img": "/img/alinti/06.jpg",
+  "url": "/kitaplar/uslu-dusler/bolum/15/",
+  "author": "Mustafa Ünal"
+ },
+ {
+  "no": 7,
+  "slug": "uslu-dusler",
+  "title": "US’lu Düşler",
+  "text": "İnsan bazen dün değiştirdiği bir şifreyi hatırlayamazken yıllar önce duyduğu bir sesi neden unutmuyordu?",
+  "img": "/img/alinti/07.jpg",
+  "url": "/kitaplar/uslu-dusler/bolum/14/",
+  "author": "Mustafa Ünal"
+ },
+ {
+  "no": 8,
+  "slug": "kelekcide-yasamak",
+  "title": "Kelekçi’de Yaşamak",
+  "text": "Her şey akar: su, tarih, yıldız, insan ve fikir.",
+  "img": "/img/alinti/08.jpg",
+  "url": "/kitaplar/kelekcide-yasamak/bolum/18/",
+  "author": "Dr. Oktar Öner"
+ }
+]

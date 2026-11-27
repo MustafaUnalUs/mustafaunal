@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "29"
+ASSET_V = "31"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -193,6 +193,13 @@ def build_home():
         f'<div class="press-col"><h3>{E(gr["title"])}</h3><ul>' + "".join(f'<li><a href="{E(l["href"])}">{E(l["label"])}</a></li>' for l in gr["links"]) + "</ul></div>"
         for gr in D["press"]["groups"])
     a = D["about"]
+    from urllib.parse import quote
+    alinti = "".join(
+        f'<li><button type="button" class="photo alinti-k" data-full="{q["img"]}" data-label="{E(q["title"])} · {E(q["author"])}" aria-label="Alıntı kartını büyüt">'
+        f'<img src="{q["img"]}" alt="“{E(q["text"])}” · {E(q["title"])}, {E(q["author"])}" width="1080" height="1080" loading="lazy"></button>'
+        f'<p class="alinti-act"><a href="https://wa.me/?text={quote("“" + q["text"] + "” " + q["title"] + ", " + q["author"] + " · " + ORIGIN + q["url"])}" target="_blank" rel="noopener">WhatsApp’ta paylaş</a>'
+        f'<a href="{q["url"]}">Bölümü oku →</a></p></li>'
+        for q in json.loads((ROOT / "data" / "alintilar.json").read_text(encoding="utf-8")))
     body = f"""
 <section class="hero">
   <div class="hero-text">
@@ -215,6 +222,8 @@ def build_home():
   <ol class="shelf is-series">{series}</ol>
   <h3 class="row-title">Editörlüğünü yaptığım kitaplar <span>Başka yazarların eserleri</span></h3>
   <ul class="shelf">{others}</ul>
+  <h3 class="row-title" id="alintilar">Kitaplardan <span>Bir cümle, bir kitap. Kartı paylaşın; okuyan bölüme ulaşsın.</span></h3>
+  <ul class="alinti-list">{alinti}</ul>
 </section>
 
 <section class="salon" id="fotograflar" aria-labelledby="fotograflar-baslik">
