@@ -733,3 +733,11 @@ body.has-gecis { padding-bottom: 4.5rem; }
 .alinti-act a:hover { text-decoration: underline; }
 .alinti-list .alinti-k, .alinti-list .alinti-k img { aspect-ratio: 1 / 1; height: auto; width: 100%; object-fit: cover; padding: 0; background: none; border: 0; box-shadow: none; }
 .alinti-list .alinti-k img { box-shadow: 0 18px 30px -18px rgba(0,0,0,.8); border-radius: 4px; }
+
+/* sesli ve görüntülü */
+.ses-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1.6rem 1.4rem; }
+.ses-list .yt { margin: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 0 0 1px rgba(217,189,133,.35), 0 18px 30px -18px rgba(0,0,0,.8); }
+.ses-list .yt-title { display: none; }
+.ses-t { margin: .6rem .1rem 0; display: flex; flex-direction: column; gap: .15rem; }
+.ses-t b { font: 400 1.25rem/1.25 var(--serif); }
+.ses-t span { font-size: .9rem; color: var(--soluk); }

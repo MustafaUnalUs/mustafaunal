@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "31"
+ASSET_V = "32"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -224,6 +224,13 @@ def build_home():
   <ul class="shelf">{others}</ul>
   <h3 class="row-title" id="alintilar">Kitaplardan <span>Bir cümle, bir kitap. Kartı paylaşın; okuyan bölüme ulaşsın.</span></h3>
   <ul class="alinti-list">{alinti}</ul>
+</section>
+
+<section class="salon salon-ses" id="ses" aria-labelledby="ses-baslik">
+  <header class="salon-head"><p class="salon-no">Ara salon</p><h2 id="ses-baslik">Sesli ve görüntülü</h2>
+    <p class="salon-text">Memleket Kokusu kanalından: şiirler, şarkı sözleri ve memleket üzerine kayıtlar. Bir videoya dokunun, burada oynasın.</p></header>
+  <ul class="ses-list">{"".join(f'<li>{books.yt(v["id"], v["title"])}<p class="ses-t"><b>{E(v["title"])}</b><span>{E(v["by"])}</span></p></li>' for v in json.loads((ROOT / "data" / "videolar.json").read_text(encoding="utf-8")))}</ul>
+  <p class="more-link"><a class="btn btn-line" href="https://www.youtube.com/@memleketkokusu" rel="noopener">Memleket Kokusu kanalının tamamı</a></p>
 </section>
 
 <section class="salon" id="fotograflar" aria-labelledby="fotograflar-baslik">
