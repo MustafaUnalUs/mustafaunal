@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "35"
+ASSET_V = "37"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -196,6 +196,8 @@ def build_home():
         f'<div class="press-col"><h3>{E(gr["title"])}</h3><ul>' + "".join(f'<li><a href="{E(l["href"])}">{E(l["label"])}</a></li>' for l in gr["links"]) + "</ul></div>"
         for gr in D["press"]["groups"])
     a = D["about"]
+    VIDEOS = json.loads((ROOT / "data" / "videolar.json").read_text(encoding="utf-8"))
+    VID = lambda v: f'<li>{books.yt(v["id"], v["title"])}<p class="ses-t"><b>{E(v["title"])}</b><span>{E(v["by"])}</span></p></li>'
     from urllib.parse import quote
     alinti = "".join(
         f'<li><button type="button" class="photo alinti-k" data-full="{q["img"]}" data-label="{E(q["title"])} · {E(q["author"])}" aria-label="Alıntı kartını büyüt">'
@@ -235,7 +237,8 @@ def build_home():
 <section class="salon salon-ses" id="ses" aria-labelledby="ses-baslik">
   <header class="salon-head"><p class="salon-no">Ara salon</p><h2 id="ses-baslik">Sesli ve görüntülü</h2>
     <p class="salon-text">Memleket Kokusu kanalından: şiirler, şarkı sözleri ve memleket üzerine kayıtlar. Bir videoya dokunun, burada oynasın.</p></header>
-  <ul class="ses-list">{"".join(f'<li>{books.yt(v["id"], v["title"])}<p class="ses-t"><b>{E(v["title"])}</b><span>{E(v["by"])}</span></p></li>' for v in json.loads((ROOT / "data" / "videolar.json").read_text(encoding="utf-8")))}</ul>
+  <ul class="ses-list">{"".join(VID(v) for v in VIDEOS[:6])}</ul>
+  {f'<details class="ses-daha"><summary>Bütün videolar ({len(VIDEOS)})</summary><ul class="ses-list">{"".join(VID(v) for v in VIDEOS[6:])}</ul></details>' if len(VIDEOS) > 6 else ""}
   <p class="more-link"><a class="btn btn-line" href="https://www.youtube.com/@memleketkokusu" rel="noopener">Memleket Kokusu kanalının tamamı</a></p>
 </section>
 
@@ -360,6 +363,7 @@ def build_yazilar(write):
   <p class="yazi-konu">{E(y["konu"])}</p>
   {books.share_mini()}
   <div class="yazi-metin">{"".join(blok(x) for x in y["blocks"])}</div>
+  {(f'<h2 class="yazi-vid-b">Videoda: {E(y["video"]["title"])}</h2>' + books.yt(y["video"]["id"], y["video"]["title"])) if y.get("video") else ""}
   <p class="yazi-imza">Mustafa Ünal · {E(y["date"])}</p>
   <p class="more-link"><a href="/yazilar/">Bütün yazılar</a> · <a href="/">Sergiye dön</a></p>
 </article>"""
