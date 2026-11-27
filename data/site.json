@@ -123,7 +123,16 @@
    ],
    "title": "Kitaplar ve yeni anlatı dönemi",
    "text": "Yıllar boyunca biriken hayat, şimdi kitaplara dönüşüyor.",
-   "links": [],
+   "links": [
+    {
+     "label": "US’lu Anlatılar serisi",
+     "href": "/uslu-anlatilar/"
+    },
+    {
+     "label": "US’lu Düşler",
+     "href": "/kitaplar/uslu-dusler/"
+    }
+   ],
    "img": null,
    "logo": false
   },
@@ -180,6 +189,10 @@
     {
      "label": "GAMEKS tarihçesi",
      "href": "#gameks"
+    },
+    {
+     "label": "Kitap IV: Adı Konmamış İşlere Don Biçen Adam",
+     "href": "/kitaplar/adi-konmamis-islere-don-bicen-adam/"
     }
    ],
    "img": "/img/inline/inline-02.webp",
@@ -191,7 +204,12 @@
    ],
    "title": "Teknolojiye açılan yol",
    "text": "Kişisel bilgisayar deneyimleri, 386SX, Kuluçkahane İşletim Paketi ve teknolojiyle birlikte gelişen öğrenme süreci.",
-   "links": [],
+   "links": [
+    {
+     "label": "Kitap II: Karanlık Odada Yedi Ay",
+     "href": "/kitaplar/karanlik-odada-yedi-ay/"
+    }
+   ],
    "img": null,
    "logo": false
   },
@@ -201,7 +219,12 @@
    ],
    "title": "Balkıca’dan başlayan yol",
    "text": "Tavas’ın Balkıca köyünde başlayan hayat; merak, çalışma ve memleket hafızasıyla bugüne uzandı.",
-   "links": [],
+   "links": [
+    {
+     "label": "Kitap I: İçimde Kalan Çocuk",
+     "href": "/kitaplar/icimde-kalan-cocuk/"
+    }
+   ],
    "img": null,
    "logo": false
   }
