@@ -158,7 +158,7 @@ def series_strip(book):
         f'<li><a href="{b["base"]}"{" aria-current=" + chr(34) + "page" + chr(34) if b is book else ""}>'
         f'<img src="{b["cover"]}" alt="" width="400" height="620" loading="lazy"><span class="s-no">{E(b["seri"])}</span>'
         f'<span class="s-t">{E(b["title"])}</span></a></li>' for b in SERIES)
-    return (f'<section class="bk-series"><h2>US’lu Anlatılar</h2><p>Altı kitaplık seri. Her kitap tek başına da okunabilir.</p>'
+    return (f'<section class="bk-series"><h2>US’lu Anlatılar</h2><p>Altı kitaplık seri. Her kitap tek başına da okunabilir. <a href="/uslu-anlatilar/">Okuma sırası ve seri hakkında</a></p>'
             f'<ol>{li}</ol></section>')
 
 

@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "27"
+ASSET_V = "29"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -211,7 +211,7 @@ def build_home():
 
 <section class="salon" id="kitaplar" aria-labelledby="kitaplar-baslik">
   {salon_head(1, "kitaplar", "Kitaplar", "Hepsi ücretsiz; internette okunur, PDF olarak indirilir. Bir kitaba dokunun, sayfası açılsın.")}
-  <h3 class="row-title">US’lu Anlatılar <span>Altı kitaplık seri</span></h3>
+  <h3 class="row-title">US’lu Anlatılar <span>Altı kitaplık seri · <a href="/uslu-anlatilar/">Okuma sırası ve seri hakkında</a></span></h3>
   <ol class="shelf is-series">{series}</ol>
   <h3 class="row-title">Editörlüğünü yaptığım kitaplar <span>Başka yazarların eserleri</span></h3>
   <ul class="shelf">{others}</ul>
@@ -285,6 +285,39 @@ def build_gameks():
     return layout("/gameks/", "GAMEKS: Bilişimden üretime · Mustafa Ünal", body, desc=g["lead"], cls="page-gameks")
 
 
+
+
+def build_seri():
+    """US’lu Anlatılar: altı kitaplık serinin okuma sırası."""
+    us = "/kitaplar/icimde-kalan-cocuk/bolum/03/"
+    rows = ""
+    for i, b in enumerate(SERIES):
+        soon = b.get("soon")
+        durum = "Hazırlanıyor" if soon else "Yayında"
+        etiket = f"Kitap {b['no']}" + (f" · {b['tag']}" if b.get("tag") else "")
+        acts = (f'<a class="btn btn-line" href="{b["path"]}">Kitabın sayfası</a>' if soon else
+                f'<a class="btn" href="{b["path"]}bolum/01/">Okumaya başla</a><a class="btn btn-line" href="{b["path"]}">Kitabın sayfası</a>')
+        rows += (f'<li class="seri-k{" is-soon" if soon else ""}"><span class="seri-adim" aria-hidden="true">{b["no"]}</span>'
+                 f'<a class="seri-kapak" href="{b["path"]}">{ph("/img/kapak/" + b["slug"] + ".webp?v=" + ASSET_V, b["title"] + " kapağı", "", 400, 620)}</a>'
+                 f'<div class="seri-yazi"><p class="seri-et">{E(etiket)} <span class="seri-durum">{durum}</span></p><h2>{E(b["title"])}</h2>'
+                 f'<p>{E(b["line"])}</p><p class="seri-act">{acts}</p></div></li>')
+    yayinda = sum(1 for b in SERIES if not b.get("soon"))
+    body = f"""
+<section class="lobby seri-lobi">
+  <div class="lobby-text"><p class="salon-no">Altı kitaplık seri</p><h1>US’lu Anlatılar</h1>
+    <p class="lobby-lead">Çocukluktan bugüne bir ömrün anlatısı. Her kitap tek başına okunabilir; sırayla okuyan, bir hayatın nasıl bir düşünme biçimine dönüştüğünü izler. Şu an {yayinda} kitap yayında, {len(SERIES) - yayinda} kitap hazırlanıyor.</p>
+    <blockquote class="seri-soz"><p>Us, akıldır. Ama benim için yalnızca düşünmek değildir. Sorgulamaktır, merak etmektir, bilmediğini kabul edebilmektir.</p>
+      <p>“Us” kelimesini seçmemin bir başka nedeni de ismimle ilgili: Mustafa Ünal. U ve S…</p>
+      <cite>İçimde Kalan Çocuk, “US Nedir?” · <a href="{us}">Bölümün tamamını okuyun</a></cite></blockquote>
+    {books.share_mini()}</div>
+</section>
+<section class="salon seri-salon" aria-label="Okuma sırası">
+  <p class="salon-no">Okuma sırası</p>
+  <ol class="seri-yol">{rows}</ol>
+  <p class="more-link"><a href="/#kitaplar">Bütün kitaplar</a></p>
+</section>"""
+    return layout("/uslu-anlatilar/", "US’lu Anlatılar: altı kitaplık seri · Mustafa Ünal", body,
+                  desc="Mustafa Ünal’ın altı kitaplık US’lu Anlatılar serisi: okuma sırası, yayımlananlar ve hazırlananlar.", cls="page-seri")
 
 
 def _strip(h):
@@ -374,6 +407,7 @@ def main():
     print("kitap sayfası:", books.build_all(write, layout))
     (OUT / "gameks").mkdir()
     (OUT / "gameks" / "index.html").write_text(build_gameks(), encoding="utf-8")
+    write("/uslu-anlatilar/", build_seri())
     nf = layout("/404", "Sayfa bulunamadı · Mustafa Ünal",
                 '<section class="lobby"><div class="lobby-text"><p class="salon-no">Kayıp eser</p><h1>Bu salon boş.</h1>'
                 '<p class="lobby-lead">Aradığınız sayfa taşınmış olabilir. <a href="/">Sergi girişine dönün.</a></p></div></section>')
