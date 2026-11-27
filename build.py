@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "32"
+ASSET_V = "33"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -90,6 +90,9 @@ def layout(path, title, body, desc="", cls=""):
 <meta name="theme-color" content="#16231d">
 <script>(function(){{var t;try{{t=localStorage.getItem("tema")}}catch(e){{}}document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}})()</script>
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="apple-touch-icon" href="/img/uygulama-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400..700&display=swap">
@@ -411,6 +414,9 @@ def main():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "static", OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    sw = (ROOT / "static" / "sw.tmpl.js").read_text().replace("__A__", ASSET_V).replace("__V__", "v" + ASSET_V)
+    (OUT / "sw.js").write_text(sw)
+    (OUT / "sw.tmpl.js").unlink(missing_ok=True)
     if not CANLI:
         (OUT / "CNAME").write_text("mustafaunal.gunerunal.com.tr\n")
     (OUT / ".nojekyll").write_text("")

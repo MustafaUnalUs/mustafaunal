@@ -1,0 +1,29 @@
+{
+ "name": "Mustafa Ünal",
+ "short_name": "M. Ünal",
+ "description": "Mustafa Ünal: kitaplar, fotoğraflar, hayat.",
+ "lang": "tr",
+ "start_url": "/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#16231d",
+ "theme_color": "#16231d",
+ "icons": [
+  {
+   "src": "/img/uygulama-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/img/uygulama-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/img/uygulama-512m.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

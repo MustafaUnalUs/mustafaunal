@@ -309,3 +309,6 @@ document.querySelectorAll(".dinle-kutu audio[data-start]").forEach((au) => {
   au.addEventListener("play", () => { if (au.currentTime < a - 1 || au.currentTime >= z) au.currentTime = a; });
   au.addEventListener("timeupdate", () => { if (au.currentTime >= z) { au.pause(); au.currentTime = a; } });
 });
+
+/* çevrimdışı okuma */
+if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("/sw.js").catch(() => {});
