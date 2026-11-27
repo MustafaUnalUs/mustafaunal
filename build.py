@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "41"
+ASSET_V = "42"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -102,7 +102,7 @@ def layout(path, title, body, desc="", cls=""):
 <div class="torch" aria-hidden="true"></div>
 <a class="skip" href="#icerik">İçeriğe geç</a>
 <header class="bar">
-  <a class="name" href="/"><span class="name-dot" aria-hidden="true"></span>Mustafa Ünal</a>
+  <a class="name" href="/"><svg class="name-ikon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.2" fill="#16231d" stroke="#d9bd85" stroke-width="1.6"/><g stroke="#b8955a" stroke-width=".9"><line x1="22.20" y1="12.00" x2="10.97" y2="18.52"/><line x1="17.10" y1="20.83" x2="5.84" y2="14.37"/><line x1="6.90" y1="20.83" x2="6.87" y2="7.85"/><line x1="1.80" y1="12.00" x2="13.03" y2="5.48"/><line x1="6.90" y1="3.17" x2="18.16" y2="9.63"/><line x1="17.10" y1="3.17" x2="17.13" y2="16.15"/></g><circle cx="12" cy="12" r="7" fill="#16231d" stroke="#d9bd85" stroke-width=".8"/><text x="12" y="14.6" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="7.4" fill="#d9bd85">US</text></svg>Mustafa Ünal</a>
   <a class="tema ara-btn" href="/ara/" aria-label="Sitede ara" title="Sitede ara"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></a>
   <button type="button" class="tema" id="tema" aria-label="Açık ya da koyu görünüme geç" title="Açık / koyu görünüm">
     <svg class="gunes" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
