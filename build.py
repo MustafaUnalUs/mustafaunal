@@ -19,7 +19,7 @@ ORIGIN = "https://mustafaunal.tr"
 # SITE_MODE=canli: mustafaunal.tr için (arama motorlarına açık, test notu yok). Varsayılan: test.
 CANLI = os.environ.get("SITE_MODE", "test") == "canli"
 READER = "https://acipayam.com"
-ASSET_V = "39"
+ASSET_V = "40"
 E = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
 
 SERIES = [
@@ -89,9 +89,9 @@ def layout(path, title, body, desc="", cls=""):
 <link rel="canonical" href="{ORIGIN}{path}">
 <meta name="theme-color" content="#16231d">
 <script>(function(){{var t;try{{t=localStorage.getItem("tema")}}catch(e){{}}document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}})()</script>
-<link rel="icon" href="/img/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="/img/favicon.svg?v=4" type="image/svg+xml">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="apple-touch-icon" href="/img/uygulama3-180.png">
+<link rel="apple-touch-icon" href="/img/uygulama4-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
